@@ -8,9 +8,10 @@
  *
  * SPDX-License-Identifier: EPL-2.0
  ******************************************************************************/
-package org.eclipse.equinox.log;
+package org.fdesigner.supplement.log;
 
-import org.osgi.service.log.*;
+import org.fdesigner.framework.service.log.LogListener;
+import org.fdesigner.framework.service.log.LogReaderService;
 
 /**
  * Extends the OSGi Log Service's LogReaderService to allow better control of log listeners.

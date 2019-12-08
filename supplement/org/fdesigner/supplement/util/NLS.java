@@ -25,9 +25,10 @@ import java.util.List;
 import java.util.Locale;
 import java.util.Map;
 import java.util.Properties;
-import org.eclipse.osgi.framework.log.FrameworkLog;
-import org.eclipse.osgi.framework.log.FrameworkLogEntry;
-import org.eclipse.osgi.internal.util.SupplementDebug;
+
+import org.fdesigner.supplement.framework.log.FrameworkLog;
+import org.fdesigner.supplement.framework.log.FrameworkLogEntry;
+import org.fdesigner.supplement.internal.util.SupplementDebug;
 
 /**
  * Common superclass for all message bundle classes.  Provides convenience

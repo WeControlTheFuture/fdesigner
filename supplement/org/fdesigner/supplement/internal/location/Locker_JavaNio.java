@@ -15,11 +15,15 @@
  *******************************************************************************/
 package org.fdesigner.supplement.internal.location;
 
-import java.io.*;
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.IOException;
+import java.io.RandomAccessFile;
 import java.nio.channels.FileLock;
 import java.nio.channels.OverlappingFileLockException;
-import org.eclipse.osgi.internal.messages.Msg;
-import org.eclipse.osgi.util.NLS;
+
+import org.fdesigner.supplement.internal.messages.Msg;
+import org.fdesigner.supplement.util.NLS;
 
 /**
  * Internal class.

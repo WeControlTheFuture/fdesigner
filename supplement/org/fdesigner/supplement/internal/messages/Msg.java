@@ -13,7 +13,7 @@
  *******************************************************************************/
 package org.fdesigner.supplement.internal.messages;
 
-import org.eclipse.osgi.util.NLS;
+import org.fdesigner.supplement.util.NLS;
 
 public class Msg extends NLS {
 	private static final String BUNDLE_NAME = "org.eclipse.osgi.internal.messages.ExternalMessages"; //$NON-NLS-1$

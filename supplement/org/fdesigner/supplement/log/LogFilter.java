@@ -8,10 +8,9 @@
  *
  * SPDX-License-Identifier: EPL-2.0
  ******************************************************************************/
-package org.eclipse.equinox.log;
+package org.fdesigner.supplement.log;
 
-import org.osgi.framework.Bundle;
-import org.osgi.service.log.LogEntry;
+import org.fdesigner.framework.framework.Bundle;
 
 /**
  * A <code>LogFilter</code> is used to pre-filter log requests before sending events to a <code>LogListener</code>.

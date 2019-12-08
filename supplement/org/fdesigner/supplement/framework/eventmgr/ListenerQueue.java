@@ -16,7 +16,8 @@ package org.fdesigner.supplement.framework.eventmgr;
 
 import java.util.Map;
 import java.util.Set;
-import org.eclipse.osgi.framework.eventmgr.EventManager.EventThread;
+
+import org.fdesigner.supplement.framework.eventmgr.EventManager.EventThread;
 
 /**
  * The ListenerQueue is used to snapshot the list of listeners at the time the event

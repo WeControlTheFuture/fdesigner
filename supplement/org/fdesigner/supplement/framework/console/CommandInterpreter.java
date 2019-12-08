@@ -15,7 +15,8 @@
 package org.fdesigner.supplement.framework.console;
 
 import java.util.Dictionary;
-import org.osgi.framework.Bundle;
+
+import org.fdesigner.framework.framework.Bundle;
 
 /**	
  * A command interpreter is a shell that can interpret command

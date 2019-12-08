@@ -15,7 +15,10 @@ package org.fdesigner.supplement.framework.console;
 
 import java.io.InputStream;
 import java.io.OutputStream;
-import org.osgi.framework.*;
+
+import org.fdesigner.framework.framework.Bundle;
+import org.fdesigner.framework.framework.ServiceFactory;
+import org.fdesigner.framework.framework.ServiceRegistration;
 
 /**
  * A console session service provides the input and output to a single console session.

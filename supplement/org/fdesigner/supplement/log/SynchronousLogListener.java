@@ -8,9 +8,9 @@
  *
  * SPDX-License-Identifier: EPL-2.0
  ******************************************************************************/
-package org.eclipse.equinox.log;
+package org.fdesigner.supplement.log;
 
-import org.osgi.service.log.LogListener;
+import org.fdesigner.framework.service.log.LogListener;
 
 /**
  * Marker interface to denotes a log listener that should be called on the logging thread

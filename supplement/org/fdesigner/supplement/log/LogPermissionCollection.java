@@ -8,7 +8,7 @@
  *
  * SPDX-License-Identifier: EPL-2.0
  ******************************************************************************/
-package org.eclipse.equinox.log;
+package org.fdesigner.supplement.log;
 
 import java.security.Permission;
 import java.security.PermissionCollection;

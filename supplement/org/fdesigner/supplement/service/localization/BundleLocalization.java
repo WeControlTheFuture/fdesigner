@@ -14,7 +14,8 @@
 package org.fdesigner.supplement.service.localization;
 
 import java.util.ResourceBundle;
-import org.osgi.framework.Bundle;
+
+import org.fdesigner.framework.framework.Bundle;
 
 /**
  * The interface of the service that gets {@link ResourceBundle} objects from a given 

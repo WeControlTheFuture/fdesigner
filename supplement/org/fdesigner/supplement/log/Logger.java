@@ -8,10 +8,9 @@
  *
  * SPDX-License-Identifier: EPL-2.0
  ******************************************************************************/
-package org.eclipse.equinox.log;
+package org.fdesigner.supplement.log;
 
-import org.osgi.framework.ServiceReference;
-import org.osgi.service.log.LogService;
+import org.fdesigner.framework.framework.ServiceReference;
 
 /**
   * Provides named logger support for the OSGi LogService. Otherwise very similar to the <code>LogService</code>.
@@ -20,7 +19,7 @@ import org.osgi.service.log.LogService;
  * @since 3.7
  * @noimplement This interface is not intended to be implemented by clients.
  */
-public interface Logger extends org.osgi.service.log.Logger {
+public interface Logger extends org.fdesigner.framework.service.log.Logger {
 	/**
 	 * @see LogService#log(int, String)
 	 */

@@ -8,10 +8,10 @@
  *
  * SPDX-License-Identifier: EPL-2.0
  ******************************************************************************/
-package org.eclipse.equinox.log;
+package org.fdesigner.supplement.log;
 
-import org.osgi.framework.Bundle;
-import org.osgi.service.log.LogService;
+import org.fdesigner.framework.framework.Bundle;
+import org.fdesigner.framework.service.log.LogService;
 
 /**
  * Extends the OSGi <code>Log Service</code> to support the use of named loggers that provide

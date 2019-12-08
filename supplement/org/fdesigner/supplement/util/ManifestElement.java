@@ -27,6 +27,9 @@ import java.util.Map;
 import java.util.StringTokenizer;
 
 import org.fdesigner.framework.framework.BundleException;
+import org.fdesigner.supplement.internal.messages.Msg;
+import org.fdesigner.supplement.internal.util.SupplementDebug;
+import org.fdesigner.supplement.internal.util.Tokenizer;
 
 /**
  * This class represents a single manifest element.  A manifest element must consist of a single

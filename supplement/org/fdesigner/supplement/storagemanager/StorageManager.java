@@ -25,12 +25,13 @@ import java.util.Enumeration;
 import java.util.Map;
 import java.util.Properties;
 import java.util.Set;
-import org.eclipse.osgi.framework.internal.reliablefile.ReliableFile;
-import org.eclipse.osgi.framework.internal.reliablefile.ReliableFileInputStream;
-import org.eclipse.osgi.framework.internal.reliablefile.ReliableFileOutputStream;
-import org.eclipse.osgi.internal.location.LocationHelper;
-import org.eclipse.osgi.internal.location.Locker;
-import org.eclipse.osgi.internal.messages.Msg;
+
+import org.fdesigner.supplement.framework.internal.reliablefile.ReliableFile;
+import org.fdesigner.supplement.framework.internal.reliablefile.ReliableFileInputStream;
+import org.fdesigner.supplement.framework.internal.reliablefile.ReliableFileOutputStream;
+import org.fdesigner.supplement.internal.location.LocationHelper;
+import org.fdesigner.supplement.internal.location.Locker;
+import org.fdesigner.supplement.internal.messages.Msg;
 
 /**
  * Storage managers provide a facility for tracking the state of a group of files having 

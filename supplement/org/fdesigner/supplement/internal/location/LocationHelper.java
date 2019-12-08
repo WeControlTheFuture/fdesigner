@@ -13,9 +13,17 @@
  *******************************************************************************/
 package org.fdesigner.supplement.internal.location;
 
-import java.io.*;
-import java.net.*;
-import org.eclipse.osgi.internal.location.Locker.MockLocker;
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.UnsupportedEncodingException;
+import java.net.MalformedURLException;
+import java.net.URL;
+import java.net.URLConnection;
+import java.net.URLDecoder;
+
+import org.fdesigner.supplement.internal.location.Locker.MockLocker;
 
 /**
  * @since 3.3
