@@ -11,18 +11,33 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.osgi.container;
+package org.fdesigner.container;
 
-import java.util.*;
-import org.eclipse.osgi.internal.framework.FilterImpl;
-import org.eclipse.osgi.internal.messages.Msg;
-import org.eclipse.osgi.report.resolution.ResolutionReport;
-import org.osgi.framework.Constants;
-import org.osgi.framework.InvalidSyntaxException;
-import org.osgi.framework.namespace.*;
-import org.osgi.framework.wiring.BundleRevision;
-import org.osgi.resource.*;
-import org.osgi.service.resolver.ResolutionException;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.HashMap;
+import java.util.HashSet;
+import java.util.List;
+import java.util.Map;
+import java.util.Set;
+
+import org.fdesigner.container.internal.framework.FilterImpl;
+import org.fdesigner.framework.framework.Constants;
+import org.fdesigner.framework.framework.InvalidSyntaxException;
+import org.fdesigner.framework.framework.namespace.BundleNamespace;
+import org.fdesigner.framework.framework.namespace.HostNamespace;
+import org.fdesigner.framework.framework.namespace.PackageNamespace;
+import org.fdesigner.framework.framework.wiring.BundleRevision;
+import org.fdesigner.framework.resource.Capability;
+import org.fdesigner.framework.resource.Namespace;
+import org.fdesigner.framework.resource.Requirement;
+import org.fdesigner.framework.resource.Resource;
+import org.fdesigner.framework.resource.Wire;
+import org.fdesigner.framework.service.resolver.ResolutionException;
+import org.fdesigner.supplement.internal.messages.Msg;
+import org.fdesigner.supplement.report.resolution.ResolutionReport;
+import org.fdesigner.supplement.report.resolution.ResolutionReport.Entry;
+import org.fdesigner.supplement.report.resolution.ResolutionReport.Entry.Type;
 
 /**
  * A resolution report implementation used by the container for resolution operations.

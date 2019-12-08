@@ -11,21 +11,21 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.osgi.service.resolver;
+package org.fdesigner.container.service.resolver;
 
-import org.osgi.framework.Version;
+import org.fdesigner.framework.framework.Version;
 
 /**
  * This class represents a version range.
  * @since 3.1
  * @noextend This class is not intended to be subclassed by clients.
  */
-public class VersionRange extends org.osgi.framework.VersionRange {
+public class VersionRange extends org.fdesigner.framework.framework.VersionRange {
 	private static final Version versionMax = new Version(Integer.MAX_VALUE, Integer.MAX_VALUE, Integer.MAX_VALUE);
-	private static final char INCLUDE_MIN = org.osgi.framework.VersionRange.LEFT_CLOSED;
-	private static final char EXCLUDE_MIN = org.osgi.framework.VersionRange.LEFT_OPEN;
-	private static final char INCLUDE_MAX = org.osgi.framework.VersionRange.RIGHT_CLOSED;
-	private static final char EXCLUDE_MAX = org.osgi.framework.VersionRange.RIGHT_OPEN;
+	private static final char INCLUDE_MIN = org.fdesigner.framework.framework.VersionRange.LEFT_CLOSED;
+	private static final char EXCLUDE_MIN = org.fdesigner.framework.framework.VersionRange.LEFT_OPEN;
+	private static final char INCLUDE_MAX = org.fdesigner.framework.framework.VersionRange.RIGHT_CLOSED;
+	private static final char EXCLUDE_MAX = org.fdesigner.framework.framework.VersionRange.RIGHT_OPEN;
 
 	/**
 	 * An empty version range: "0.0.0".  The empty version range includes all valid versions

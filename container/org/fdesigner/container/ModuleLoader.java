@@ -11,12 +11,11 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.osgi.container;
+package org.fdesigner.container;
 
 import java.net.URL;
 import java.util.Collection;
 import java.util.List;
-import org.eclipse.osgi.container.Module.StartOptions;
 
 /**
  * A module loader is what connects a {@link ModuleWiring} to a real classloader.

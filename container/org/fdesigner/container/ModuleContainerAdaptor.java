@@ -11,18 +11,16 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.osgi.container;
+package org.fdesigner.container;
 
-import java.io.DataInputStream;
 import java.util.EnumSet;
 import java.util.concurrent.Executor;
 import java.util.concurrent.ScheduledExecutorService;
-import org.eclipse.osgi.container.Module.Settings;
-import org.eclipse.osgi.service.debug.DebugOptions;
-import org.osgi.framework.Constants;
-import org.osgi.framework.FrameworkListener;
-import org.osgi.framework.hooks.resolver.ResolverHookFactory;
-import org.osgi.framework.startlevel.FrameworkStartLevel;
+
+import org.fdesigner.container.Module.Settings;
+import org.fdesigner.framework.framework.FrameworkListener;
+import org.fdesigner.framework.framework.hooks.resolver.ResolverHookFactory;
+import org.fdesigner.supplement.service.debug.DebugOptions;
 
 /**
  * Adapts the behavior of a container.

@@ -12,15 +12,20 @@
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
 
-package org.eclipse.osgi.framework.util;
+package org.fdesigner.container.framework.util;
 
 import java.io.IOException;
 import java.io.InputStream;
-import java.util.*;
-import org.eclipse.osgi.internal.messages.Msg;
-import org.eclipse.osgi.util.ManifestElement;
-import org.eclipse.osgi.util.NLS;
-import org.osgi.framework.BundleException;
+import java.util.Collection;
+import java.util.Dictionary;
+import java.util.Enumeration;
+import java.util.Map;
+import java.util.Set;
+
+import org.fdesigner.framework.framework.BundleException;
+import org.fdesigner.supplement.internal.messages.Msg;
+import org.fdesigner.supplement.util.ManifestElement;
+import org.fdesigner.supplement.util.NLS;
 
 /**
  * Headers classes. This class implements a Dictionary that has

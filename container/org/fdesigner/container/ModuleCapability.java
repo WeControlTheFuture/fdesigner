@@ -11,11 +11,14 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.osgi.container;
+package org.fdesigner.container;
 
-import java.util.*;
-import org.osgi.framework.namespace.NativeNamespace;
-import org.osgi.framework.wiring.BundleCapability;
+import java.util.Collections;
+import java.util.HashMap;
+import java.util.Map;
+
+import org.fdesigner.framework.framework.namespace.NativeNamespace;
+import org.fdesigner.framework.framework.wiring.BundleCapability;
 
 /**
  * An implementation of {@link BundleCapability}.

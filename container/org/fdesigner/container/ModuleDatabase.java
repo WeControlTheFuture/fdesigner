@@ -11,8 +11,9 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.osgi.container;
+package org.fdesigner.container;
 
+import java.awt.event.ContainerEvent;
 import java.io.DataInputStream;
 import java.io.DataOutputStream;
 import java.io.IOException;
@@ -30,26 +31,23 @@ import java.util.Map;
 import java.util.Set;
 import java.util.concurrent.atomic.AtomicLong;
 import java.util.concurrent.locks.ReentrantReadWriteLock;
-import java.util.concurrent.locks.ReentrantReadWriteLock.ReadLock;
-import java.util.concurrent.locks.ReentrantReadWriteLock.WriteLock;
-import org.eclipse.osgi.container.Module.Settings;
-import org.eclipse.osgi.container.Module.State;
-import org.eclipse.osgi.container.ModuleContainerAdaptor.ContainerEvent;
-import org.eclipse.osgi.container.ModuleRevisionBuilder.GenericInfo;
-import org.eclipse.osgi.container.namespaces.EquinoxModuleDataNamespace;
-import org.eclipse.osgi.framework.util.ObjectPool;
-import org.eclipse.osgi.internal.container.Capabilities;
-import org.eclipse.osgi.internal.container.ComputeNodeOrder;
-import org.eclipse.osgi.internal.framework.EquinoxConfiguration;
-import org.osgi.framework.BundleException;
-import org.osgi.framework.Constants;
-import org.osgi.framework.Version;
-import org.osgi.framework.namespace.PackageNamespace;
-import org.osgi.framework.wiring.BundleRevision;
-import org.osgi.resource.Namespace;
-import org.osgi.resource.Requirement;
-import org.osgi.resource.Wire;
-import org.osgi.service.resolver.Resolver;
+
+import org.fdesigner.container.Module.Settings;
+import org.fdesigner.container.Module.State;
+import org.fdesigner.container.ModuleRevisionBuilder.GenericInfo;
+import org.fdesigner.container.framework.util.ObjectPool;
+import org.fdesigner.container.internal.container.Capabilities;
+import org.fdesigner.container.internal.container.ComputeNodeOrder;
+import org.fdesigner.container.internal.framework.EquinoxConfiguration;
+import org.fdesigner.container.namespaces.EquinoxModuleDataNamespace;
+import org.fdesigner.framework.framework.BundleException;
+import org.fdesigner.framework.framework.Constants;
+import org.fdesigner.framework.framework.Version;
+import org.fdesigner.framework.framework.namespace.PackageNamespace;
+import org.fdesigner.framework.framework.wiring.BundleRevision;
+import org.fdesigner.framework.resource.Namespace;
+import org.fdesigner.framework.resource.Requirement;
+import org.fdesigner.framework.resource.Wire;
 
 /**
  * A database for storing modules, their revisions and wiring states.  The

@@ -11,12 +11,13 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.osgi.framework.util;
+package org.fdesigner.container.framework.util;
 
 import java.lang.ref.WeakReference;
 import java.util.Map;
 import java.util.WeakHashMap;
-import org.eclipse.osgi.internal.debug.Debug;
+
+import org.fdesigner.container.internal.debug.Debug;
 
 public class ObjectPool {
 	//private static String OPTION_DEBUG_OBJECTPOOL_ADDS = Debug.ECLIPSE_OSGI + "/debug/objectPool/adds"; //$NON-NLS-1$

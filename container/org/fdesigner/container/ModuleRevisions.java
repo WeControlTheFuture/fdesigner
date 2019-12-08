@@ -11,13 +11,14 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.osgi.container;
+package org.fdesigner.container;
 
 import java.util.ArrayList;
 import java.util.List;
-import org.osgi.framework.Bundle;
-import org.osgi.framework.wiring.BundleRevision;
-import org.osgi.framework.wiring.BundleRevisions;
+
+import org.fdesigner.framework.framework.Bundle;
+import org.fdesigner.framework.framework.wiring.BundleRevision;
+import org.fdesigner.framework.framework.wiring.BundleRevisions;
 
 /**
  * An implementation of {@link BundleRevisions} which represent a 

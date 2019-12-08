@@ -12,7 +12,7 @@
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
 
-package org.eclipse.osgi.framework.util;
+package org.fdesigner.container.framework.util;
 
 import static java.util.Objects.requireNonNull;
 
@@ -26,9 +26,10 @@ import java.util.Iterator;
 import java.util.Map;
 import java.util.Objects;
 import java.util.Set;
-import org.eclipse.osgi.internal.messages.Msg;
-import org.eclipse.osgi.util.NLS;
-import org.osgi.framework.Constants;
+
+import org.fdesigner.framework.framework.Constants;
+import org.fdesigner.supplement.internal.messages.Msg;
+import org.fdesigner.supplement.util.NLS;
 
 /**
  * CaseInsensitiveDictionaryMap classes. This class implements Dictionary and Map with

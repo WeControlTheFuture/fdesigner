@@ -11,7 +11,7 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.osgi.container;
+package org.fdesigner.container;
 
 import java.security.AllPermission;
 import java.util.ArrayList;
@@ -21,16 +21,16 @@ import java.util.Collections;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-import org.eclipse.osgi.internal.framework.FilterImpl;
-import org.osgi.framework.AdminPermission;
-import org.osgi.framework.Bundle;
-import org.osgi.framework.BundleException;
-import org.osgi.framework.Constants;
-import org.osgi.framework.InvalidSyntaxException;
-import org.osgi.framework.Version;
-import org.osgi.framework.namespace.HostNamespace;
-import org.osgi.framework.wiring.BundleRevision;
-import org.osgi.resource.Namespace;
+
+import org.fdesigner.container.internal.framework.FilterImpl;
+import org.fdesigner.framework.framework.AdminPermission;
+import org.fdesigner.framework.framework.Bundle;
+import org.fdesigner.framework.framework.BundleException;
+import org.fdesigner.framework.framework.InvalidSyntaxException;
+import org.fdesigner.framework.framework.Version;
+import org.fdesigner.framework.framework.namespace.HostNamespace;
+import org.fdesigner.framework.framework.wiring.BundleRevision;
+import org.fdesigner.framework.resource.Namespace;
 
 /**
  * A builder for creating module {@link ModuleRevision} objects.  A builder can only be used by 

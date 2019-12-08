@@ -11,7 +11,7 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.osgi.container.builders;
+package org.fdesigner.container.builders;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -23,31 +23,32 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.Map;
 import java.util.Set;
-import org.eclipse.osgi.container.ModuleRevisionBuilder;
-import org.eclipse.osgi.container.namespaces.EclipsePlatformNamespace;
-import org.eclipse.osgi.container.namespaces.EquinoxFragmentNamespace;
-import org.eclipse.osgi.container.namespaces.EquinoxModuleDataNamespace;
-import org.eclipse.osgi.internal.framework.EquinoxContainer;
-import org.eclipse.osgi.internal.framework.FilterImpl;
-import org.eclipse.osgi.internal.messages.Msg;
-import org.eclipse.osgi.internal.util.Tokenizer;
-import org.eclipse.osgi.storage.NativeCodeFinder;
-import org.eclipse.osgi.util.ManifestElement;
-import org.eclipse.osgi.util.NLS;
-import org.osgi.framework.BundleException;
-import org.osgi.framework.Constants;
-import org.osgi.framework.FrameworkUtil;
-import org.osgi.framework.InvalidSyntaxException;
-import org.osgi.framework.Version;
-import org.osgi.framework.VersionRange;
-import org.osgi.framework.namespace.BundleNamespace;
-import org.osgi.framework.namespace.ExecutionEnvironmentNamespace;
-import org.osgi.framework.namespace.HostNamespace;
-import org.osgi.framework.namespace.IdentityNamespace;
-import org.osgi.framework.namespace.NativeNamespace;
-import org.osgi.framework.namespace.PackageNamespace;
-import org.osgi.framework.wiring.BundleRevision;
-import org.osgi.resource.Namespace;
+
+import org.fdesigner.container.ModuleRevisionBuilder;
+import org.fdesigner.container.internal.framework.EquinoxContainer;
+import org.fdesigner.container.internal.framework.FilterImpl;
+import org.fdesigner.container.namespaces.EclipsePlatformNamespace;
+import org.fdesigner.container.namespaces.EquinoxFragmentNamespace;
+import org.fdesigner.container.namespaces.EquinoxModuleDataNamespace;
+import org.fdesigner.container.service.resolver.VersionRange;
+import org.fdesigner.container.storage.NativeCodeFinder;
+import org.fdesigner.framework.framework.BundleException;
+import org.fdesigner.framework.framework.Constants;
+import org.fdesigner.framework.framework.FrameworkUtil;
+import org.fdesigner.framework.framework.InvalidSyntaxException;
+import org.fdesigner.framework.framework.Version;
+import org.fdesigner.framework.framework.namespace.BundleNamespace;
+import org.fdesigner.framework.framework.namespace.ExecutionEnvironmentNamespace;
+import org.fdesigner.framework.framework.namespace.HostNamespace;
+import org.fdesigner.framework.framework.namespace.IdentityNamespace;
+import org.fdesigner.framework.framework.namespace.NativeNamespace;
+import org.fdesigner.framework.framework.namespace.PackageNamespace;
+import org.fdesigner.framework.framework.wiring.BundleRevision;
+import org.fdesigner.framework.resource.Namespace;
+import org.fdesigner.supplement.internal.messages.Msg;
+import org.fdesigner.supplement.internal.util.Tokenizer;
+import org.fdesigner.supplement.util.ManifestElement;
+import org.fdesigner.supplement.util.NLS;
 
 /**
  * A factory for creating {@link ModuleRevisionBuilder}s based on OSGi bundle manifests.

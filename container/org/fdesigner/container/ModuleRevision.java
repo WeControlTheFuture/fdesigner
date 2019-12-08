@@ -19,8 +19,18 @@ import java.util.List;
 import java.util.Map;
 import java.util.Map.Entry;
 import java.util.Set;
+
 import org.fdesigner.common.Version;
+import org.fdesigner.container.ModuleRevisionBuilder.GenericInfo;
+import org.fdesigner.container.internal.container.InternalUtils;
+import org.fdesigner.container.namespaces.EquinoxModuleDataNamespace;
+import org.fdesigner.framework.framework.Bundle;
+import org.fdesigner.framework.framework.namespace.IdentityNamespace;
+import org.fdesigner.framework.framework.wiring.BundleCapability;
+import org.fdesigner.framework.framework.wiring.BundleRequirement;
 import org.fdesigner.framework.framework.wiring.BundleRevision;
+import org.fdesigner.framework.resource.Capability;
+import org.fdesigner.framework.resource.Requirement;
 
 /**
  * An implementation of {@link BundleRevision}.

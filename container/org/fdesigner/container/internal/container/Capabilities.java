@@ -11,19 +11,33 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.osgi.internal.container;
+package org.fdesigner.container.internal.container;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collection;
+import java.util.Collections;
+import java.util.HashMap;
+import java.util.HashSet;
+import java.util.List;
+import java.util.Map;
+import java.util.Set;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
-import org.eclipse.osgi.container.ModuleCapability;
-import org.eclipse.osgi.container.ModuleRevision;
-import org.eclipse.osgi.internal.framework.FilterImpl;
-import org.eclipse.osgi.util.ManifestElement;
-import org.osgi.framework.Filter;
-import org.osgi.framework.InvalidSyntaxException;
-import org.osgi.framework.namespace.*;
-import org.osgi.resource.*;
+
+import org.fdesigner.container.ModuleCapability;
+import org.fdesigner.container.ModuleRevision;
+import org.fdesigner.container.internal.framework.FilterImpl;
+import org.fdesigner.framework.framework.Filter;
+import org.fdesigner.framework.framework.InvalidSyntaxException;
+import org.fdesigner.framework.framework.namespace.AbstractWiringNamespace;
+import org.fdesigner.framework.framework.namespace.BundleNamespace;
+import org.fdesigner.framework.framework.namespace.HostNamespace;
+import org.fdesigner.framework.framework.namespace.PackageNamespace;
+import org.fdesigner.framework.resource.Capability;
+import org.fdesigner.framework.resource.Namespace;
+import org.fdesigner.framework.resource.Requirement;
+import org.fdesigner.supplement.util.ManifestElement;
 
 public class Capabilities {
 	static class NamespaceSet {

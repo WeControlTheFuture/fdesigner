@@ -11,7 +11,7 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.osgi.framework.util;
+package org.fdesigner.container.framework.util;
 
 /**
  * NOTE: This interface defines an element that could be inserted into an internal class called

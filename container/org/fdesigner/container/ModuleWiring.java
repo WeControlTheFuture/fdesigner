@@ -11,21 +11,36 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.osgi.container;
+package org.fdesigner.container;
 
 import java.net.URL;
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.Collections;
+import java.util.HashMap;
+import java.util.HashSet;
+import java.util.Iterator;
+import java.util.List;
+import java.util.Map;
+import java.util.Set;
 import java.util.concurrent.Callable;
 import java.util.concurrent.atomic.AtomicReference;
-import org.eclipse.osgi.container.ModuleRevisionBuilder.GenericInfo;
-import org.eclipse.osgi.internal.container.AtomicLazyInitializer;
-import org.eclipse.osgi.internal.container.InternalUtils;
-import org.osgi.framework.AdminPermission;
-import org.osgi.framework.Bundle;
-import org.osgi.framework.namespace.HostNamespace;
-import org.osgi.framework.namespace.PackageNamespace;
-import org.osgi.framework.wiring.*;
-import org.osgi.resource.*;
+
+import org.fdesigner.container.ModuleRevisionBuilder.GenericInfo;
+import org.fdesigner.container.internal.container.AtomicLazyInitializer;
+import org.fdesigner.container.internal.container.InternalUtils;
+import org.fdesigner.framework.framework.AdminPermission;
+import org.fdesigner.framework.framework.Bundle;
+import org.fdesigner.framework.framework.namespace.HostNamespace;
+import org.fdesigner.framework.framework.namespace.PackageNamespace;
+import org.fdesigner.framework.framework.wiring.BundleCapability;
+import org.fdesigner.framework.framework.wiring.BundleRequirement;
+import org.fdesigner.framework.framework.wiring.BundleRevision;
+import org.fdesigner.framework.framework.wiring.BundleWire;
+import org.fdesigner.framework.framework.wiring.BundleWiring;
+import org.fdesigner.framework.resource.Capability;
+import org.fdesigner.framework.resource.Requirement;
+import org.fdesigner.framework.resource.Wire;
 
 /**
  * An implementation of {@link BundleWiring}.

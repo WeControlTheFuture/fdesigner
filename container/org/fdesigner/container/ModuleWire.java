@@ -11,9 +11,9 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.osgi.container;
+package org.fdesigner.container;
 
-import org.osgi.framework.wiring.BundleWire;
+import org.fdesigner.framework.framework.wiring.BundleWire;
 
 /**
  * An implementation of {@link BundleWire}.

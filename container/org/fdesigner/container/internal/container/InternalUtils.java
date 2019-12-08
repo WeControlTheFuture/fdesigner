@@ -11,14 +11,29 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.osgi.internal.container;
+package org.fdesigner.container.internal.container;
 
 import java.security.Permission;
-import java.util.*;
-import org.osgi.framework.*;
-import org.osgi.framework.namespace.*;
-import org.osgi.framework.wiring.*;
-import org.osgi.resource.*;
+import java.util.Collection;
+import java.util.Iterator;
+import java.util.List;
+
+import org.fdesigner.framework.framework.Bundle;
+import org.fdesigner.framework.framework.BundlePermission;
+import org.fdesigner.framework.framework.CapabilityPermission;
+import org.fdesigner.framework.framework.PackagePermission;
+import org.fdesigner.framework.framework.namespace.BundleNamespace;
+import org.fdesigner.framework.framework.namespace.HostNamespace;
+import org.fdesigner.framework.framework.namespace.PackageNamespace;
+import org.fdesigner.framework.framework.wiring.BundleCapability;
+import org.fdesigner.framework.framework.wiring.BundleRequirement;
+import org.fdesigner.framework.framework.wiring.BundleRevision;
+import org.fdesigner.framework.framework.wiring.BundleWire;
+import org.fdesigner.framework.framework.wiring.BundleWiring;
+import org.fdesigner.framework.resource.Capability;
+import org.fdesigner.framework.resource.Requirement;
+import org.fdesigner.framework.resource.Resource;
+import org.fdesigner.framework.resource.Wire;
 
 public class InternalUtils {
 

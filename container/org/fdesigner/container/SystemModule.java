@@ -11,22 +11,22 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.osgi.container;
+package org.fdesigner.container;
 
 import java.util.Collections;
 import java.util.EnumSet;
 import java.util.concurrent.TimeUnit;
 import java.util.concurrent.atomic.AtomicReference;
-import org.eclipse.osgi.container.ModuleContainer.ContainerStartLevel;
-import org.eclipse.osgi.container.ModuleContainerAdaptor.ContainerEvent;
-import org.eclipse.osgi.container.ModuleContainerAdaptor.ModuleEvent;
-import org.eclipse.osgi.internal.messages.Msg;
-import org.eclipse.osgi.report.resolution.ResolutionReport;
-import org.osgi.framework.AdminPermission;
-import org.osgi.framework.BundleException;
-import org.osgi.framework.Constants;
-import org.osgi.framework.launch.Framework;
-import org.osgi.service.resolver.ResolutionException;
+
+import org.fdesigner.container.ModuleContainer.ContainerStartLevel;
+import org.fdesigner.container.ModuleContainerAdaptor.ContainerEvent;
+import org.fdesigner.container.ModuleContainerAdaptor.ModuleEvent;
+import org.fdesigner.framework.framework.AdminPermission;
+import org.fdesigner.framework.framework.BundleException;
+import org.fdesigner.framework.framework.Constants;
+import org.fdesigner.framework.service.resolver.ResolutionException;
+import org.fdesigner.supplement.internal.messages.Msg;
+import org.fdesigner.supplement.report.resolution.ResolutionReport;
 
 /**
  * A special kind of module that represents the system module for the container.  Additional

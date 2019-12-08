@@ -11,17 +11,20 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.osgi.container;
+package org.fdesigner.container;
 
 import java.util.HashMap;
 import java.util.Map;
-import org.eclipse.osgi.internal.container.Capabilities;
-import org.eclipse.osgi.internal.framework.FilterImpl;
-import org.osgi.framework.InvalidSyntaxException;
-import org.osgi.framework.namespace.*;
-import org.osgi.framework.wiring.BundleCapability;
-import org.osgi.framework.wiring.BundleRequirement;
-import org.osgi.resource.Namespace;
+
+import org.fdesigner.container.internal.container.Capabilities;
+import org.fdesigner.container.internal.framework.FilterImpl;
+import org.fdesigner.framework.framework.InvalidSyntaxException;
+import org.fdesigner.framework.framework.namespace.BundleNamespace;
+import org.fdesigner.framework.framework.namespace.HostNamespace;
+import org.fdesigner.framework.framework.namespace.PackageNamespace;
+import org.fdesigner.framework.framework.wiring.BundleCapability;
+import org.fdesigner.framework.framework.wiring.BundleRequirement;
+import org.fdesigner.framework.resource.Namespace;
 
 /**
  * An implementation of {@link BundleRequirement}.  This requirement implements 
