@@ -23,13 +23,11 @@ package org.fdesigner.framework.service.resolver;
 import java.util.List;
 import java.util.Map;
 
-import org.osgi.annotation.versioning.ProviderType;
-import org.osgi.framework.namespace.PackageNamespace;
-import org.osgi.resource.Namespace;
-import org.osgi.resource.Requirement;
-import org.osgi.resource.Resource;
-import org.osgi.resource.Wire;
-import org.osgi.resource.Wiring;
+import org.fdesigner.common.ProviderType;
+import org.fdesigner.framework.resource.Requirement;
+import org.fdesigner.framework.resource.Resource;
+import org.fdesigner.framework.resource.Wire;
+import org.fdesigner.framework.resource.Wiring;
 
 /**
  * A resolver service resolves the specified resources in the context supplied

@@ -16,7 +16,7 @@
 
 package org.fdesigner.framework.resource;
 
-import org.osgi.annotation.versioning.ConsumerType;
+import org.fdesigner.common.ConsumerType;
 
 /**
  * Capability and Requirement Namespaces base class.

@@ -36,5 +36,5 @@
 @Version("1.3")
 package org.fdesigner.framework.framework.wiring.dto;
 
-import org.osgi.annotation.versioning.Version;
+import org.fdesigner.common.Version;
 

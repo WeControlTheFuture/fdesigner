@@ -30,5 +30,5 @@
 @Version("1.9")
 package org.fdesigner.framework.framework;
 
-import org.osgi.annotation.versioning.Version;
+import org.fdesigner.common.Version;
 

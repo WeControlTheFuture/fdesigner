@@ -28,5 +28,5 @@
 @Version("1.1")
 package org.fdesigner.framework.framework.namespace;
 
-import org.osgi.annotation.versioning.Version;
+import org.fdesigner.common.Version;
 

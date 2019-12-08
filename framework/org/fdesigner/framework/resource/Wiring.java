@@ -18,7 +18,7 @@ package org.fdesigner.framework.resource;
 
 import java.util.List;
 
-import org.osgi.annotation.versioning.ConsumerType;
+import org.fdesigner.common.ConsumerType;
 
 /**
  * A wiring for a resource. A wiring is associated with a resource and

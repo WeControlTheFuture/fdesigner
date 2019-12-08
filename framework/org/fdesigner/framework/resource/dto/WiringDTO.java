@@ -17,8 +17,8 @@
 package org.fdesigner.framework.resource.dto;
 
 import java.util.List;
-import org.osgi.dto.DTO;
-import org.osgi.resource.Wiring;
+
+import org.fdesigner.framework.dto.DTO;
 
 /**
  * Data Transfer Object for a Wiring node.

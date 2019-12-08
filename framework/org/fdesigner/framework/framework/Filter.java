@@ -18,7 +18,8 @@ package org.fdesigner.framework.framework;
 
 import java.util.Dictionary;
 import java.util.Map;
-import org.osgi.annotation.versioning.ProviderType;
+
+import org.fdesigner.common.ProviderType;
 
 /**
  * An <a href="http://www.ietf.org/rfc/rfc1960.txt">RFC 1960</a>-based Filter.

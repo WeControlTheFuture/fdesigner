@@ -17,9 +17,9 @@
 package org.fdesigner.framework.framework.wiring;
 
 import java.util.Map;
-import org.osgi.annotation.versioning.ProviderType;
-import org.osgi.framework.namespace.AbstractWiringNamespace;
-import org.osgi.resource.Requirement;
+
+import org.fdesigner.common.ProviderType;
+import org.fdesigner.framework.resource.Requirement;
 
 /**
  * A requirement that has been declared from a {@link BundleRevision bundle

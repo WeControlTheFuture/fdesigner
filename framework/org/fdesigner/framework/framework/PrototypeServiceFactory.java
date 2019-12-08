@@ -16,7 +16,7 @@
 
 package org.fdesigner.framework.framework;
 
-import org.osgi.annotation.versioning.ConsumerType;
+import org.fdesigner.common.ConsumerType;
 
 /**
  * A factory for {@link Constants#SCOPE_PROTOTYPE prototype scope} services. The

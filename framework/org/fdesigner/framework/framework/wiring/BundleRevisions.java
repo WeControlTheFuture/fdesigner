@@ -17,9 +17,9 @@
 package org.fdesigner.framework.framework.wiring;
 
 import java.util.List;
-import org.osgi.annotation.versioning.ProviderType;
-import org.osgi.framework.Bundle;
-import org.osgi.framework.BundleReference;
+
+import org.fdesigner.common.ProviderType;
+import org.fdesigner.framework.framework.BundleReference;
 
 /**
  * The {@link BundleRevision bundle revisions} of a bundle. When a bundle is

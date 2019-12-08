@@ -16,8 +16,7 @@
 
 package org.fdesigner.framework.framework.namespace;
 
-import org.osgi.framework.Constants;
-import org.osgi.resource.Namespace;
+import org.fdesigner.framework.resource.Namespace;
 
 /**
  * Native Capability and Requirement Namespace.

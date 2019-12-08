@@ -17,7 +17,8 @@
 package org.fdesigner.framework.service.condpermadmin;
 
 import java.util.List;
-import org.osgi.annotation.versioning.ProviderType;
+
+import org.fdesigner.common.ProviderType;
 
 /**
  * Update the Conditional Permission Table. There may be many update objects in

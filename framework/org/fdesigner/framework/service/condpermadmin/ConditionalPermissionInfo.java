@@ -16,8 +16,8 @@
 
 package org.fdesigner.framework.service.condpermadmin;
 
-import org.osgi.annotation.versioning.ProviderType;
-import org.osgi.service.permissionadmin.PermissionInfo;
+import org.fdesigner.common.ProviderType;
+import org.fdesigner.framework.service.permissionadmin.PermissionInfo;
 
 /**
  * A list of Permissions guarded by a list of conditions with an access

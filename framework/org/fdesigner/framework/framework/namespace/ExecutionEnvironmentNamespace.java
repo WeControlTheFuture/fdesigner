@@ -16,7 +16,7 @@
 
 package org.fdesigner.framework.framework.namespace;
 
-import org.osgi.resource.Namespace;
+import org.fdesigner.framework.resource.Namespace;
 
 /**
  * Execution Environment Capability and Requirement Namespace.

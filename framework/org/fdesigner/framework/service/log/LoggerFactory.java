@@ -16,8 +16,8 @@
 
 package org.fdesigner.framework.service.log;
 
-import org.osgi.annotation.versioning.ProviderType;
-import org.osgi.framework.Bundle;
+import org.fdesigner.common.ProviderType;
+import org.fdesigner.framework.framework.Bundle;
 
 /**
  * Logger Factory service for logging information.

@@ -16,8 +16,7 @@
 
 package org.fdesigner.framework.resource.dto;
 
-import org.osgi.dto.DTO;
-import org.osgi.resource.Wire;
+import org.fdesigner.framework.dto.DTO;
 
 /**
  * Data Transfer Object for a Wire.

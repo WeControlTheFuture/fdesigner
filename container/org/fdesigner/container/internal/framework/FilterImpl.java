@@ -12,7 +12,7 @@
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
 
-package org.eclipse.osgi.internal.framework;
+package org.fdesigner.container.internal.framework;
 
 import java.lang.reflect.AccessibleObject;
 import java.lang.reflect.Constructor;
@@ -31,16 +31,17 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.Set;
-import org.eclipse.osgi.framework.util.CaseInsensitiveDictionaryMap;
-import org.eclipse.osgi.internal.debug.Debug;
-import org.eclipse.osgi.internal.messages.Msg;
-import org.eclipse.osgi.internal.serviceregistry.ServiceReferenceImpl;
-import org.eclipse.osgi.util.NLS;
-import org.osgi.framework.Constants;
-import org.osgi.framework.Filter;
-import org.osgi.framework.InvalidSyntaxException;
-import org.osgi.framework.ServiceReference;
-import org.osgi.framework.Version;
+
+import org.fdesigner.container.framework.util.CaseInsensitiveDictionaryMap;
+import org.fdesigner.container.internal.debug.Debug;
+import org.fdesigner.container.internal.serviceregistry.ServiceReferenceImpl;
+import org.fdesigner.framework.framework.Constants;
+import org.fdesigner.framework.framework.Filter;
+import org.fdesigner.framework.framework.InvalidSyntaxException;
+import org.fdesigner.framework.framework.ServiceReference;
+import org.fdesigner.framework.framework.Version;
+import org.fdesigner.supplement.internal.messages.Msg;
+import org.fdesigner.supplement.util.NLS;
 
 /**
  * RFC 1960-based Filter. Filter objects can be created by calling

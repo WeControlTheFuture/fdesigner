@@ -38,5 +38,5 @@
 @Version("1.8")
 package org.fdesigner.framework.framework.dto;
 
-import org.osgi.annotation.versioning.Version;
+import org.fdesigner.common.Version;
 

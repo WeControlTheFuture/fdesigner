@@ -18,7 +18,7 @@ package org.fdesigner.framework.framework.wiring.dto;
 
 import java.util.Set;
 
-import org.osgi.dto.DTO;
+import org.fdesigner.framework.dto.DTO;
 
 /**
  * Data Transfer Object for the wiring graph of the framework.

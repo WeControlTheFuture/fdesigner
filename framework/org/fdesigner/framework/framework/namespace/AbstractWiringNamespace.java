@@ -16,8 +16,8 @@
 
 package org.fdesigner.framework.framework.namespace;
 
-import org.osgi.annotation.versioning.ProviderType;
-import org.osgi.resource.Namespace;
+import org.fdesigner.common.ProviderType;
+import org.fdesigner.framework.resource.Namespace;
 
 /**
  * Wiring Capability and Requirement Namespaces base class.

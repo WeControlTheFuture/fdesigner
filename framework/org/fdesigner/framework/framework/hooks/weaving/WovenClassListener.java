@@ -16,7 +16,7 @@
 
 package org.fdesigner.framework.framework.hooks.weaving;
 
-import org.osgi.annotation.versioning.ConsumerType;
+import org.fdesigner.common.ConsumerType;
 
 /**
  * Woven Class Listener Service.

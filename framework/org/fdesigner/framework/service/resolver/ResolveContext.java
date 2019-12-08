@@ -23,17 +23,15 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.Map;
 import java.util.Set;
-import java.util.concurrent.CancellationException;
 
-import org.osgi.annotation.versioning.ConsumerType;
-import org.osgi.framework.namespace.BundleNamespace;
-import org.osgi.framework.namespace.HostNamespace;
-import org.osgi.framework.namespace.PackageNamespace;
-import org.osgi.resource.Capability;
-import org.osgi.resource.Requirement;
-import org.osgi.resource.Resource;
-import org.osgi.resource.Wire;
-import org.osgi.resource.Wiring;
+import org.fdesigner.common.ConsumerType;
+import org.fdesigner.framework.framework.namespace.HostNamespace;
+import org.fdesigner.framework.framework.namespace.PackageNamespace;
+import org.fdesigner.framework.resource.Capability;
+import org.fdesigner.framework.resource.Requirement;
+import org.fdesigner.framework.resource.Resource;
+import org.fdesigner.framework.resource.Wire;
+import org.fdesigner.framework.resource.Wiring;
 
 /**
  * A resolve context provides resources, options and constraints to the

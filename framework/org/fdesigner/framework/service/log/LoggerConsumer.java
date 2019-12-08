@@ -16,7 +16,7 @@
 
 package org.fdesigner.framework.service.log;
 
-import org.osgi.annotation.versioning.ConsumerType;
+import org.fdesigner.common.ConsumerType;
 
 /**
  * An operation that accepts a {@link Logger} argument and produces no result.

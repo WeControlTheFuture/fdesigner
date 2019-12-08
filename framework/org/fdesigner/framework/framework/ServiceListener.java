@@ -17,7 +17,8 @@
 package org.fdesigner.framework.framework;
 
 import java.util.EventListener;
-import org.osgi.annotation.versioning.ConsumerType;
+
+import org.fdesigner.common.ConsumerType;
 
 /**
  * A {@code ServiceEvent} listener. {@code ServiceListener} is a listener

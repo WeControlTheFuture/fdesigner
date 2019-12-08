@@ -16,8 +16,7 @@
 
 package org.fdesigner.framework.framework.wiring.dto;
 
-import org.osgi.framework.wiring.BundleRevision;
-import org.osgi.resource.dto.ResourceDTO;
+import org.fdesigner.framework.resource.dto.ResourceDTO;
 
 /**
  * Data Transfer Object for a BundleRevision.

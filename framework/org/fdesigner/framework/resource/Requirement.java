@@ -17,7 +17,8 @@
 package org.fdesigner.framework.resource;
 
 import java.util.Map;
-import org.osgi.annotation.versioning.ConsumerType;
+
+import org.fdesigner.common.ConsumerType;
 
 /**
  * A requirement that has been declared from a {@link Resource} .

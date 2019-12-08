@@ -23,9 +23,11 @@ import java.util.Collections;
 import java.util.Iterator;
 import java.util.List;
 import java.util.ServiceLoader;
+
 import javax.security.auth.x500.X500Principal;
-import org.eclipse.osgi.internal.framework.FilterImpl;
-import org.eclipse.osgi.internal.hookregistry.FrameworkUtilHelper;
+
+import org.fdesigner.container.internal.framework.FilterImpl;
+import org.fdesigner.container.internal.hookregistry.FrameworkUtilHelper;
 
 /**
  * Framework Utility class.

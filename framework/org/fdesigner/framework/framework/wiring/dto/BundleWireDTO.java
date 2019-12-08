@@ -16,9 +16,7 @@
 
 package org.fdesigner.framework.framework.wiring.dto;
 
-import org.osgi.framework.wiring.BundleWire;
-import org.osgi.resource.dto.WireDTO;
-import org.osgi.resource.dto.WiringDTO;
+import org.fdesigner.framework.resource.dto.WireDTO;
 
 /**
  * Data Transfer Object for a BundleWire.

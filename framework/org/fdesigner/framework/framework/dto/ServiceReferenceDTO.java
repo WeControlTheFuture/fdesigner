@@ -17,9 +17,8 @@
 package org.fdesigner.framework.framework.dto;
 
 import java.util.Map;
-import org.osgi.dto.DTO;
-import org.osgi.framework.Constants;
-import org.osgi.framework.ServiceReference;
+
+import org.fdesigner.framework.dto.DTO;
 
 /**
  * Data Transfer Object for a ServiceReference.

@@ -16,7 +16,7 @@
 
 package org.fdesigner.framework.service.startlevel;
 
-import org.osgi.framework.Bundle;
+import org.fdesigner.framework.framework.Bundle;
 
 /**
  * The StartLevel service allows management agents to manage a start level

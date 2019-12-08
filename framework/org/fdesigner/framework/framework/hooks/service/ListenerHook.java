@@ -17,9 +17,10 @@
 package org.fdesigner.framework.framework.hooks.service;
 
 import java.util.Collection;
-import org.osgi.annotation.versioning.ConsumerType;
-import org.osgi.annotation.versioning.ProviderType;
-import org.osgi.framework.BundleContext;
+
+import org.fdesigner.common.ConsumerType;
+import org.fdesigner.common.ProviderType;
+import org.fdesigner.framework.framework.BundleContext;
 
 /**
  * OSGi Framework Service Listener Hook Service.

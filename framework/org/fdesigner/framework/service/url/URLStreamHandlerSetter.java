@@ -17,7 +17,8 @@
 package org.fdesigner.framework.service.url;
 
 import java.net.URL;
-import org.osgi.annotation.versioning.ConsumerType;
+
+import org.fdesigner.common.ConsumerType;
 
 /**
  * Interface used by {@code URLStreamHandlerService} objects to call the

@@ -19,7 +19,8 @@ package org.fdesigner.framework.service.resolver;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Collections;
-import org.osgi.resource.Requirement;
+
+import org.fdesigner.framework.resource.Requirement;
 
 /**
  * Indicates failure to resolve a set of requirements.

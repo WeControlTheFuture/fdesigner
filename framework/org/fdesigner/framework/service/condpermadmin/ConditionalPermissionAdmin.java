@@ -18,8 +18,9 @@ package org.fdesigner.framework.service.condpermadmin;
 
 import java.security.AccessControlContext;
 import java.util.Enumeration;
-import org.osgi.annotation.versioning.ProviderType;
-import org.osgi.service.permissionadmin.PermissionInfo;
+
+import org.fdesigner.common.ProviderType;
+import org.fdesigner.framework.service.permissionadmin.PermissionInfo;
 
 /**
  * Framework service to administer Conditional Permissions. Conditional

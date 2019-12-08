@@ -17,9 +17,9 @@
 package org.fdesigner.framework.framework.wiring;
 
 import java.util.Map;
-import org.osgi.annotation.versioning.ProviderType;
-import org.osgi.framework.namespace.AbstractWiringNamespace;
-import org.osgi.resource.Capability;
+
+import org.fdesigner.common.ProviderType;
+import org.fdesigner.framework.resource.Capability;
 
 /**
  * A capability that has been declared from a {@link BundleRevision bundle

@@ -37,4 +37,4 @@
 @Version("1.1")
 package org.fdesigner.framework.service.startlevel;
 
-import org.osgi.annotation.versioning.Version;
+import org.fdesigner.common.Version;

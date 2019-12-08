@@ -17,10 +17,9 @@
 package org.fdesigner.framework.framework.hooks.bundle;
 
 import java.util.Collection;
-import org.osgi.annotation.versioning.ConsumerType;
-import org.osgi.framework.Bundle;
-import org.osgi.framework.BundleContext;
-import org.osgi.framework.Constants;
+
+import org.fdesigner.common.ConsumerType;
+import org.fdesigner.framework.framework.Bundle;
 
 /**
  * OSGi Framework Bundle Collision Hook Service.

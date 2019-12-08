@@ -32,5 +32,5 @@
 @Version("1.1")
 package org.fdesigner.framework.framework.hooks.service;
 
-import org.osgi.annotation.versioning.Version;
+import org.fdesigner.common.Version;
 

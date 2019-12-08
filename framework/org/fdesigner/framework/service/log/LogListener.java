@@ -18,7 +18,7 @@ package org.fdesigner.framework.service.log;
 
 import java.util.EventListener;
 
-import org.osgi.annotation.versioning.ConsumerType;
+import org.fdesigner.common.ConsumerType;
 
 /**
  * Subscribes to {@code LogEntry} objects from the {@code LogReaderService}.

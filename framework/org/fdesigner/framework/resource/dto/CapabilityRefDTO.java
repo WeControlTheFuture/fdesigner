@@ -16,7 +16,7 @@
 
 package org.fdesigner.framework.resource.dto;
 
-import org.osgi.dto.DTO;
+import org.fdesigner.framework.dto.DTO;
 
 /**
  * Data Transfer Object for a reference to a Capability.

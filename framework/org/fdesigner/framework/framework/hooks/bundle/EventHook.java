@@ -17,9 +17,10 @@
 package org.fdesigner.framework.framework.hooks.bundle;
 
 import java.util.Collection;
-import org.osgi.annotation.versioning.ConsumerType;
-import org.osgi.framework.BundleContext;
-import org.osgi.framework.BundleEvent;
+
+import org.fdesigner.common.ConsumerType;
+import org.fdesigner.framework.framework.BundleContext;
+import org.fdesigner.framework.framework.BundleEvent;
 
 /**
  * OSGi Framework Bundle Event Hook Service.

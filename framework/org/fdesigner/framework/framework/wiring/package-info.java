@@ -31,5 +31,5 @@
 @Version("1.2")
 package org.fdesigner.framework.framework.wiring;
 
-import org.osgi.annotation.versioning.Version;
+import org.fdesigner.common.Version;
 

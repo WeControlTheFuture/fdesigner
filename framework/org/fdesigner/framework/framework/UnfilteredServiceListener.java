@@ -16,8 +16,7 @@
 
 package org.fdesigner.framework.framework;
 
-import org.osgi.annotation.versioning.ConsumerType;
-import org.osgi.framework.hooks.service.ListenerHook;
+import org.fdesigner.common.ConsumerType;
 
 /**
  * A {@code ServiceEvent} listener that does <i>not</i> filter based upon any

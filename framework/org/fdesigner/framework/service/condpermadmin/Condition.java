@@ -17,7 +17,8 @@
 package org.fdesigner.framework.service.condpermadmin;
 
 import java.util.Dictionary;
-import org.osgi.annotation.versioning.ConsumerType;
+
+import org.fdesigner.common.ConsumerType;
 
 /**
  * The interface implemented by a Condition. Conditions are bound to Permissions

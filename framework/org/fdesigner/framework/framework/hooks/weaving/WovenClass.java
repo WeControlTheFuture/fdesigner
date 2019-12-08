@@ -18,8 +18,9 @@ package org.fdesigner.framework.framework.hooks.weaving;
 
 import java.security.ProtectionDomain;
 import java.util.List;
-import org.osgi.annotation.versioning.ProviderType;
-import org.osgi.framework.wiring.BundleWiring;
+
+import org.fdesigner.common.ProviderType;
+import org.fdesigner.framework.framework.wiring.BundleWiring;
 
 /**
  * A class being woven.

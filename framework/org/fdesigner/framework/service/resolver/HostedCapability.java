@@ -16,9 +16,9 @@
 
 package org.fdesigner.framework.service.resolver;
 
-import org.osgi.annotation.versioning.ProviderType;
-import org.osgi.resource.Capability;
-import org.osgi.resource.Resource;
+import org.fdesigner.common.ProviderType;
+import org.fdesigner.framework.resource.Capability;
+import org.fdesigner.framework.resource.Resource;
 
 /**
  * A capability hosted by a resource.

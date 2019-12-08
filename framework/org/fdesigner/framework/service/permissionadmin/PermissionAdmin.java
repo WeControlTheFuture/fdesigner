@@ -16,7 +16,7 @@
 
 package org.fdesigner.framework.service.permissionadmin;
 
-import org.osgi.annotation.versioning.ProviderType;
+import org.fdesigner.common.ProviderType;
 
 /**
  * The Permission Admin service allows management agents to manage the

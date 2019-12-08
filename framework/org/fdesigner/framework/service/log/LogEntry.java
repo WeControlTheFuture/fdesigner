@@ -16,9 +16,9 @@
 
 package org.fdesigner.framework.service.log;
 
-import org.osgi.annotation.versioning.ProviderType;
-import org.osgi.framework.Bundle;
-import org.osgi.framework.ServiceReference;
+import org.fdesigner.common.ProviderType;
+import org.fdesigner.framework.framework.Bundle;
+import org.fdesigner.framework.framework.ServiceReference;
 
 /**
  * Provides methods to access the information contained in an individual Log

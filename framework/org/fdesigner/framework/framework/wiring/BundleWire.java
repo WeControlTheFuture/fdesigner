@@ -16,8 +16,8 @@
 
 package org.fdesigner.framework.framework.wiring;
 
-import org.osgi.annotation.versioning.ProviderType;
-import org.osgi.resource.Wire;
+import org.fdesigner.common.ProviderType;
+import org.fdesigner.framework.resource.Wire;
 
 /**
  * A wire connecting a {@link BundleCapability} to a {@link BundleRequirement}.

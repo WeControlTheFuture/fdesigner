@@ -20,7 +20,8 @@ import java.net.InetAddress;
 import java.net.URL;
 import java.net.URLConnection;
 import java.net.URLStreamHandler;
-import org.osgi.annotation.versioning.ConsumerType;
+
+import org.fdesigner.common.ConsumerType;
 
 /**
  * Abstract implementation of the {@code URLStreamHandlerService} interface. All

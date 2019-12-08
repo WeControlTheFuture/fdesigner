@@ -16,8 +16,7 @@
 
 package org.fdesigner.framework.service.log.admin;
 
-import org.osgi.annotation.versioning.ProviderType;
-import org.osgi.service.log.LoggerFactory;
+import org.fdesigner.common.ProviderType;
 
 /**
  * LoggerAdmin service for configuring loggers.

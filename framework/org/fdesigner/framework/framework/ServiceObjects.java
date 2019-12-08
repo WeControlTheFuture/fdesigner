@@ -16,7 +16,7 @@
 
 package org.fdesigner.framework.framework;
 
-import org.osgi.annotation.versioning.ProviderType;
+import org.fdesigner.common.ProviderType;
 
 /**
  * Allows multiple service objects for a service to be obtained.

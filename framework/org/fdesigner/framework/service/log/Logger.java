@@ -16,7 +16,7 @@
 
 package org.fdesigner.framework.service.log;
 
-import org.osgi.annotation.versioning.ProviderType;
+import org.fdesigner.common.ProviderType;
 
 /**
  * Provides methods for bundles to write messages to the log using SLF4J-style

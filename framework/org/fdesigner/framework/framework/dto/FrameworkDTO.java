@@ -18,8 +18,8 @@ package org.fdesigner.framework.framework.dto;
 
 import java.util.List;
 import java.util.Map;
-import org.osgi.dto.DTO;
-import org.osgi.framework.BundleContext;
+
+import org.fdesigner.framework.dto.DTO;
 
 /**
  * Data Transfer Object for a Framework.

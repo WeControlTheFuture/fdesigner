@@ -17,14 +17,11 @@
 package org.fdesigner.framework.framework.hooks.resolver;
 
 import java.util.Collection;
-import org.osgi.annotation.versioning.ConsumerType;
-import org.osgi.framework.Bundle;
-import org.osgi.framework.namespace.BundleNamespace;
-import org.osgi.framework.namespace.IdentityNamespace;
-import org.osgi.framework.wiring.BundleCapability;
-import org.osgi.framework.wiring.BundleRequirement;
-import org.osgi.framework.wiring.BundleRevision;
-import org.osgi.framework.wiring.FrameworkWiring;
+
+import org.fdesigner.common.ConsumerType;
+import org.fdesigner.framework.framework.wiring.BundleCapability;
+import org.fdesigner.framework.framework.wiring.BundleRequirement;
+import org.fdesigner.framework.framework.wiring.BundleRevision;
 
 /**
  * OSGi Framework Resolver Hook instances are obtained from the OSGi

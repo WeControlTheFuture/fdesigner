@@ -16,8 +16,7 @@
 
 package org.fdesigner.framework.framework.startlevel.dto;
 
-import org.osgi.dto.DTO;
-import org.osgi.framework.startlevel.FrameworkStartLevel;
+import org.fdesigner.framework.dto.DTO;
 
 /**
  * Data Transfer Object for a FrameworkStartLevel.

@@ -20,10 +20,11 @@ import java.security.AccessController;
 import java.security.PrivilegedAction;
 import java.util.Dictionary;
 import java.util.Hashtable;
-import org.osgi.framework.Bundle;
-import org.osgi.framework.Filter;
-import org.osgi.framework.FrameworkUtil;
-import org.osgi.framework.InvalidSyntaxException;
+
+import org.fdesigner.framework.framework.Bundle;
+import org.fdesigner.framework.framework.Filter;
+import org.fdesigner.framework.framework.FrameworkUtil;
+import org.fdesigner.framework.framework.InvalidSyntaxException;
 
 /**
  * Condition to test if the location of a bundle matches or does not match a

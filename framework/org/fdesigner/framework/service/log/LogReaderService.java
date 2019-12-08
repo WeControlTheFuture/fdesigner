@@ -18,7 +18,7 @@ package org.fdesigner.framework.service.log;
 
 import java.util.Enumeration;
 
-import org.osgi.annotation.versioning.ProviderType;
+import org.fdesigner.common.ProviderType;
 
 /**
  * LogReaderService for obtaining logging information.

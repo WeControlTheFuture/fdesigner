@@ -20,8 +20,9 @@ import java.security.cert.X509Certificate;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
-import org.osgi.framework.Bundle;
-import org.osgi.framework.FrameworkUtil;
+
+import org.fdesigner.framework.framework.Bundle;
+import org.fdesigner.framework.framework.FrameworkUtil;
 
 /**
  * Condition to test if the signer of a bundle matches or does not match a

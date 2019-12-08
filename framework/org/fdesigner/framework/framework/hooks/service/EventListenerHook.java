@@ -18,10 +18,11 @@ package org.fdesigner.framework.framework.hooks.service;
 
 import java.util.Collection;
 import java.util.Map;
-import org.osgi.annotation.versioning.ConsumerType;
-import org.osgi.framework.BundleContext;
-import org.osgi.framework.ServiceEvent;
-import org.osgi.framework.hooks.service.ListenerHook.ListenerInfo;
+
+import org.fdesigner.common.ConsumerType;
+import org.fdesigner.framework.framework.BundleContext;
+import org.fdesigner.framework.framework.ServiceEvent;
+import org.fdesigner.framework.framework.hooks.service.ListenerHook.ListenerInfo;
 
 /**
  * OSGi Framework Service Event Listener Hook Service.

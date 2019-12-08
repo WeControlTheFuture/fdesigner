@@ -18,8 +18,8 @@ package org.fdesigner.framework.service.log.admin;
 
 import java.util.Map;
 
-import org.osgi.annotation.versioning.ProviderType;
-import org.osgi.service.log.LogLevel;
+import org.fdesigner.common.ProviderType;
+import org.fdesigner.framework.service.log.LogLevel;
 
 /**
  * Logger Context for a bundle.

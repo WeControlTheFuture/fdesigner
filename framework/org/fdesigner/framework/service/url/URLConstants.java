@@ -16,7 +16,7 @@
 
 package org.fdesigner.framework.service.url;
 
-import org.osgi.annotation.versioning.ProviderType;
+import org.fdesigner.common.ProviderType;
 
 /**
  * Defines standard names for property keys associated with
