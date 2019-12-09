@@ -11,15 +11,16 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.osgi.storage;
+package org.fdesigner.container.storage;
 
 import java.util.ResourceBundle;
-import org.eclipse.osgi.container.Module;
-import org.eclipse.osgi.container.ModuleRevision;
-import org.eclipse.osgi.internal.framework.EquinoxBundle;
-import org.eclipse.osgi.service.localization.BundleLocalization;
-import org.eclipse.osgi.storage.BundleInfo.Generation;
-import org.osgi.framework.Bundle;
+
+import org.fdesigner.container.Module;
+import org.fdesigner.container.ModuleRevision;
+import org.fdesigner.container.internal.framework.EquinoxBundle;
+import org.fdesigner.container.storage.BundleInfo.Generation;
+import org.fdesigner.framework.framework.Bundle;
+import org.fdesigner.supplement.service.localization.BundleLocalization;
 
 /**
  * The implementation of the service that gets ResourceBundle objects from a given 

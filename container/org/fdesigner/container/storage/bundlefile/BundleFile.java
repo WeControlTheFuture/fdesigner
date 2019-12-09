@@ -24,7 +24,7 @@ import java.util.Enumeration;
 import org.fdesigner.container.Module;
 import org.fdesigner.container.framework.util.SecureAction;
 import org.fdesigner.container.storage.url.BundleResourceHandler;
-import org.fdesigner.container.storage.url.reference.Handler;
+import org.fdesigner.container.storage.url.bundleentry.Handler;
 
 /**
  * The BundleFile API is used by Adaptors to read resources out of an 
