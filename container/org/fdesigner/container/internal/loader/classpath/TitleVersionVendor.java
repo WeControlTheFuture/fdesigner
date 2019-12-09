@@ -12,7 +12,7 @@
  *     Alex Blewitt - initial API and implementation
  ******************************************************************************/
 
-package org.eclipse.osgi.internal.loader.classpath;
+package org.fdesigner.container.internal.loader.classpath;
 
 /**
  * Stores a (title,version,vendor) triple for Specification-* or Implementation-*

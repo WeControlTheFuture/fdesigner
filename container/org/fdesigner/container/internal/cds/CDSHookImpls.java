@@ -20,27 +20,29 @@
  * SPDX-License-Identifier: EPL-2.0 OR Apache-2.0 OR GPL-2.0 WITH Classpath-exception-2.0 OR LicenseRef-GPL-2.0 WITH Assembly-exception
  *******************************************************************************/
 
-package org.eclipse.osgi.internal.cds;
+package org.fdesigner.container.internal.cds;
+
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.Arrays;
+
+import org.fdesigner.container.internal.hookregistry.BundleFileWrapperFactoryHook;
+import org.fdesigner.container.internal.hookregistry.ClassLoaderHook;
+import org.fdesigner.container.internal.hookregistry.HookRegistry;
+import org.fdesigner.container.internal.loader.ModuleClassLoader;
+import org.fdesigner.container.internal.loader.classpath.ClasspathEntry;
+import org.fdesigner.container.internal.loader.classpath.ClasspathManager;
+import org.fdesigner.container.internal.loader.classpath.FragmentClasspath;
+import org.fdesigner.container.storage.BundleInfo.Generation;
+import org.fdesigner.container.storage.bundlefile.BundleEntry;
+import org.fdesigner.container.storage.bundlefile.BundleFile;
+import org.fdesigner.container.storage.bundlefile.BundleFileWrapper;
+import org.fdesigner.container.storage.bundlefile.BundleFileWrapperChain;
 
 import com.ibm.oti.shared.HelperAlreadyDefinedException;
 import com.ibm.oti.shared.Shared;
 import com.ibm.oti.shared.SharedClassHelperFactory;
 import com.ibm.oti.shared.SharedClassURLHelper;
-import java.io.IOException;
-import java.util.ArrayList;
-import java.util.Arrays;
-import org.eclipse.osgi.internal.hookregistry.BundleFileWrapperFactoryHook;
-import org.eclipse.osgi.internal.hookregistry.ClassLoaderHook;
-import org.eclipse.osgi.internal.hookregistry.HookRegistry;
-import org.eclipse.osgi.internal.loader.ModuleClassLoader;
-import org.eclipse.osgi.internal.loader.classpath.ClasspathEntry;
-import org.eclipse.osgi.internal.loader.classpath.ClasspathManager;
-import org.eclipse.osgi.internal.loader.classpath.FragmentClasspath;
-import org.eclipse.osgi.storage.BundleInfo.Generation;
-import org.eclipse.osgi.storage.bundlefile.BundleEntry;
-import org.eclipse.osgi.storage.bundlefile.BundleFile;
-import org.eclipse.osgi.storage.bundlefile.BundleFileWrapper;
-import org.eclipse.osgi.storage.bundlefile.BundleFileWrapperChain;
 
 public class CDSHookImpls extends ClassLoaderHook implements BundleFileWrapperFactoryHook {
 	private static SharedClassHelperFactory factory = Shared.getSharedClassHelperFactory();

@@ -11,7 +11,7 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.osgi.signedcontent;
+package org.fdesigner.container.signedcontent;
 
 import java.io.IOException;
 

@@ -12,7 +12,7 @@
  *     IBM Corporation - initial API and implementation
  *     Connexta, LLC - performance improvements
  *******************************************************************************/
-package org.eclipse.osgi.internal.permadmin;
+package org.fdesigner.container.internal.permadmin;
 
 import java.lang.reflect.Array;
 import java.lang.reflect.Constructor;
@@ -23,11 +23,12 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-import org.osgi.framework.Bundle;
-import org.osgi.service.condpermadmin.Condition;
-import org.osgi.service.condpermadmin.ConditionInfo;
-import org.osgi.service.condpermadmin.ConditionalPermissionInfo;
-import org.osgi.service.permissionadmin.PermissionInfo;
+
+import org.fdesigner.framework.framework.Bundle;
+import org.fdesigner.framework.service.condpermadmin.Condition;
+import org.fdesigner.framework.service.condpermadmin.ConditionInfo;
+import org.fdesigner.framework.service.condpermadmin.ConditionalPermissionInfo;
+import org.fdesigner.framework.service.permissionadmin.PermissionInfo;
 
 public final class SecurityRow implements ConditionalPermissionInfo {
 	/* Used to find condition constructors getConditions */

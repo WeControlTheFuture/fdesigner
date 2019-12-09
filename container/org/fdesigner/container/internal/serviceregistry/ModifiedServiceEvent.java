@@ -12,10 +12,13 @@
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
 
-package org.eclipse.osgi.internal.serviceregistry;
+package org.fdesigner.container.internal.serviceregistry;
 
 import java.util.Map;
-import org.osgi.framework.*;
+
+import org.fdesigner.framework.framework.Filter;
+import org.fdesigner.framework.framework.ServiceEvent;
+import org.fdesigner.framework.framework.ServiceReference;
 
 /**
  * ServiceEvent subtype for MODIFIED_ENDMATCH computation.

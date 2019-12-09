@@ -9,7 +9,7 @@
  * SPDX-License-Identifier: EPL-2.0
  * 
  *******************************************************************************/
-package org.eclipse.osgi.internal.url;
+package org.fdesigner.container.internal.url;
 
 import java.io.IOException;
 import java.net.ContentHandler;

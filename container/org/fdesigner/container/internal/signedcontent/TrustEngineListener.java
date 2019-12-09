@@ -10,16 +10,19 @@
  * 
  * Contributors: IBM Corporation - initial API and implementation
  ******************************************************************************/
-package org.eclipse.osgi.internal.signedcontent;
+package org.fdesigner.container.internal.signedcontent;
 
 import java.security.cert.Certificate;
-import java.util.*;
-import org.eclipse.osgi.internal.framework.EquinoxBundle;
-import org.eclipse.osgi.internal.signedcontent.SignedStorageHook.StorageHookImpl;
-import org.eclipse.osgi.signedcontent.SignerInfo;
-import org.eclipse.osgi.storage.BundleInfo.Generation;
-import org.osgi.framework.Bundle;
-import org.osgi.framework.BundleContext;
+import java.util.HashSet;
+import java.util.Iterator;
+import java.util.Set;
+
+import org.fdesigner.container.internal.framework.EquinoxBundle;
+import org.fdesigner.container.internal.signedcontent.SignedStorageHook.StorageHookImpl;
+import org.fdesigner.container.signedcontent.SignerInfo;
+import org.fdesigner.container.storage.BundleInfo.Generation;
+import org.fdesigner.framework.framework.Bundle;
+import org.fdesigner.framework.framework.BundleContext;
 
 public class TrustEngineListener {
 	private final BundleContext context;

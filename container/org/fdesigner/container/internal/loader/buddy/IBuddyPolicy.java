@@ -11,7 +11,7 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.osgi.internal.loader.buddy;
+package org.fdesigner.container.internal.loader.buddy;
 
 import java.net.URL;
 import java.util.Enumeration;

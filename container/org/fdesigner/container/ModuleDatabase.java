@@ -13,7 +13,6 @@
  *******************************************************************************/
 package org.fdesigner.container;
 
-import java.awt.event.ContainerEvent;
 import java.io.DataInputStream;
 import java.io.DataOutputStream;
 import java.io.IOException;
@@ -34,6 +33,7 @@ import java.util.concurrent.locks.ReentrantReadWriteLock;
 
 import org.fdesigner.container.Module.Settings;
 import org.fdesigner.container.Module.State;
+import org.fdesigner.container.ModuleContainerAdaptor.ContainerEvent;
 import org.fdesigner.container.ModuleRevisionBuilder.GenericInfo;
 import org.fdesigner.container.framework.util.ObjectPool;
 import org.fdesigner.container.internal.container.Capabilities;

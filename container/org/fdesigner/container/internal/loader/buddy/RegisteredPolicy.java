@@ -11,15 +11,18 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.osgi.internal.loader.buddy;
+package org.fdesigner.container.internal.loader.buddy;
 
 import java.io.IOException;
 import java.net.URL;
-import java.util.*;
-import org.eclipse.osgi.container.ModuleCapability;
-import org.eclipse.osgi.container.ModuleWiring;
-import org.eclipse.osgi.container.namespaces.EquinoxModuleDataNamespace;
-import org.eclipse.osgi.internal.loader.BundleLoader;
+import java.util.Enumeration;
+import java.util.Iterator;
+import java.util.List;
+
+import org.fdesigner.container.ModuleCapability;
+import org.fdesigner.container.ModuleWiring;
+import org.fdesigner.container.internal.loader.BundleLoader;
+import org.fdesigner.container.namespaces.EquinoxModuleDataNamespace;
 
 /**
  *Registered policy is an implementation of a buddy policy. 

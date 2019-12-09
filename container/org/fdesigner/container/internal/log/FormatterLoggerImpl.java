@@ -8,10 +8,10 @@
  *
  * SPDX-License-Identifier: EPL-2.0
  ******************************************************************************/
-package org.eclipse.osgi.internal.log;
+package org.fdesigner.container.internal.log;
 
-import org.osgi.service.log.FormatterLogger;
-import org.osgi.service.log.admin.LoggerContext;
+import org.fdesigner.framework.service.log.FormatterLogger;
+import org.fdesigner.framework.service.log.admin.LoggerContext;
 
 public class FormatterLoggerImpl extends LoggerImpl implements FormatterLogger {
 	public FormatterLoggerImpl(ExtendedLogServiceImpl logServiceImpl, String name, LoggerContext loggerContext) {

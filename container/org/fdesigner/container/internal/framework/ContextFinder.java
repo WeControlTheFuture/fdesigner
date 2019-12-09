@@ -11,7 +11,7 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.osgi.internal.framework;
+package org.fdesigner.container.internal.framework;
 
 import java.io.IOException;
 import java.net.URL;
@@ -24,8 +24,9 @@ import java.util.HashSet;
 import java.util.Iterator;
 import java.util.List;
 import java.util.Set;
-import org.eclipse.osgi.internal.loader.BundleLoader;
-import org.eclipse.osgi.internal.loader.ModuleClassLoader;
+
+import org.fdesigner.container.internal.loader.BundleLoader;
+import org.fdesigner.container.internal.loader.ModuleClassLoader;
 
 public class ContextFinder extends ClassLoader implements PrivilegedAction<List<ClassLoader>> {
 	static final class Finder extends SecurityManager {

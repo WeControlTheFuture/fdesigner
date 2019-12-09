@@ -11,18 +11,19 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.osgi.internal.loader;
+package org.fdesigner.container.internal.loader;
 
 import java.security.AccessController;
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.ConcurrentMap;
-import org.eclipse.osgi.container.ModuleCapability;
-import org.eclipse.osgi.framework.util.SecureAction;
-import org.eclipse.osgi.internal.loader.sources.FilteredSourcePackage;
-import org.eclipse.osgi.internal.loader.sources.PackageSource;
-import org.eclipse.osgi.internal.loader.sources.SingleSourcePackage;
-import org.osgi.framework.namespace.PackageNamespace;
+
+import org.fdesigner.container.ModuleCapability;
+import org.fdesigner.container.framework.util.SecureAction;
+import org.fdesigner.container.internal.loader.sources.FilteredSourcePackage;
+import org.fdesigner.container.internal.loader.sources.PackageSource;
+import org.fdesigner.container.internal.loader.sources.SingleSourcePackage;
+import org.fdesigner.framework.framework.namespace.PackageNamespace;
 
 public class BundleLoaderSources {
 	static SecureAction secureAction = AccessController.doPrivileged(SecureAction.createSecureAction());

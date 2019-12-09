@@ -12,7 +12,7 @@
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
 
-package org.eclipse.osgi.internal.loader.classpath;
+package org.fdesigner.container.internal.loader.classpath;
 
 import java.io.File;
 import java.io.IOException;
@@ -28,13 +28,14 @@ import java.util.Map.Entry;
 import java.util.Set;
 import java.util.jar.Attributes;
 import java.util.jar.Manifest;
-import org.eclipse.osgi.container.Module;
-import org.eclipse.osgi.framework.util.KeyedElement;
-import org.eclipse.osgi.storage.BundleInfo;
-import org.eclipse.osgi.storage.BundleInfo.Generation;
-import org.eclipse.osgi.storage.Storage;
-import org.eclipse.osgi.storage.bundlefile.BundleEntry;
-import org.eclipse.osgi.storage.bundlefile.BundleFile;
+
+import org.fdesigner.container.Module;
+import org.fdesigner.container.framework.util.KeyedElement;
+import org.fdesigner.container.storage.BundleInfo;
+import org.fdesigner.container.storage.BundleInfo.Generation;
+import org.fdesigner.container.storage.Storage;
+import org.fdesigner.container.storage.bundlefile.BundleEntry;
+import org.fdesigner.container.storage.bundlefile.BundleFile;
 
 /**
  * A ClasspathEntry contains a single <code>BundleFile</code> which is used as 

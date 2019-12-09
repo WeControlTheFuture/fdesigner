@@ -20,11 +20,11 @@ import java.util.Map;
 import java.util.Map.Entry;
 import java.util.Set;
 
-import org.fdesigner.common.Version;
 import org.fdesigner.container.ModuleRevisionBuilder.GenericInfo;
 import org.fdesigner.container.internal.container.InternalUtils;
 import org.fdesigner.container.namespaces.EquinoxModuleDataNamespace;
 import org.fdesigner.framework.framework.Bundle;
+import org.fdesigner.framework.framework.Version;
 import org.fdesigner.framework.framework.namespace.IdentityNamespace;
 import org.fdesigner.framework.framework.wiring.BundleCapability;
 import org.fdesigner.framework.framework.wiring.BundleRequirement;

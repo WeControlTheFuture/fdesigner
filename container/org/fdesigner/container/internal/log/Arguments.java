@@ -8,9 +8,9 @@
  *
  * SPDX-License-Identifier: EPL-2.0
  ******************************************************************************/
-package org.eclipse.osgi.internal.log;
+package org.fdesigner.container.internal.log;
 
-import org.osgi.framework.ServiceReference;
+import org.fdesigner.framework.framework.ServiceReference;
 
 public class Arguments {
 	private final Object[] arguments;

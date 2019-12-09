@@ -12,7 +12,7 @@
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
 
-package org.eclipse.osgi.internal.serviceregistry;
+package org.fdesigner.container.internal.serviceregistry;
 
 import java.util.*;
 

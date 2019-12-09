@@ -20,12 +20,13 @@
  * SPDX-License-Identifier: EPL-2.0 OR Apache-2.0 OR GPL-2.0 WITH Classpath-exception-2.0 OR LicenseRef-GPL-2.0 WITH Assembly-exception
  *******************************************************************************/
 
-package org.eclipse.osgi.internal.cds;
+package org.fdesigner.container.internal.cds;
 
 import java.io.IOException;
 import java.io.InputStream;
 import java.net.URL;
-import org.eclipse.osgi.storage.bundlefile.BundleEntry;
+
+import org.fdesigner.container.storage.bundlefile.BundleEntry;
 
 /**
  * A bundle entry for a class that is found in the shared classes cache

@@ -11,7 +11,7 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.osgi.internal.framework;
+package org.fdesigner.container.internal.framework;
 
 import java.security.ProtectionDomain;
 import java.util.EnumSet;
@@ -29,31 +29,34 @@ import java.util.concurrent.ThreadFactory;
 import java.util.concurrent.ThreadPoolExecutor;
 import java.util.concurrent.TimeUnit;
 import java.util.concurrent.atomic.AtomicLong;
-import org.eclipse.osgi.container.Module;
-import org.eclipse.osgi.container.Module.Settings;
-import org.eclipse.osgi.container.Module.State;
-import org.eclipse.osgi.container.ModuleCollisionHook;
-import org.eclipse.osgi.container.ModuleContainerAdaptor;
-import org.eclipse.osgi.container.ModuleLoader;
-import org.eclipse.osgi.container.ModuleRevision;
-import org.eclipse.osgi.container.ModuleRevisionBuilder;
-import org.eclipse.osgi.container.ModuleWiring;
-import org.eclipse.osgi.container.SystemModule;
-import org.eclipse.osgi.internal.container.AtomicLazyInitializer;
-import org.eclipse.osgi.internal.hookregistry.ClassLoaderHook;
-import org.eclipse.osgi.internal.loader.BundleLoader;
-import org.eclipse.osgi.internal.loader.FragmentLoader;
-import org.eclipse.osgi.internal.loader.SystemBundleLoader;
-import org.eclipse.osgi.internal.permadmin.BundlePermissions;
-import org.eclipse.osgi.service.debug.DebugOptions;
-import org.eclipse.osgi.storage.BundleInfo.Generation;
-import org.eclipse.osgi.storage.Storage;
-import org.osgi.framework.BundleEvent;
-import org.osgi.framework.Constants;
-import org.osgi.framework.FrameworkEvent;
-import org.osgi.framework.FrameworkListener;
-import org.osgi.framework.hooks.resolver.ResolverHookFactory;
-import org.osgi.framework.wiring.BundleRevision;
+
+import org.fdesigner.container.Module;
+import org.fdesigner.container.Module.Settings;
+import org.fdesigner.container.Module.State;
+import org.fdesigner.container.ModuleCollisionHook;
+import org.fdesigner.container.ModuleContainerAdaptor;
+import org.fdesigner.container.ModuleContainerAdaptor.ContainerEvent;
+import org.fdesigner.container.ModuleContainerAdaptor.ModuleEvent;
+import org.fdesigner.container.ModuleLoader;
+import org.fdesigner.container.ModuleRevision;
+import org.fdesigner.container.ModuleRevisionBuilder;
+import org.fdesigner.container.ModuleWiring;
+import org.fdesigner.container.SystemModule;
+import org.fdesigner.container.internal.container.AtomicLazyInitializer;
+import org.fdesigner.container.internal.hookregistry.ClassLoaderHook;
+import org.fdesigner.container.internal.loader.BundleLoader;
+import org.fdesigner.container.internal.loader.FragmentLoader;
+import org.fdesigner.container.internal.loader.SystemBundleLoader;
+import org.fdesigner.container.internal.permadmin.BundlePermissions;
+import org.fdesigner.container.storage.BundleInfo.Generation;
+import org.fdesigner.container.storage.Storage;
+import org.fdesigner.framework.framework.BundleEvent;
+import org.fdesigner.framework.framework.Constants;
+import org.fdesigner.framework.framework.FrameworkEvent;
+import org.fdesigner.framework.framework.FrameworkListener;
+import org.fdesigner.framework.framework.hooks.resolver.ResolverHookFactory;
+import org.fdesigner.framework.framework.wiring.BundleRevision;
+import org.fdesigner.supplement.service.debug.DebugOptions;
 
 public class EquinoxContainerAdaptor extends ModuleContainerAdaptor {
 	private final EquinoxContainer container;

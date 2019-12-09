@@ -11,11 +11,12 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.osgi.service.resolver;
+package org.fdesigner.container.service.resolver;
 
 import java.util.Map;
-import org.osgi.framework.Version;
-import org.osgi.framework.wiring.BundleCapability;
+
+import org.fdesigner.framework.framework.Version;
+import org.fdesigner.framework.framework.wiring.BundleCapability;
 
 /**
  * This class represents a base description object for a state.  All description

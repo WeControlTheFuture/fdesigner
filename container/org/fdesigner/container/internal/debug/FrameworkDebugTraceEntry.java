@@ -11,7 +11,7 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.osgi.internal.debug;
+package org.fdesigner.container.internal.debug;
 
 /**
  * A framework trace entry is a bean containing all of the attributes for a single trace message.

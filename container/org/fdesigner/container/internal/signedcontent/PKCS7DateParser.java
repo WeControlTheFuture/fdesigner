@@ -10,7 +10,7 @@
  * 
  * Contributors: IBM Corporation - initial API and implementation
  ******************************************************************************/
-package org.eclipse.osgi.internal.signedcontent;
+package org.fdesigner.container.internal.signedcontent;
 
 import java.security.*;
 import java.security.cert.CertificateException;

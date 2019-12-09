@@ -12,12 +12,21 @@
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
 
-package org.eclipse.osgi.internal.permadmin;
+package org.fdesigner.container.internal.permadmin;
 
-import java.security.*;
-import java.util.*;
-import org.eclipse.osgi.internal.permadmin.SecurityRow.Decision;
-import org.osgi.service.condpermadmin.Condition;
+import java.security.AccessControlContext;
+import java.security.AccessController;
+import java.security.Permission;
+import java.security.PrivilegedAction;
+import java.util.ArrayList;
+import java.util.Dictionary;
+import java.util.HashMap;
+import java.util.Hashtable;
+import java.util.List;
+import java.util.Map;
+
+import org.fdesigner.container.internal.permadmin.SecurityRow.Decision;
+import org.fdesigner.framework.service.condpermadmin.Condition;
 
 /**
  * 

@@ -11,12 +11,16 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.osgi.internal.weaving;
+package org.fdesigner.container.internal.weaving;
 
-import java.util.*;
-import org.eclipse.osgi.util.ManifestElement;
-import org.osgi.framework.Constants;
-import org.osgi.framework.PackagePermission;
+import java.util.AbstractList;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.RandomAccess;
+
+import org.fdesigner.framework.framework.Constants;
+import org.fdesigner.framework.framework.PackagePermission;
+import org.fdesigner.supplement.util.ManifestElement;
 
 /**
  * A list of DynamicImport-Package statements that are to be used for adding new 

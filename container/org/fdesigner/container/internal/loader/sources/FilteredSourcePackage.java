@@ -11,12 +11,15 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.osgi.internal.loader.sources;
+package org.fdesigner.container.internal.loader.sources;
 
 import java.net.URL;
-import java.util.*;
-import org.eclipse.osgi.internal.loader.BundleLoader;
-import org.eclipse.osgi.util.ManifestElement;
+import java.util.Collection;
+import java.util.Enumeration;
+import java.util.Iterator;
+
+import org.fdesigner.container.internal.loader.BundleLoader;
+import org.fdesigner.supplement.util.ManifestElement;
 
 public class FilteredSourcePackage extends SingleSourcePackage {
 	private static final char ALL = '*';

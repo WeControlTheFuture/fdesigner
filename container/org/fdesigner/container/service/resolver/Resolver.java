@@ -11,7 +11,7 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.osgi.service.resolver;
+package org.fdesigner.container.service.resolver;
 
 import java.util.Comparator;
 import java.util.Dictionary;

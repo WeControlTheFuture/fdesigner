@@ -12,10 +12,15 @@
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
 
-package org.eclipse.osgi.internal.serviceregistry;
+package org.fdesigner.container.internal.serviceregistry;
 
 import java.util.Dictionary;
-import org.osgi.framework.*;
+
+import org.fdesigner.framework.framework.Bundle;
+import org.fdesigner.framework.framework.BundleContext;
+import org.fdesigner.framework.framework.Constants;
+import org.fdesigner.framework.framework.ServiceReference;
+import org.fdesigner.framework.framework.ServiceRegistration;
 
 /**
  * A reference to a service.

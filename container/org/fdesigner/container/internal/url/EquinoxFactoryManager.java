@@ -11,7 +11,7 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.osgi.internal.url;
+package org.fdesigner.container.internal.url;
 
 import java.lang.reflect.Field;
 import java.lang.reflect.Method;
@@ -20,9 +20,10 @@ import java.net.URL;
 import java.net.URLConnection;
 import java.net.URLStreamHandlerFactory;
 import java.util.Hashtable;
-import org.eclipse.osgi.framework.log.FrameworkLogEntry;
-import org.eclipse.osgi.internal.framework.EquinoxContainer;
-import org.osgi.framework.BundleContext;
+
+import org.fdesigner.container.internal.framework.EquinoxContainer;
+import org.fdesigner.framework.framework.BundleContext;
+import org.fdesigner.supplement.framework.log.FrameworkLogEntry;
 
 public class EquinoxFactoryManager {
 	private final EquinoxContainer container;

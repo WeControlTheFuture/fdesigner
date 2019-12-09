@@ -12,12 +12,16 @@
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
 
-package org.eclipse.osgi.internal.url;
+package org.fdesigner.container.internal.url;
 
 import java.io.IOException;
-import java.net.*;
-import org.osgi.service.url.URLStreamHandlerService;
-import org.osgi.service.url.URLStreamHandlerSetter;
+import java.net.InetAddress;
+import java.net.MalformedURLException;
+import java.net.URL;
+import java.net.URLConnection;
+
+import org.fdesigner.framework.service.url.URLStreamHandlerService;
+import org.fdesigner.framework.service.url.URLStreamHandlerSetter;
 
 /**
  * The NullURLStreamService is created when a registered URLStreamHandler service

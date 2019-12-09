@@ -12,7 +12,7 @@
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
 
-package org.eclipse.osgi.storage.bundlefile;
+package org.fdesigner.container.storage.bundlefile;
 
 import java.io.File;
 import java.io.IOException;

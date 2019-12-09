@@ -11,7 +11,7 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.osgi.storage;
+package org.fdesigner.container.storage;
 
 import java.io.File;
 import java.lang.reflect.AccessibleObject;
@@ -26,28 +26,29 @@ import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Collections;
 import java.util.List;
-import org.eclipse.osgi.container.Module;
-import org.eclipse.osgi.container.ModuleCapability;
-import org.eclipse.osgi.container.ModuleRevision;
-import org.eclipse.osgi.container.ModuleWire;
-import org.eclipse.osgi.container.ModuleWiring;
-import org.eclipse.osgi.container.namespaces.EquinoxModuleDataNamespace;
-import org.eclipse.osgi.framework.util.ArrayMap;
-import org.eclipse.osgi.internal.framework.EquinoxConfiguration;
-import org.eclipse.osgi.internal.hookregistry.ActivatorHookFactory;
-import org.eclipse.osgi.internal.hookregistry.HookRegistry;
-import org.eclipse.osgi.internal.messages.Msg;
-import org.eclipse.osgi.internal.url.MultiplexingFactory;
-import org.eclipse.osgi.storage.BundleInfo.Generation;
-import org.eclipse.osgi.util.NLS;
-import org.osgi.framework.Bundle;
-import org.osgi.framework.BundleActivator;
-import org.osgi.framework.BundleContext;
-import org.osgi.framework.BundleException;
-import org.osgi.framework.FrameworkEvent;
-import org.osgi.framework.namespace.HostNamespace;
-import org.osgi.framework.wiring.BundleWiring;
-import org.osgi.resource.Capability;
+
+import org.fdesigner.container.Module;
+import org.fdesigner.container.ModuleCapability;
+import org.fdesigner.container.ModuleRevision;
+import org.fdesigner.container.ModuleWire;
+import org.fdesigner.container.ModuleWiring;
+import org.fdesigner.container.framework.util.ArrayMap;
+import org.fdesigner.container.internal.framework.EquinoxConfiguration;
+import org.fdesigner.container.internal.hookregistry.ActivatorHookFactory;
+import org.fdesigner.container.internal.hookregistry.HookRegistry;
+import org.fdesigner.container.internal.url.MultiplexingFactory;
+import org.fdesigner.container.namespaces.EquinoxModuleDataNamespace;
+import org.fdesigner.container.storage.BundleInfo.Generation;
+import org.fdesigner.framework.framework.Bundle;
+import org.fdesigner.framework.framework.BundleActivator;
+import org.fdesigner.framework.framework.BundleContext;
+import org.fdesigner.framework.framework.BundleException;
+import org.fdesigner.framework.framework.FrameworkEvent;
+import org.fdesigner.framework.framework.namespace.HostNamespace;
+import org.fdesigner.framework.framework.wiring.BundleWiring;
+import org.fdesigner.framework.resource.Capability;
+import org.fdesigner.supplement.internal.messages.Msg;
+import org.fdesigner.supplement.util.NLS;
 
 public class FrameworkExtensionInstaller {
 	private static final ClassLoader CL = FrameworkExtensionInstaller.class.getClassLoader();

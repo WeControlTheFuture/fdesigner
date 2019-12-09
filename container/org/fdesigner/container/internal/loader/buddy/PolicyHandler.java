@@ -11,7 +11,7 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.osgi.internal.loader.buddy;
+package org.fdesigner.container.internal.loader.buddy;
 
 import java.net.URL;
 import java.util.ArrayList;
@@ -21,13 +21,14 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 import java.util.StringTokenizer;
-import org.eclipse.osgi.container.ModuleContainerAdaptor.ContainerEvent;
-import org.eclipse.osgi.internal.framework.EquinoxBundle;
-import org.eclipse.osgi.internal.loader.BundleLoader;
-import org.osgi.framework.BundleContext;
-import org.osgi.framework.BundleEvent;
-import org.osgi.framework.SynchronousBundleListener;
-import org.osgi.service.packageadmin.PackageAdmin;
+
+import org.fdesigner.container.ModuleContainerAdaptor.ContainerEvent;
+import org.fdesigner.container.internal.framework.EquinoxBundle;
+import org.fdesigner.container.internal.loader.BundleLoader;
+import org.fdesigner.framework.framework.BundleContext;
+import org.fdesigner.framework.framework.BundleEvent;
+import org.fdesigner.framework.framework.SynchronousBundleListener;
+import org.fdesigner.framework.service.packageadmin.PackageAdmin;
 
 public class PolicyHandler implements SynchronousBundleListener {
 	//Key for the framework buddies

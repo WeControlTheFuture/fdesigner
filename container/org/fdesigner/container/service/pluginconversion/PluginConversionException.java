@@ -11,7 +11,7 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.osgi.service.pluginconversion;
+package org.fdesigner.container.service.pluginconversion;
 
 /**
  * Custom exception for errors that can happen during plugin conversion.

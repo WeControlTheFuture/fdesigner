@@ -11,34 +11,62 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.osgi.internal.signedcontent;
+package org.fdesigner.container.internal.signedcontent;
 
 import java.io.File;
 import java.io.IOException;
 import java.lang.reflect.Field;
 import java.net.MalformedURLException;
 import java.net.URL;
-import java.security.*;
+import java.security.AccessController;
+import java.security.GeneralSecurityException;
+import java.security.InvalidKeyException;
+import java.security.NoSuchAlgorithmException;
+import java.security.NoSuchProviderException;
+import java.security.PrivilegedActionException;
+import java.security.PrivilegedExceptionAction;
+import java.security.SignatureException;
 import java.security.cert.Certificate;
 import java.security.cert.CertificateException;
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Dictionary;
+import java.util.Hashtable;
+import java.util.Iterator;
+import java.util.List;
+import java.util.StringTokenizer;
 import java.util.zip.ZipFile;
-import org.eclipse.osgi.framework.log.FrameworkLogEntry;
-import org.eclipse.osgi.framework.util.SecureAction;
-import org.eclipse.osgi.internal.framework.EquinoxBundle;
-import org.eclipse.osgi.internal.framework.EquinoxContainer;
-import org.eclipse.osgi.internal.hookregistry.*;
-import org.eclipse.osgi.internal.service.security.KeyStoreTrustEngine;
-import org.eclipse.osgi.internal.signedcontent.SignedStorageHook.StorageHookImpl;
-import org.eclipse.osgi.service.security.TrustEngine;
-import org.eclipse.osgi.signedcontent.*;
-import org.eclipse.osgi.storage.BundleInfo.Generation;
-import org.eclipse.osgi.storage.bundlefile.*;
-import org.eclipse.osgi.util.ManifestElement;
-import org.eclipse.osgi.util.NLS;
-import org.osgi.framework.*;
-import org.osgi.util.tracker.ServiceTracker;
-import org.osgi.util.tracker.ServiceTrackerCustomizer;
+
+import org.fdesigner.container.framework.util.SecureAction;
+import org.fdesigner.container.internal.framework.EquinoxBundle;
+import org.fdesigner.container.internal.framework.EquinoxContainer;
+import org.fdesigner.container.internal.hookregistry.ActivatorHookFactory;
+import org.fdesigner.container.internal.hookregistry.BundleFileWrapperFactoryHook;
+import org.fdesigner.container.internal.hookregistry.HookConfigurator;
+import org.fdesigner.container.internal.hookregistry.HookRegistry;
+import org.fdesigner.container.internal.service.security.KeyStoreTrustEngine;
+import org.fdesigner.container.internal.signedcontent.SignedStorageHook.StorageHookImpl;
+import org.fdesigner.container.service.security.TrustEngine;
+import org.fdesigner.container.signedcontent.SignedContent;
+import org.fdesigner.container.signedcontent.SignedContentFactory;
+import org.fdesigner.container.signedcontent.SignerInfo;
+import org.fdesigner.container.storage.BundleInfo.Generation;
+import org.fdesigner.container.storage.bundlefile.BundleFile;
+import org.fdesigner.container.storage.bundlefile.BundleFileWrapper;
+import org.fdesigner.container.storage.bundlefile.DirBundleFile;
+import org.fdesigner.container.storage.bundlefile.ZipBundleFile;
+import org.fdesigner.framework.framework.Bundle;
+import org.fdesigner.framework.framework.BundleActivator;
+import org.fdesigner.framework.framework.BundleContext;
+import org.fdesigner.framework.framework.Constants;
+import org.fdesigner.framework.framework.Filter;
+import org.fdesigner.framework.framework.InvalidSyntaxException;
+import org.fdesigner.framework.framework.ServiceReference;
+import org.fdesigner.framework.framework.ServiceRegistration;
+import org.fdesigner.framework.util.tracker.ServiceTracker;
+import org.fdesigner.framework.util.tracker.ServiceTrackerCustomizer;
+import org.fdesigner.supplement.framework.log.FrameworkLogEntry;
+import org.fdesigner.supplement.util.ManifestElement;
+import org.fdesigner.supplement.util.NLS;
 
 /**
  * Implements signed bundle hook support for the framework

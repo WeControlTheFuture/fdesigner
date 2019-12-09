@@ -11,21 +11,22 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.osgi.internal.loader.sources;
+package org.fdesigner.container.internal.loader.sources;
 
 import java.io.IOException;
 import java.net.URL;
 import java.util.Collection;
 import java.util.Enumeration;
-import org.eclipse.osgi.container.ModuleRevision;
-import org.eclipse.osgi.container.ModuleWiring;
-import org.eclipse.osgi.internal.framework.EquinoxBundle;
-import org.eclipse.osgi.internal.framework.EquinoxContainer;
-import org.eclipse.osgi.internal.loader.BundleLoader;
-import org.eclipse.osgi.internal.loader.SystemBundleLoader;
-import org.osgi.framework.Bundle;
-import org.osgi.framework.ServiceFactory;
-import org.osgi.service.packageadmin.PackageAdmin;
+
+import org.fdesigner.container.ModuleRevision;
+import org.fdesigner.container.ModuleWiring;
+import org.fdesigner.container.internal.framework.EquinoxBundle;
+import org.fdesigner.container.internal.framework.EquinoxContainer;
+import org.fdesigner.container.internal.loader.BundleLoader;
+import org.fdesigner.container.internal.loader.SystemBundleLoader;
+import org.fdesigner.framework.framework.Bundle;
+import org.fdesigner.framework.framework.ServiceFactory;
+import org.fdesigner.framework.service.packageadmin.PackageAdmin;
 
 public abstract class PackageSource {
 	protected final String id;

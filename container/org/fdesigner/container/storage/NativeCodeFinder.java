@@ -12,21 +12,28 @@
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
 
-package org.eclipse.osgi.storage;
+package org.fdesigner.container.storage;
 
 import java.io.File;
-import java.util.*;
-import org.eclipse.osgi.container.*;
-import org.eclipse.osgi.internal.debug.Debug;
-import org.eclipse.osgi.internal.framework.FilterImpl;
-import org.eclipse.osgi.internal.hookregistry.ClassLoaderHook;
-import org.eclipse.osgi.storage.BundleInfo.Generation;
-import org.eclipse.osgi.storage.bundlefile.BundleEntry;
-import org.eclipse.osgi.storage.bundlefile.BundleFile;
-import org.osgi.framework.InvalidSyntaxException;
-import org.osgi.framework.namespace.HostNamespace;
-import org.osgi.framework.namespace.NativeNamespace;
-import org.osgi.framework.wiring.BundleRevision;
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.Collections;
+import java.util.List;
+import java.util.Map;
+
+import org.fdesigner.container.ModuleRevision;
+import org.fdesigner.container.ModuleWire;
+import org.fdesigner.container.ModuleWiring;
+import org.fdesigner.container.internal.debug.Debug;
+import org.fdesigner.container.internal.framework.FilterImpl;
+import org.fdesigner.container.internal.hookregistry.ClassLoaderHook;
+import org.fdesigner.container.storage.BundleInfo.Generation;
+import org.fdesigner.container.storage.bundlefile.BundleEntry;
+import org.fdesigner.container.storage.bundlefile.BundleFile;
+import org.fdesigner.framework.framework.InvalidSyntaxException;
+import org.fdesigner.framework.framework.namespace.HostNamespace;
+import org.fdesigner.framework.framework.namespace.NativeNamespace;
+import org.fdesigner.framework.framework.wiring.BundleRevision;
 
 public class NativeCodeFinder {
 	public static final String REQUIREMENT_NATIVE_PATHS_ATTRIBUTE = "native.paths"; //$NON-NLS-1$
@@ -117,7 +124,7 @@ public class NativeCodeFinder {
 				if (libFile == null)
 					return null;
 				// see bug 88697 - HP requires libraries to have executable permissions
-				if (org.eclipse.osgi.service.environment.Constants.OS_HPUX.equals(generation.getBundleInfo().getStorage().getConfiguration().getOS())) {
+				if (org.fdesigner.supplement.service.environment.Constants.OS_HPUX.equals(generation.getBundleInfo().getStorage().getConfiguration().getOS())) {
 					try {
 						// use the string array method in case there is a space in the path
 						Runtime.getRuntime().exec(new String[] {"chmod", "755", libFile.getAbsolutePath()}).waitFor(); //$NON-NLS-1$ //$NON-NLS-2$

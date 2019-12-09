@@ -11,13 +11,14 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.osgi.internal.loader.sources;
+package org.fdesigner.container.internal.loader.sources;
 
 import java.net.URL;
 import java.util.Collection;
 import java.util.Enumeration;
-import org.eclipse.osgi.internal.loader.BundleLoader;
-import org.eclipse.osgi.internal.loader.ModuleClassLoader;
+
+import org.fdesigner.container.internal.loader.BundleLoader;
+import org.fdesigner.container.internal.loader.ModuleClassLoader;
 
 public class SingleSourcePackage extends PackageSource {
 	private final BundleLoader supplier;

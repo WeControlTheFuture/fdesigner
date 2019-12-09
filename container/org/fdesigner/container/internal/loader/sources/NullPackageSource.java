@@ -11,7 +11,7 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.osgi.internal.loader.sources;
+package org.fdesigner.container.internal.loader.sources;
 
 import java.net.URL;
 import java.util.Collections;

@@ -11,9 +11,9 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.osgi.internal.provisional.service.security;
+package org.fdesigner.container.internal.provisional.service.security;
 
-import org.eclipse.osgi.signedcontent.SignedContent;
+import org.fdesigner.container.signedcontent.SignedContent;
 
 /**
  * An event that is fired when an AuthorizationEngine implementation makes

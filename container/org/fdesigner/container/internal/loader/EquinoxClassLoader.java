@@ -12,12 +12,12 @@
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
 
-package org.eclipse.osgi.internal.loader;
+package org.fdesigner.container.internal.loader;
 
-import org.eclipse.osgi.internal.debug.Debug;
-import org.eclipse.osgi.internal.framework.EquinoxConfiguration;
-import org.eclipse.osgi.internal.loader.classpath.ClasspathManager;
-import org.eclipse.osgi.storage.BundleInfo.Generation;
+import org.fdesigner.container.internal.debug.Debug;
+import org.fdesigner.container.internal.framework.EquinoxConfiguration;
+import org.fdesigner.container.internal.loader.classpath.ClasspathManager;
+import org.fdesigner.container.storage.BundleInfo.Generation;
 
 public class EquinoxClassLoader extends ModuleClassLoader {
 	protected static final boolean EQUINOX_REGISTERED_AS_PARALLEL;

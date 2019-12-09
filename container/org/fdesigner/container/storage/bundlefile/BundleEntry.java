@@ -12,12 +12,13 @@
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
 
-package org.eclipse.osgi.storage.bundlefile;
+package org.fdesigner.container.storage.bundlefile;
 
 import java.io.IOException;
 import java.io.InputStream;
 import java.net.URL;
-import org.eclipse.osgi.storage.StorageUtil;
+
+import org.fdesigner.container.storage.StorageUtil;
 
 /**
  * A BundleEntry represents one entry of a BundleFile.

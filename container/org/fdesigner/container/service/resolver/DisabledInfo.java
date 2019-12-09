@@ -11,7 +11,7 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.osgi.service.resolver;
+package org.fdesigner.container.service.resolver;
 
 /**
  * A disabled info represents a policy decision to disable a bundle which exists in a {@link State}.

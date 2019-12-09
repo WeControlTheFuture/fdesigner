@@ -11,17 +11,20 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.osgi.storage;
+package org.fdesigner.container.storage;
 
-import java.io.*;
+import java.io.File;
+import java.io.IOException;
+import java.io.InputStream;
 import java.net.URL;
 import java.util.Enumeration;
 import java.util.Map;
-import org.eclipse.osgi.framework.util.CaseInsensitiveDictionaryMap;
-import org.eclipse.osgi.storage.bundlefile.BundleEntry;
-import org.eclipse.osgi.storage.bundlefile.BundleFile;
-import org.eclipse.osgi.util.ManifestElement;
-import org.osgi.framework.BundleException;
+
+import org.fdesigner.container.framework.util.CaseInsensitiveDictionaryMap;
+import org.fdesigner.container.storage.bundlefile.BundleEntry;
+import org.fdesigner.container.storage.bundlefile.BundleFile;
+import org.fdesigner.framework.framework.BundleException;
+import org.fdesigner.supplement.util.ManifestElement;
 
 public class SystemBundleFile extends BundleFile {
 

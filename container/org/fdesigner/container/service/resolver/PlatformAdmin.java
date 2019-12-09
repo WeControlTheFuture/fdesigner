@@ -12,9 +12,9 @@
  *     IBM Corporation - initial API and implementation
  *     Rob Harrop - SpringSource Inc. (bug 247522)
  *******************************************************************************/
-package org.eclipse.osgi.service.resolver;
+package org.fdesigner.container.service.resolver;
 
-import org.osgi.framework.BundleException;
+import org.fdesigner.framework.framework.BundleException;
 
 /**
  * Framework service which allows bundle programmers to inspect the bundles and

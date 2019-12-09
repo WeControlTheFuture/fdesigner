@@ -36,6 +36,7 @@ import org.fdesigner.container.Module;
 import org.fdesigner.container.ModuleContainerAdaptor.ModuleEvent;
 import org.fdesigner.container.ModuleRevision;
 import org.fdesigner.container.ModuleRevisionBuilder;
+import org.fdesigner.container.framework.util.CaseInsensitiveDictionaryMap;
 import org.fdesigner.container.framework.util.ThreadInfoReport;
 import org.fdesigner.container.internal.container.LockSet;
 import org.fdesigner.container.internal.debug.Debug;
@@ -49,9 +50,9 @@ import org.fdesigner.container.storage.bundlefile.BundleFile;
 import org.fdesigner.container.storage.url.BundleResourceHandler;
 import org.fdesigner.container.storage.url.reference.Handler;
 import org.fdesigner.framework.framework.BundleException;
+import org.fdesigner.framework.framework.Constants;
 import org.fdesigner.supplement.framework.log.FrameworkLogEntry;
 import org.fdesigner.supplement.internal.messages.Msg;
-import org.fdesigner.supplement.service.environment.Constants;
 import org.fdesigner.supplement.util.ManifestElement;
 import org.fdesigner.supplement.util.NLS;
 

@@ -12,15 +12,16 @@
  *     IBM Corporation - initial API and implementation
  *     Connexta, LLC - evaluation cache implementation
  *******************************************************************************/
-package org.eclipse.osgi.internal.permadmin;
+package org.fdesigner.container.internal.permadmin;
 
 import java.security.Permission;
 import java.security.PermissionCollection;
 import java.util.Enumeration;
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
-import org.eclipse.osgi.internal.permadmin.SecurityRow.Decision;
-import org.osgi.service.condpermadmin.Condition;
+
+import org.fdesigner.container.internal.permadmin.SecurityRow.Decision;
+import org.fdesigner.framework.service.condpermadmin.Condition;
 
 public class SecurityTable extends PermissionCollection {
 	private static final long serialVersionUID = -1800193310096318060L;

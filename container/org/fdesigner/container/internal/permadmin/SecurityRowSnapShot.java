@@ -11,11 +11,11 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.osgi.internal.permadmin;
+package org.fdesigner.container.internal.permadmin;
 
-import org.osgi.service.condpermadmin.ConditionInfo;
-import org.osgi.service.condpermadmin.ConditionalPermissionInfo;
-import org.osgi.service.permissionadmin.PermissionInfo;
+import org.fdesigner.framework.service.condpermadmin.ConditionInfo;
+import org.fdesigner.framework.service.condpermadmin.ConditionalPermissionInfo;
+import org.fdesigner.framework.service.permissionadmin.PermissionInfo;
 
 public class SecurityRowSnapShot implements ConditionalPermissionInfo {
 

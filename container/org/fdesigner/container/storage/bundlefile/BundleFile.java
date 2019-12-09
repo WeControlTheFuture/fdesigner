@@ -12,7 +12,7 @@
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
 
-package org.eclipse.osgi.storage.bundlefile;
+package org.fdesigner.container.storage.bundlefile;
 
 import java.io.File;
 import java.io.IOException;
@@ -20,10 +20,11 @@ import java.net.MalformedURLException;
 import java.net.URL;
 import java.security.AccessController;
 import java.util.Enumeration;
-import org.eclipse.osgi.container.Module;
-import org.eclipse.osgi.framework.util.SecureAction;
-import org.eclipse.osgi.storage.url.BundleResourceHandler;
-import org.eclipse.osgi.storage.url.bundleresource.Handler;
+
+import org.fdesigner.container.Module;
+import org.fdesigner.container.framework.util.SecureAction;
+import org.fdesigner.container.storage.url.BundleResourceHandler;
+import org.fdesigner.container.storage.url.reference.Handler;
 
 /**
  * The BundleFile API is used by Adaptors to read resources out of an 

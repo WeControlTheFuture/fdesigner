@@ -12,11 +12,11 @@
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
 
-package org.eclipse.osgi.internal.url;
+package org.fdesigner.container.internal.url;
 
 import java.net.URL;
 
-public class URLStreamHandlerSetter implements org.osgi.service.url.URLStreamHandlerSetter {
+public class URLStreamHandlerSetter implements org.fdesigner.framework.service.url.URLStreamHandlerSetter {
 
 	protected URLStreamHandlerProxy handlerProxy;
 

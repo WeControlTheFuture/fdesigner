@@ -8,7 +8,7 @@
  *
  * SPDX-License-Identifier: EPL-2.0
  *******************************************************************************/
-package org.eclipse.osgi.internal.log;
+package org.fdesigner.container.internal.log;
 
 import java.lang.reflect.Constructor;
 import java.lang.reflect.InvocationTargetException;
@@ -18,11 +18,12 @@ import java.security.PrivilegedActionException;
 import java.security.PrivilegedExceptionAction;
 import java.util.Dictionary;
 import java.util.Hashtable;
-import org.eclipse.equinox.log.SynchronousLogListener;
-import org.osgi.framework.Bundle;
-import org.osgi.framework.ServiceReference;
-import org.osgi.service.log.LogEntry;
-import org.osgi.service.log.LogService;
+
+import org.fdesigner.framework.framework.Bundle;
+import org.fdesigner.framework.framework.ServiceReference;
+import org.fdesigner.framework.service.log.LogEntry;
+import org.fdesigner.framework.service.log.LogService;
+import org.fdesigner.supplement.log.SynchronousLogListener;
 
 public class EventAdminLogListener implements SynchronousLogListener {
 
@@ -137,12 +138,12 @@ public class EventAdminLogListener implements SynchronousLogListener {
 
 	public static void putServiceReferenceProperties(Hashtable<String, Object> properties, ServiceReference<?> ref) {
 		properties.put(SERVICE, ref);
-		properties.put(SERVICE_ID, ref.getProperty(org.osgi.framework.Constants.SERVICE_ID));
-		Object o = ref.getProperty(org.osgi.framework.Constants.SERVICE_PID);
+		properties.put(SERVICE_ID, ref.getProperty(org.fdesigner.framework.framework.Constants.SERVICE_ID));
+		Object o = ref.getProperty(org.fdesigner.framework.framework.Constants.SERVICE_PID);
 		if ((o != null) && (o instanceof String)) {
 			properties.put(SERVICE_PID, o);
 		}
-		Object o2 = ref.getProperty(org.osgi.framework.Constants.OBJECTCLASS);
+		Object o2 = ref.getProperty(org.fdesigner.framework.framework.Constants.OBJECTCLASS);
 		if ((o2 != null) && (o2 instanceof String[])) {
 			properties.put(SERVICE_OBJECTCLASS, o2);
 		}

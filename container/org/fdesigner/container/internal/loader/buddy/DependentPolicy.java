@@ -12,16 +12,19 @@
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
 
-package org.eclipse.osgi.internal.loader.buddy;
+package org.fdesigner.container.internal.loader.buddy;
 
 import java.io.IOException;
 import java.net.URL;
-import java.util.*;
-import org.eclipse.osgi.container.ModuleWire;
-import org.eclipse.osgi.container.ModuleWiring;
-import org.eclipse.osgi.internal.loader.BundleLoader;
-import org.osgi.framework.namespace.BundleNamespace;
-import org.osgi.framework.namespace.PackageNamespace;
+import java.util.ArrayList;
+import java.util.Enumeration;
+import java.util.List;
+
+import org.fdesigner.container.ModuleWire;
+import org.fdesigner.container.ModuleWiring;
+import org.fdesigner.container.internal.loader.BundleLoader;
+import org.fdesigner.framework.framework.namespace.BundleNamespace;
+import org.fdesigner.framework.framework.namespace.PackageNamespace;
 
 /**
  * DependentPolicy is an implementation of a buddy policy. 

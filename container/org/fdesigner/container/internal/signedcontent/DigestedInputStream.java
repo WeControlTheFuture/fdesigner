@@ -12,17 +12,18 @@
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
 
-package org.eclipse.osgi.internal.signedcontent;
+package org.fdesigner.container.internal.signedcontent;
 
 import java.io.FilterInputStream;
 import java.io.IOException;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
-import org.eclipse.osgi.signedcontent.InvalidContentException;
-import org.eclipse.osgi.signedcontent.SignerInfo;
-import org.eclipse.osgi.storage.bundlefile.BundleEntry;
-import org.eclipse.osgi.storage.bundlefile.BundleFile;
-import org.eclipse.osgi.util.NLS;
+
+import org.fdesigner.container.signedcontent.InvalidContentException;
+import org.fdesigner.container.signedcontent.SignerInfo;
+import org.fdesigner.container.storage.bundlefile.BundleEntry;
+import org.fdesigner.container.storage.bundlefile.BundleFile;
+import org.fdesigner.supplement.util.NLS;
 
 /**
  * This InputStream will calculate the digest of bytes as they are read. At the

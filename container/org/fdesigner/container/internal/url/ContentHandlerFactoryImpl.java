@@ -12,7 +12,7 @@
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
 
-package org.eclipse.osgi.internal.url;
+package org.fdesigner.container.internal.url;
 
 import java.lang.reflect.Method;
 import java.net.ContentHandler;
@@ -22,14 +22,15 @@ import java.util.Hashtable;
 import java.util.List;
 import java.util.Map;
 import java.util.StringTokenizer;
-import org.eclipse.osgi.framework.log.FrameworkLogEntry;
-import org.eclipse.osgi.internal.framework.EquinoxContainer;
-import org.eclipse.osgi.internal.messages.Msg;
-import org.eclipse.osgi.util.NLS;
-import org.osgi.framework.BundleContext;
-import org.osgi.framework.ServiceReference;
-import org.osgi.service.url.URLConstants;
-import org.osgi.util.tracker.ServiceTracker;
+
+import org.fdesigner.container.internal.framework.EquinoxContainer;
+import org.fdesigner.framework.framework.BundleContext;
+import org.fdesigner.framework.framework.ServiceReference;
+import org.fdesigner.framework.service.url.URLConstants;
+import org.fdesigner.framework.util.tracker.ServiceTracker;
+import org.fdesigner.supplement.framework.log.FrameworkLogEntry;
+import org.fdesigner.supplement.internal.messages.Msg;
+import org.fdesigner.supplement.util.NLS;
 
 /**
  * The ContentHandlerFactory is registered with the JVM to provide content handlers

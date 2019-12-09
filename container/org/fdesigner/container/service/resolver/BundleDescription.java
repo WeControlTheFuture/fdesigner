@@ -11,10 +11,11 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.osgi.service.resolver;
+package org.fdesigner.container.service.resolver;
 
 import java.util.Map;
-import org.osgi.framework.wiring.BundleRevision;
+
+import org.fdesigner.framework.framework.wiring.BundleRevision;
 
 /**
  * This class represents a specific version of a bundle in the system.

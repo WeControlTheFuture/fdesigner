@@ -9,7 +9,7 @@
  * SPDX-License-Identifier: EPL-2.0
  * 
  *******************************************************************************/
-package org.eclipse.osgi.internal.url;
+package org.fdesigner.container.internal.url;
 
 import java.lang.reflect.AccessibleObject;
 import java.lang.reflect.Field;
@@ -22,13 +22,14 @@ import java.util.Collection;
 import java.util.Collections;
 import java.util.LinkedList;
 import java.util.List;
-import org.eclipse.osgi.framework.log.FrameworkLogEntry;
-import org.eclipse.osgi.internal.framework.EquinoxBundle;
-import org.eclipse.osgi.internal.framework.EquinoxContainer;
-import org.eclipse.osgi.storage.StorageUtil;
-import org.osgi.framework.Bundle;
-import org.osgi.framework.BundleContext;
-import org.osgi.framework.FrameworkUtil;
+
+import org.fdesigner.container.internal.framework.EquinoxBundle;
+import org.fdesigner.container.internal.framework.EquinoxContainer;
+import org.fdesigner.container.storage.StorageUtil;
+import org.fdesigner.framework.framework.Bundle;
+import org.fdesigner.framework.framework.BundleContext;
+import org.fdesigner.framework.framework.FrameworkUtil;
+import org.fdesigner.supplement.framework.log.FrameworkLogEntry;
 
 /*
  * An abstract class for handler factory impls (Stream and Content) that can 

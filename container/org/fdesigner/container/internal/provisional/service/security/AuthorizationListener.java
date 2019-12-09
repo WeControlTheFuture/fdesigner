@@ -11,7 +11,7 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.osgi.internal.provisional.service.security;
+package org.fdesigner.container.internal.provisional.service.security;
 
 import java.util.EventListener;
 

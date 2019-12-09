@@ -11,12 +11,13 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.osgi.internal.permadmin;
+package org.fdesigner.container.internal.permadmin;
 
 import java.util.ArrayList;
 import java.util.List;
-import org.osgi.service.condpermadmin.ConditionalPermissionInfo;
-import org.osgi.service.condpermadmin.ConditionalPermissionUpdate;
+
+import org.fdesigner.framework.service.condpermadmin.ConditionalPermissionInfo;
+import org.fdesigner.framework.service.condpermadmin.ConditionalPermissionUpdate;
 
 public class SecurityTableUpdate implements ConditionalPermissionUpdate {
 

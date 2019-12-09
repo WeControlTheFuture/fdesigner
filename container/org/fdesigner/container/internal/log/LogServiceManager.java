@@ -8,7 +8,7 @@
  *
  * SPDX-License-Identifier: EPL-2.0
  ******************************************************************************/
-package org.eclipse.osgi.internal.log;
+package org.fdesigner.container.internal.log;
 
 import java.io.File;
 import java.io.InputStream;
@@ -20,29 +20,30 @@ import java.util.HashMap;
 import java.util.Hashtable;
 import java.util.List;
 import java.util.Map;
-import org.eclipse.equinox.log.ExtendedLogReaderService;
-import org.eclipse.equinox.log.ExtendedLogService;
-import org.eclipse.equinox.log.LogFilter;
-import org.eclipse.osgi.internal.framework.BundleContextImpl;
-import org.eclipse.osgi.internal.framework.EquinoxContainer;
-import org.osgi.framework.Bundle;
-import org.osgi.framework.BundleContext;
-import org.osgi.framework.BundleEvent;
-import org.osgi.framework.Constants;
-import org.osgi.framework.FrameworkEvent;
-import org.osgi.framework.FrameworkListener;
-import org.osgi.framework.ServiceEvent;
-import org.osgi.framework.ServiceListener;
-import org.osgi.framework.ServiceReference;
-import org.osgi.framework.ServiceRegistration;
-import org.osgi.framework.SynchronousBundleListener;
-import org.osgi.framework.Version;
-import org.osgi.service.log.LogLevel;
-import org.osgi.service.log.LogListener;
-import org.osgi.service.log.LogReaderService;
-import org.osgi.service.log.LogService;
-import org.osgi.service.log.LoggerFactory;
-import org.osgi.service.log.admin.LoggerAdmin;
+
+import org.fdesigner.container.internal.framework.BundleContextImpl;
+import org.fdesigner.container.internal.framework.EquinoxContainer;
+import org.fdesigner.framework.framework.Bundle;
+import org.fdesigner.framework.framework.BundleContext;
+import org.fdesigner.framework.framework.BundleEvent;
+import org.fdesigner.framework.framework.Constants;
+import org.fdesigner.framework.framework.FrameworkEvent;
+import org.fdesigner.framework.framework.FrameworkListener;
+import org.fdesigner.framework.framework.ServiceEvent;
+import org.fdesigner.framework.framework.ServiceListener;
+import org.fdesigner.framework.framework.ServiceReference;
+import org.fdesigner.framework.framework.ServiceRegistration;
+import org.fdesigner.framework.framework.SynchronousBundleListener;
+import org.fdesigner.framework.framework.Version;
+import org.fdesigner.framework.service.log.LogLevel;
+import org.fdesigner.framework.service.log.LogListener;
+import org.fdesigner.framework.service.log.LogReaderService;
+import org.fdesigner.framework.service.log.LogService;
+import org.fdesigner.framework.service.log.LoggerFactory;
+import org.fdesigner.framework.service.log.admin.LoggerAdmin;
+import org.fdesigner.supplement.log.ExtendedLogReaderService;
+import org.fdesigner.supplement.log.ExtendedLogService;
+import org.fdesigner.supplement.log.LogFilter;
 
 public class LogServiceManager implements SynchronousBundleListener, FrameworkListener, ServiceListener {
 	private static final String LOGGER_FRAMEWORK_EVENT = "Events.Framework"; //$NON-NLS-1$

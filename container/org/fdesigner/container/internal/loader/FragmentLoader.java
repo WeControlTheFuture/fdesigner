@@ -11,12 +11,15 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.osgi.internal.loader;
+package org.fdesigner.container.internal.loader;
 
 import java.net.URL;
-import java.util.*;
-import org.eclipse.osgi.container.ModuleLoader;
-import org.eclipse.osgi.container.ModuleRevision;
+import java.util.Collection;
+import java.util.Collections;
+import java.util.List;
+
+import org.fdesigner.container.ModuleLoader;
+import org.fdesigner.container.ModuleRevision;
 
 public class FragmentLoader extends ModuleLoader {
 

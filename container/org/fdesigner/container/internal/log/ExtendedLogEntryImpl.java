@@ -8,15 +8,16 @@
  *
  * SPDX-License-Identifier: EPL-2.0
  ******************************************************************************/
-package org.eclipse.osgi.internal.log;
+package org.fdesigner.container.internal.log;
 
 import java.util.Map;
 import java.util.WeakHashMap;
-import org.eclipse.equinox.log.ExtendedLogEntry;
-import org.osgi.framework.Bundle;
-import org.osgi.framework.ServiceReference;
-import org.osgi.service.log.LogEntry;
-import org.osgi.service.log.LogLevel;
+
+import org.fdesigner.framework.framework.Bundle;
+import org.fdesigner.framework.framework.ServiceReference;
+import org.fdesigner.framework.service.log.LogEntry;
+import org.fdesigner.framework.service.log.LogLevel;
+import org.fdesigner.supplement.log.ExtendedLogEntry;
 
 public class ExtendedLogEntryImpl implements ExtendedLogEntry, LogEntry {
 

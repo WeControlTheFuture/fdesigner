@@ -11,14 +11,17 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.osgi.internal.provisional.service.security;
+package org.fdesigner.container.internal.provisional.service.security;
 
 import java.util.HashMap;
 import java.util.Map;
-import org.eclipse.osgi.framework.eventmgr.*;
-import org.eclipse.osgi.signedcontent.SignedContent;
-import org.osgi.framework.BundleContext;
-import org.osgi.util.tracker.ServiceTracker;
+
+import org.fdesigner.container.signedcontent.SignedContent;
+import org.fdesigner.framework.framework.BundleContext;
+import org.fdesigner.framework.util.tracker.ServiceTracker;
+import org.fdesigner.supplement.framework.eventmgr.EventDispatcher;
+import org.fdesigner.supplement.framework.eventmgr.EventManager;
+import org.fdesigner.supplement.framework.eventmgr.ListenerQueue;
 
 /**
  * An authorization engine is used to grant authorization to {@link SignedContent}.

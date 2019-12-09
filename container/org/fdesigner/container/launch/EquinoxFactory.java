@@ -11,11 +11,12 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.osgi.launch;
+package org.fdesigner.container.launch;
 
 import java.util.Map;
-import org.osgi.framework.launch.Framework;
-import org.osgi.framework.launch.FrameworkFactory;
+
+import org.fdesigner.framework.framework.launch.Framework;
+import org.fdesigner.framework.framework.launch.FrameworkFactory;
 
 /**
  * The framework factory implementation for the Equinox framework.

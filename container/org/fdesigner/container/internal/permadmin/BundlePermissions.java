@@ -11,13 +11,16 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.osgi.internal.permadmin;
+package org.fdesigner.container.internal.permadmin;
 
-import java.security.*;
+import java.security.Permission;
+import java.security.PermissionCollection;
+import java.security.Permissions;
 import java.util.Enumeration;
 import java.util.NoSuchElementException;
-import org.osgi.framework.Bundle;
-import org.osgi.framework.PackagePermission;
+
+import org.fdesigner.framework.framework.Bundle;
+import org.fdesigner.framework.framework.PackagePermission;
 
 public final class BundlePermissions extends PermissionCollection {
 	private static final long serialVersionUID = -5443618108312606612L;

@@ -9,13 +9,20 @@
  * SPDX-License-Identifier: EPL-2.0
  *
  *******************************************************************************/
-package org.eclipse.osgi.internal.url;
+package org.fdesigner.container.internal.url;
 
 import java.io.IOException;
-import java.lang.reflect.*;
-import java.net.*;
+import java.lang.reflect.Field;
+import java.lang.reflect.InvocationTargetException;
+import java.lang.reflect.Method;
+import java.net.InetAddress;
+import java.net.MalformedURLException;
 import java.net.Proxy;
-import org.eclipse.osgi.framework.log.FrameworkLogEntry;
+import java.net.URL;
+import java.net.URLConnection;
+import java.net.URLStreamHandler;
+
+import org.fdesigner.supplement.framework.log.FrameworkLogEntry;
 
 public class MultiplexingURLStreamHandler extends URLStreamHandler {
 	private static Method openConnectionMethod;

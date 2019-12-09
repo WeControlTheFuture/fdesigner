@@ -12,11 +12,11 @@
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
 
-package org.eclipse.osgi.internal.serviceregistry;
+package org.fdesigner.container.internal.serviceregistry;
 
-import org.eclipse.osgi.internal.framework.BundleContextImpl;
-import org.eclipse.osgi.internal.messages.Msg;
-import org.osgi.framework.ServiceException;
+import org.fdesigner.container.internal.framework.BundleContextImpl;
+import org.fdesigner.framework.framework.ServiceException;
+import org.fdesigner.supplement.internal.messages.Msg;
 
 /**
  * This class represents the use of a service by a bundle. One is created for each

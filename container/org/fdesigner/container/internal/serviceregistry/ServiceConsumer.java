@@ -12,7 +12,7 @@
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
 
-package org.eclipse.osgi.internal.serviceregistry;
+package org.fdesigner.container.internal.serviceregistry;
 
 /**
  * Closure to allow sharing the same code for getting and ungetting a service.

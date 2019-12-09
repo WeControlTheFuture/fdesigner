@@ -20,14 +20,16 @@
  * SPDX-License-Identifier: EPL-2.0 OR Apache-2.0 OR GPL-2.0 WITH Classpath-exception-2.0 OR LicenseRef-GPL-2.0 WITH Assembly-exception
  *******************************************************************************/
 
-package org.eclipse.osgi.internal.cds;
+package org.fdesigner.container.internal.cds;
 
-import com.ibm.oti.shared.SharedClassURLHelper;
 import java.net.MalformedURLException;
 import java.net.URL;
-import org.eclipse.osgi.storage.bundlefile.BundleEntry;
-import org.eclipse.osgi.storage.bundlefile.BundleFile;
-import org.eclipse.osgi.storage.bundlefile.BundleFileWrapper;
+
+import org.fdesigner.container.storage.bundlefile.BundleEntry;
+import org.fdesigner.container.storage.bundlefile.BundleFile;
+import org.fdesigner.container.storage.bundlefile.BundleFileWrapper;
+
+import com.ibm.oti.shared.SharedClassURLHelper;
 
 /**
  * Wraps an actual BundleFile object for purposes of loading classes from the

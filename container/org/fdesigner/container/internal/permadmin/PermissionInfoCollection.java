@@ -11,7 +11,7 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.osgi.internal.permadmin;
+package org.fdesigner.container.internal.permadmin;
 
 import java.io.File;
 import java.lang.reflect.Constructor;
@@ -24,7 +24,8 @@ import java.security.PrivilegedExceptionAction;
 import java.util.Enumeration;
 import java.util.HashMap;
 import java.util.Map;
-import org.osgi.service.permissionadmin.PermissionInfo;
+
+import org.fdesigner.framework.service.permissionadmin.PermissionInfo;
 
 public final class PermissionInfoCollection extends PermissionCollection {
 	private static final long serialVersionUID = 3140511562980923957L;

@@ -12,13 +12,20 @@
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
 
-package org.eclipse.osgi.internal.serviceregistry;
+package org.fdesigner.container.internal.serviceregistry;
 
-import org.eclipse.osgi.internal.debug.Debug;
-import org.eclipse.osgi.internal.framework.BundleContextImpl;
-import org.eclipse.osgi.internal.framework.FilterImpl;
-import org.osgi.framework.*;
-import org.osgi.framework.hooks.service.ListenerHook;
+import org.fdesigner.container.internal.debug.Debug;
+import org.fdesigner.container.internal.framework.BundleContextImpl;
+import org.fdesigner.container.internal.framework.FilterImpl;
+import org.fdesigner.framework.framework.AllServiceListener;
+import org.fdesigner.framework.framework.BundleContext;
+import org.fdesigner.framework.framework.Constants;
+import org.fdesigner.framework.framework.InvalidSyntaxException;
+import org.fdesigner.framework.framework.ServiceEvent;
+import org.fdesigner.framework.framework.ServiceListener;
+import org.fdesigner.framework.framework.ServiceReference;
+import org.fdesigner.framework.framework.UnfilteredServiceListener;
+import org.fdesigner.framework.framework.hooks.service.ListenerHook;
 
 /**
  * Service Listener delegate.

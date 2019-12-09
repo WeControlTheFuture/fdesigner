@@ -12,14 +12,26 @@
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
 
-package org.eclipse.osgi.internal.serviceregistry;
+package org.fdesigner.container.internal.serviceregistry;
 
-import java.util.*;
-import org.eclipse.osgi.internal.debug.Debug;
-import org.eclipse.osgi.internal.framework.BundleContextImpl;
-import org.eclipse.osgi.internal.loader.sources.PackageSource;
-import org.eclipse.osgi.internal.messages.Msg;
-import org.osgi.framework.*;
+import java.util.ArrayList;
+import java.util.Dictionary;
+import java.util.List;
+import java.util.Map;
+
+import org.fdesigner.container.internal.debug.Debug;
+import org.fdesigner.container.internal.framework.BundleContextImpl;
+import org.fdesigner.container.internal.loader.sources.PackageSource;
+import org.fdesigner.framework.framework.Bundle;
+import org.fdesigner.framework.framework.Constants;
+import org.fdesigner.framework.framework.FrameworkEvent;
+import org.fdesigner.framework.framework.PrototypeServiceFactory;
+import org.fdesigner.framework.framework.ServiceEvent;
+import org.fdesigner.framework.framework.ServiceException;
+import org.fdesigner.framework.framework.ServiceFactory;
+import org.fdesigner.framework.framework.ServiceReference;
+import org.fdesigner.framework.framework.ServiceRegistration;
+import org.fdesigner.supplement.internal.messages.Msg;
 
 /**
  * A registered service.

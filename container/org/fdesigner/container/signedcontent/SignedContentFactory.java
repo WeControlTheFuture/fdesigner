@@ -11,13 +11,17 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.osgi.signedcontent;
+package org.fdesigner.container.signedcontent;
 
 import java.io.File;
 import java.io.IOException;
-import java.security.*;
+import java.security.InvalidKeyException;
+import java.security.NoSuchAlgorithmException;
+import java.security.NoSuchProviderException;
+import java.security.SignatureException;
 import java.security.cert.CertificateException;
-import org.osgi.framework.Bundle;
+
+import org.fdesigner.framework.framework.Bundle;
 
 /**
  * A factory used to create {@link SignedContent} objects.

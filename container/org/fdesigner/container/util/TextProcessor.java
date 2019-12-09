@@ -11,7 +11,7 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.osgi.util;
+package org.fdesigner.container.util;
 
 import java.util.Locale;
 

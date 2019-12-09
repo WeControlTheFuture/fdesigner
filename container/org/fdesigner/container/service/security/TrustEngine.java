@@ -11,12 +11,13 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.osgi.service.security;
+package org.fdesigner.container.service.security;
 
 import java.io.IOException;
 import java.security.GeneralSecurityException;
 import java.security.cert.Certificate;
-import org.eclipse.osgi.internal.signedcontent.TrustEngineListener;
+
+import org.fdesigner.container.internal.signedcontent.TrustEngineListener;
 
 /**
  * A <code>TrustEngine</code> is used to establish the authenticity of a 

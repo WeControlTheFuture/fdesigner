@@ -13,7 +13,7 @@
  *     Rob Harrop - SpringSource Inc. (bug 253942)
  *******************************************************************************/
 
-package org.eclipse.osgi.storage.bundlefile;
+package org.fdesigner.container.storage.bundlefile;
 
 import java.io.File;
 import java.io.IOException;
@@ -22,10 +22,11 @@ import java.util.Enumeration;
 import java.util.Iterator;
 import java.util.zip.ZipEntry;
 import java.util.zip.ZipFile;
-import org.eclipse.osgi.internal.debug.Debug;
-import org.eclipse.osgi.internal.messages.Msg;
-import org.eclipse.osgi.storage.BundleInfo;
-import org.eclipse.osgi.util.NLS;
+
+import org.fdesigner.container.internal.debug.Debug;
+import org.fdesigner.container.storage.BundleInfo;
+import org.fdesigner.supplement.internal.messages.Msg;
+import org.fdesigner.supplement.util.NLS;
 
 /**
  * A BundleFile that uses a ZipFile as it base file.

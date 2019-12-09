@@ -11,7 +11,7 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.osgi.storage;
+package org.fdesigner.container.storage;
 
 import java.io.IOException;
 import java.io.InputStream;
@@ -27,14 +27,15 @@ import java.util.Map.Entry;
 import java.util.MissingResourceException;
 import java.util.PropertyResourceBundle;
 import java.util.ResourceBundle;
-import org.eclipse.osgi.container.Module;
-import org.eclipse.osgi.container.ModuleWire;
-import org.eclipse.osgi.container.ModuleWiring;
-import org.eclipse.osgi.framework.util.CaseInsensitiveDictionaryMap;
-import org.eclipse.osgi.storage.BundleInfo.Generation;
-import org.osgi.framework.Constants;
-import org.osgi.framework.namespace.HostNamespace;
-import org.osgi.framework.wiring.BundleRevision;
+
+import org.fdesigner.container.Module;
+import org.fdesigner.container.ModuleWire;
+import org.fdesigner.container.ModuleWiring;
+import org.fdesigner.container.framework.util.CaseInsensitiveDictionaryMap;
+import org.fdesigner.container.storage.BundleInfo.Generation;
+import org.fdesigner.framework.framework.Constants;
+import org.fdesigner.framework.framework.namespace.HostNamespace;
+import org.fdesigner.framework.framework.wiring.BundleRevision;
 
 /**
  * This class is used to localize manifest headers for a revision.

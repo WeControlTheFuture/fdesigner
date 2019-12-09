@@ -8,7 +8,7 @@
  *
  * SPDX-License-Identifier: EPL-2.0
  ******************************************************************************/
-package org.eclipse.osgi.internal.log;
+package org.fdesigner.container.internal.log;
 
 import java.security.AccessController;
 import java.security.Permission;
@@ -16,19 +16,20 @@ import java.util.Collections;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.concurrent.locks.ReentrantReadWriteLock;
-import org.eclipse.equinox.log.ExtendedLogService;
-import org.eclipse.equinox.log.LogPermission;
-import org.eclipse.osgi.framework.util.SecureAction;
-import org.osgi.framework.Bundle;
-import org.osgi.framework.BundleEvent;
-import org.osgi.framework.BundleListener;
-import org.osgi.framework.ServiceFactory;
-import org.osgi.framework.ServiceReference;
-import org.osgi.framework.ServiceRegistration;
-import org.osgi.service.log.LogLevel;
-import org.osgi.service.log.Logger;
-import org.osgi.service.log.admin.LoggerAdmin;
-import org.osgi.service.log.admin.LoggerContext;
+
+import org.fdesigner.container.framework.util.SecureAction;
+import org.fdesigner.framework.framework.Bundle;
+import org.fdesigner.framework.framework.BundleEvent;
+import org.fdesigner.framework.framework.BundleListener;
+import org.fdesigner.framework.framework.ServiceFactory;
+import org.fdesigner.framework.framework.ServiceReference;
+import org.fdesigner.framework.framework.ServiceRegistration;
+import org.fdesigner.framework.service.log.LogLevel;
+import org.fdesigner.framework.service.log.Logger;
+import org.fdesigner.framework.service.log.admin.LoggerAdmin;
+import org.fdesigner.framework.service.log.admin.LoggerContext;
+import org.fdesigner.supplement.log.ExtendedLogService;
+import org.fdesigner.supplement.log.LogPermission;
 
 public class ExtendedLogServiceFactory implements ServiceFactory<ExtendedLogService>, BundleListener {
 	static final SecureAction secureAction = AccessController.doPrivileged(SecureAction.createSecureAction());

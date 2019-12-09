@@ -12,20 +12,48 @@
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
 
-package org.eclipse.osgi.internal.framework;
+package org.fdesigner.container.internal.framework;
 
 import java.lang.reflect.Array;
-import java.util.*;
-import org.osgi.dto.DTO;
-import org.osgi.framework.*;
-import org.osgi.framework.dto.*;
-import org.osgi.framework.startlevel.BundleStartLevel;
-import org.osgi.framework.startlevel.FrameworkStartLevel;
-import org.osgi.framework.startlevel.dto.BundleStartLevelDTO;
-import org.osgi.framework.startlevel.dto.FrameworkStartLevelDTO;
-import org.osgi.framework.wiring.*;
-import org.osgi.framework.wiring.dto.*;
-import org.osgi.resource.dto.*;
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.HashMap;
+import java.util.HashSet;
+import java.util.IdentityHashMap;
+import java.util.List;
+import java.util.ListIterator;
+import java.util.Map;
+import java.util.Set;
+
+import org.fdesigner.framework.dto.DTO;
+import org.fdesigner.framework.framework.Bundle;
+import org.fdesigner.framework.framework.BundleContext;
+import org.fdesigner.framework.framework.Constants;
+import org.fdesigner.framework.framework.InvalidSyntaxException;
+import org.fdesigner.framework.framework.ServiceReference;
+import org.fdesigner.framework.framework.Version;
+import org.fdesigner.framework.framework.dto.BundleDTO;
+import org.fdesigner.framework.framework.dto.FrameworkDTO;
+import org.fdesigner.framework.framework.dto.ServiceReferenceDTO;
+import org.fdesigner.framework.framework.startlevel.BundleStartLevel;
+import org.fdesigner.framework.framework.startlevel.FrameworkStartLevel;
+import org.fdesigner.framework.framework.startlevel.dto.BundleStartLevelDTO;
+import org.fdesigner.framework.framework.startlevel.dto.FrameworkStartLevelDTO;
+import org.fdesigner.framework.framework.wiring.BundleCapability;
+import org.fdesigner.framework.framework.wiring.BundleRequirement;
+import org.fdesigner.framework.framework.wiring.BundleRevision;
+import org.fdesigner.framework.framework.wiring.BundleRevisions;
+import org.fdesigner.framework.framework.wiring.BundleWire;
+import org.fdesigner.framework.framework.wiring.BundleWiring;
+import org.fdesigner.framework.framework.wiring.dto.BundleRevisionDTO;
+import org.fdesigner.framework.framework.wiring.dto.BundleWireDTO;
+import org.fdesigner.framework.framework.wiring.dto.BundleWiringDTO;
+import org.fdesigner.framework.framework.wiring.dto.FrameworkWiringDTO;
+import org.fdesigner.framework.resource.dto.CapabilityDTO;
+import org.fdesigner.framework.resource.dto.CapabilityRefDTO;
+import org.fdesigner.framework.resource.dto.RequirementDTO;
+import org.fdesigner.framework.resource.dto.RequirementRefDTO;
+import org.fdesigner.framework.resource.dto.WireDTO;
 
 public class DTOBuilder {
 	private final Map<BundleRevision, BundleRevisionDTO> resources;

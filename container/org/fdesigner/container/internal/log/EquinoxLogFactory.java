@@ -12,19 +12,20 @@
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
 
-package org.eclipse.osgi.internal.log;
+package org.fdesigner.container.internal.log;
 
 import java.io.File;
 import java.io.IOException;
 import java.io.Writer;
-import org.eclipse.equinox.log.Logger;
-import org.eclipse.osgi.framework.log.FrameworkLog;
-import org.eclipse.osgi.framework.log.FrameworkLogEntry;
-import org.osgi.framework.Bundle;
-import org.osgi.framework.FrameworkEvent;
-import org.osgi.framework.ServiceFactory;
-import org.osgi.framework.ServiceRegistration;
-import org.osgi.service.log.LogService;
+
+import org.fdesigner.framework.framework.Bundle;
+import org.fdesigner.framework.framework.FrameworkEvent;
+import org.fdesigner.framework.framework.ServiceFactory;
+import org.fdesigner.framework.framework.ServiceRegistration;
+import org.fdesigner.framework.service.log.LogService;
+import org.fdesigner.supplement.framework.log.FrameworkLog;
+import org.fdesigner.supplement.framework.log.FrameworkLogEntry;
+import org.fdesigner.supplement.log.Logger;
 
 class EquinoxLogFactory implements ServiceFactory<FrameworkLog> {
 	final EquinoxLogWriter defaultWriter;

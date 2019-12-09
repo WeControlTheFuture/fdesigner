@@ -12,39 +12,40 @@
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
 
-package org.eclipse.osgi.internal.framework;
+package org.fdesigner.container.internal.framework;
 
 import java.util.ArrayList;
 import java.util.Dictionary;
 import java.util.Hashtable;
 import java.util.List;
-import org.apache.felix.resolver.Logger;
-import org.apache.felix.resolver.ResolverImpl;
-import org.eclipse.osgi.internal.debug.Debug;
-import org.eclipse.osgi.internal.debug.FrameworkDebugOptions;
-import org.eclipse.osgi.internal.location.EquinoxLocations;
-import org.eclipse.osgi.internal.permadmin.EquinoxSecurityManager;
-import org.eclipse.osgi.internal.permadmin.SecurityAdmin;
-import org.eclipse.osgi.internal.url.EquinoxFactoryManager;
-import org.eclipse.osgi.service.datalocation.Location;
-import org.eclipse.osgi.service.debug.DebugOptions;
-import org.eclipse.osgi.service.debug.DebugOptionsListener;
-import org.eclipse.osgi.service.environment.EnvironmentInfo;
-import org.eclipse.osgi.service.localization.BundleLocalization;
-import org.eclipse.osgi.service.urlconversion.URLConverter;
-import org.eclipse.osgi.storage.BundleLocalizationImpl;
-import org.eclipse.osgi.storage.url.BundleResourceHandler;
-import org.eclipse.osgi.storage.url.BundleURLConverter;
-import org.osgi.framework.BundleActivator;
-import org.osgi.framework.BundleContext;
-import org.osgi.framework.BundleException;
-import org.osgi.framework.Constants;
-import org.osgi.framework.ServiceRegistration;
-import org.osgi.service.condpermadmin.ConditionalPermissionAdmin;
-import org.osgi.service.packageadmin.PackageAdmin;
-import org.osgi.service.permissionadmin.PermissionAdmin;
-import org.osgi.service.resolver.Resolver;
-import org.osgi.service.startlevel.StartLevel;
+
+import org.fdesigner.container.internal.debug.Debug;
+import org.fdesigner.container.internal.debug.FrameworkDebugOptions;
+import org.fdesigner.container.internal.location.EquinoxLocations;
+import org.fdesigner.container.internal.permadmin.EquinoxSecurityManager;
+import org.fdesigner.container.internal.permadmin.SecurityAdmin;
+import org.fdesigner.container.internal.url.EquinoxFactoryManager;
+import org.fdesigner.container.storage.BundleLocalizationImpl;
+import org.fdesigner.container.storage.url.BundleResourceHandler;
+import org.fdesigner.container.storage.url.BundleURLConverter;
+import org.fdesigner.felix.Logger;
+import org.fdesigner.felix.ResolverImpl;
+import org.fdesigner.framework.framework.BundleActivator;
+import org.fdesigner.framework.framework.BundleContext;
+import org.fdesigner.framework.framework.BundleException;
+import org.fdesigner.framework.framework.Constants;
+import org.fdesigner.framework.framework.ServiceRegistration;
+import org.fdesigner.framework.service.condpermadmin.ConditionalPermissionAdmin;
+import org.fdesigner.framework.service.packageadmin.PackageAdmin;
+import org.fdesigner.framework.service.permissionadmin.PermissionAdmin;
+import org.fdesigner.framework.service.resolver.Resolver;
+import org.fdesigner.framework.service.startlevel.StartLevel;
+import org.fdesigner.supplement.service.datalocation.Location;
+import org.fdesigner.supplement.service.debug.DebugOptions;
+import org.fdesigner.supplement.service.debug.DebugOptionsListener;
+import org.fdesigner.supplement.service.environment.EnvironmentInfo;
+import org.fdesigner.supplement.service.localization.BundleLocalization;
+import org.fdesigner.supplement.service.urlconversion.URLConverter;
 
 /**
  * This class activates the System Bundle.

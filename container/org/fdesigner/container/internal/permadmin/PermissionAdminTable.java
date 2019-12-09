@@ -11,11 +11,12 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.osgi.internal.permadmin;
+package org.fdesigner.container.internal.permadmin;
 
 import java.util.HashMap;
 import java.util.Map;
-import org.osgi.service.permissionadmin.PermissionInfo;
+
+import org.fdesigner.framework.service.permissionadmin.PermissionInfo;
 
 public class PermissionAdminTable {
 	private final Map<String, PermissionInfoCollection> locations = new HashMap<>();

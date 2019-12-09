@@ -12,11 +12,12 @@
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
 
-package org.eclipse.osgi.internal.loader.classpath;
+package org.fdesigner.container.internal.loader.classpath;
 
 import java.io.IOException;
-import org.eclipse.osgi.container.ModuleContainerAdaptor.ContainerEvent;
-import org.eclipse.osgi.storage.BundleInfo.Generation;
+
+import org.fdesigner.container.ModuleContainerAdaptor.ContainerEvent;
+import org.fdesigner.container.storage.BundleInfo.Generation;
 
 /**
  * A FragmentClasspath contains all the <code>ClasspathEntry</code> objects for a fragment

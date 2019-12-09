@@ -12,7 +12,7 @@
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
 
-package org.eclipse.osgi.storage;
+package org.fdesigner.container.storage;
 
 import java.io.DataInputStream;
 import java.io.DataOutputStream;
@@ -26,10 +26,11 @@ import java.net.URL;
 import java.util.Dictionary;
 import java.util.Hashtable;
 import java.util.concurrent.TimeUnit;
-import org.eclipse.osgi.internal.debug.Debug;
-import org.osgi.framework.BundleContext;
-import org.osgi.framework.Constants;
-import org.osgi.framework.ServiceRegistration;
+
+import org.fdesigner.container.internal.debug.Debug;
+import org.fdesigner.framework.framework.BundleContext;
+import org.fdesigner.framework.framework.Constants;
+import org.fdesigner.framework.framework.ServiceRegistration;
 
 /**
  * A utility class with some generally useful static methods for adaptor hook implementations

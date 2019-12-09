@@ -11,7 +11,7 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.osgi.internal.permadmin;
+package org.fdesigner.container.internal.permadmin;
 
 import java.io.BufferedReader;
 import java.io.DataInputStream;
@@ -49,20 +49,21 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
 import java.util.Set;
-import org.eclipse.osgi.internal.framework.EquinoxBundle;
-import org.eclipse.osgi.storage.PermissionData;
-import org.osgi.framework.AdminPermission;
-import org.osgi.framework.Bundle;
-import org.osgi.framework.BundleContext;
-import org.osgi.framework.BundleException;
-import org.osgi.framework.ServiceReference;
-import org.osgi.framework.Version;
-import org.osgi.service.condpermadmin.ConditionInfo;
-import org.osgi.service.condpermadmin.ConditionalPermissionAdmin;
-import org.osgi.service.condpermadmin.ConditionalPermissionInfo;
-import org.osgi.service.condpermadmin.ConditionalPermissionUpdate;
-import org.osgi.service.permissionadmin.PermissionAdmin;
-import org.osgi.service.permissionadmin.PermissionInfo;
+
+import org.fdesigner.container.internal.framework.EquinoxBundle;
+import org.fdesigner.container.storage.PermissionData;
+import org.fdesigner.framework.framework.AdminPermission;
+import org.fdesigner.framework.framework.Bundle;
+import org.fdesigner.framework.framework.BundleContext;
+import org.fdesigner.framework.framework.BundleException;
+import org.fdesigner.framework.framework.ServiceReference;
+import org.fdesigner.framework.framework.Version;
+import org.fdesigner.framework.service.condpermadmin.ConditionInfo;
+import org.fdesigner.framework.service.condpermadmin.ConditionalPermissionAdmin;
+import org.fdesigner.framework.service.condpermadmin.ConditionalPermissionInfo;
+import org.fdesigner.framework.service.condpermadmin.ConditionalPermissionUpdate;
+import org.fdesigner.framework.service.permissionadmin.PermissionAdmin;
+import org.fdesigner.framework.service.permissionadmin.PermissionInfo;
 
 public final class SecurityAdmin implements PermissionAdmin, ConditionalPermissionAdmin {
 	private static final PermissionCollection DEFAULT_DEFAULT;

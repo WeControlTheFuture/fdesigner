@@ -12,7 +12,7 @@
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
 
-package org.eclipse.osgi.internal.hookregistry;
+package org.fdesigner.container.internal.hookregistry;
 
 import java.io.DataInputStream;
 import java.io.DataOutputStream;
@@ -20,14 +20,15 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.net.URLConnection;
 import java.util.Dictionary;
-import org.eclipse.osgi.container.Module;
-import org.eclipse.osgi.container.ModuleContainer;
-import org.eclipse.osgi.container.ModuleContainerAdaptor;
-import org.eclipse.osgi.container.ModuleContainerAdaptor.ModuleEvent;
-import org.eclipse.osgi.container.ModuleRevision;
-import org.eclipse.osgi.container.ModuleRevisionBuilder;
-import org.eclipse.osgi.storage.BundleInfo.Generation;
-import org.osgi.framework.BundleException;
+
+import org.fdesigner.container.Module;
+import org.fdesigner.container.ModuleContainer;
+import org.fdesigner.container.ModuleContainerAdaptor;
+import org.fdesigner.container.ModuleContainerAdaptor.ModuleEvent;
+import org.fdesigner.container.ModuleRevision;
+import org.fdesigner.container.ModuleRevisionBuilder;
+import org.fdesigner.container.storage.BundleInfo.Generation;
+import org.fdesigner.framework.framework.BundleException;
 
 /**
  * A StorageHookFactory hooks into the persistent storage loading and saving of bundle {@link Generation generations}.

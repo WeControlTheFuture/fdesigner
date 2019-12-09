@@ -11,7 +11,7 @@
  * Contributors:
  *     Connexta, LLC - initial implementation
  *******************************************************************************/
-package org.eclipse.osgi.internal.permadmin;
+package org.fdesigner.container.internal.permadmin;
 
 import java.security.Permission;
 import java.util.Objects;

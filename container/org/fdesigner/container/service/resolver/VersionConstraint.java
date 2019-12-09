@@ -11,9 +11,9 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.osgi.service.resolver;
+package org.fdesigner.container.service.resolver;
 
-import org.osgi.framework.wiring.BundleRequirement;
+import org.fdesigner.framework.framework.wiring.BundleRequirement;
 
 /**
  * VersionConstraints represent the relationship between two bundles (in the 

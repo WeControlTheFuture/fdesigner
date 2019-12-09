@@ -11,12 +11,17 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.osgi.internal.log;
+package org.fdesigner.container.internal.log;
 
-import java.util.*;
-import org.osgi.framework.*;
-import org.osgi.util.tracker.ServiceTracker;
-import org.osgi.util.tracker.ServiceTrackerCustomizer;
+import java.util.Arrays;
+import java.util.Collection;
+import java.util.HashSet;
+
+import org.fdesigner.framework.framework.BundleContext;
+import org.fdesigner.framework.framework.Constants;
+import org.fdesigner.framework.framework.ServiceReference;
+import org.fdesigner.framework.util.tracker.ServiceTracker;
+import org.fdesigner.framework.util.tracker.ServiceTrackerCustomizer;
 
 public class EventAdminAdapter implements ServiceTrackerCustomizer<Object, Object> {
 	public static final String EVENT_TOPIC = "event.topics"; //$NON-NLS-1$

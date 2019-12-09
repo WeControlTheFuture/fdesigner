@@ -11,9 +11,9 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.osgi.container.namespaces;
+package org.fdesigner.container.namespaces;
 
-import org.osgi.resource.Namespace;
+import org.fdesigner.framework.resource.Namespace;
 
 /**
  * Equinox Namespace for fragment capabilities.

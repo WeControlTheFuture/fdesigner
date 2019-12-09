@@ -12,7 +12,7 @@
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
 
-package org.eclipse.osgi.storage.bundlefile;
+package org.fdesigner.container.storage.bundlefile;
 
 import java.io.IOException;
 import java.util.Collections;
@@ -21,10 +21,11 @@ import java.util.concurrent.TimeUnit;
 import java.util.concurrent.atomic.AtomicInteger;
 import java.util.concurrent.locks.Condition;
 import java.util.concurrent.locks.ReentrantLock;
-import org.eclipse.osgi.framework.eventmgr.EventDispatcher;
-import org.eclipse.osgi.framework.eventmgr.EventManager;
-import org.eclipse.osgi.framework.eventmgr.ListenerQueue;
-import org.eclipse.osgi.internal.debug.Debug;
+
+import org.fdesigner.container.internal.debug.Debug;
+import org.fdesigner.supplement.framework.eventmgr.EventDispatcher;
+import org.fdesigner.supplement.framework.eventmgr.EventManager;
+import org.fdesigner.supplement.framework.eventmgr.ListenerQueue;
 
 /**
  * A simple/quick/small implementation of an MRU (Most Recently Used) list to keep

@@ -11,9 +11,9 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.osgi.internal.hookregistry;
+package org.fdesigner.container.internal.hookregistry;
 
-import org.osgi.framework.BundleActivator;
+import org.fdesigner.framework.framework.BundleActivator;
 
 /**
  * A factory for creating bundle activators for an

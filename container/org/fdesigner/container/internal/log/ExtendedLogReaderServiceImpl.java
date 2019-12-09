@@ -8,13 +8,16 @@
  *
  * SPDX-License-Identifier: EPL-2.0
  ******************************************************************************/
-package org.eclipse.osgi.internal.log;
+package org.fdesigner.container.internal.log;
 
-import java.util.*;
-import org.eclipse.equinox.log.ExtendedLogReaderService;
-import org.eclipse.equinox.log.LogFilter;
-import org.osgi.service.log.LogEntry;
-import org.osgi.service.log.LogListener;
+import java.util.Enumeration;
+import java.util.HashSet;
+import java.util.Set;
+
+import org.fdesigner.framework.service.log.LogEntry;
+import org.fdesigner.framework.service.log.LogListener;
+import org.fdesigner.supplement.log.ExtendedLogReaderService;
+import org.fdesigner.supplement.log.LogFilter;
 
 public class ExtendedLogReaderServiceImpl implements ExtendedLogReaderService {
 

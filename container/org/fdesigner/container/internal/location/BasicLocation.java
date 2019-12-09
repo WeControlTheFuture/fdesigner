@@ -22,8 +22,11 @@ import org.fdesigner.container.internal.framework.EquinoxConfiguration.ConfigVal
 import org.fdesigner.container.internal.framework.EquinoxContainer;
 import org.fdesigner.container.internal.log.EquinoxLogServices;
 import org.fdesigner.supplement.framework.log.FrameworkLogEntry;
+import org.fdesigner.supplement.internal.location.LocationHelper;
 import org.fdesigner.supplement.internal.location.Locker;
+import org.fdesigner.supplement.internal.messages.Msg;
 import org.fdesigner.supplement.service.datalocation.Location;
+import org.fdesigner.supplement.util.NLS;
 
 /**
  * Internal class.

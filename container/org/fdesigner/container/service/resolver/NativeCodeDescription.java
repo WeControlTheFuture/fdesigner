@@ -11,9 +11,9 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.osgi.service.resolver;
+package org.fdesigner.container.service.resolver;
 
-import org.osgi.framework.Filter;
+import org.fdesigner.framework.framework.Filter;
 
 /**
  * This class represents a native code description.

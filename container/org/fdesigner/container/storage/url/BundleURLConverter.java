@@ -11,14 +11,15 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.osgi.storage.url;
+package org.fdesigner.container.storage.url;
 
 import java.io.IOException;
 import java.net.URL;
 import java.net.URLConnection;
-import org.eclipse.osgi.internal.messages.Msg;
-import org.eclipse.osgi.service.urlconversion.URLConverter;
-import org.eclipse.osgi.util.NLS;
+
+import org.fdesigner.supplement.internal.messages.Msg;
+import org.fdesigner.supplement.service.urlconversion.URLConverter;
+import org.fdesigner.supplement.util.NLS;
 
 /**
  * The service implementation that allows bundleresource or bundleentry

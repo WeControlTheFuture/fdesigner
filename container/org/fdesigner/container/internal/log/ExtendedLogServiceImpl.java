@@ -8,31 +8,32 @@
  *
  * SPDX-License-Identifier: EPL-2.0
  ******************************************************************************/
-package org.eclipse.osgi.internal.log;
+package org.fdesigner.container.internal.log;
 
 import java.util.HashMap;
 import java.util.Map;
-import org.eclipse.equinox.log.ExtendedLogService;
-import org.eclipse.equinox.log.Logger;
-import org.eclipse.osgi.internal.log.ExtendedLogServiceFactory.EquinoxLoggerContext;
-import org.osgi.framework.Bundle;
-import org.osgi.framework.ServiceReference;
-import org.osgi.service.log.FormatterLogger;
-import org.osgi.service.log.LoggerConsumer;
-import org.osgi.service.log.admin.LoggerContext;
+
+import org.fdesigner.container.internal.log.ExtendedLogServiceFactory.EquinoxLoggerContext;
+import org.fdesigner.framework.framework.Bundle;
+import org.fdesigner.framework.framework.ServiceReference;
+import org.fdesigner.framework.service.log.FormatterLogger;
+import org.fdesigner.framework.service.log.LoggerConsumer;
+import org.fdesigner.framework.service.log.admin.LoggerContext;
+import org.fdesigner.supplement.log.ExtendedLogService;
+import org.fdesigner.supplement.log.Logger;
 
 public class ExtendedLogServiceImpl implements ExtendedLogService {
 
 	private final ExtendedLogServiceFactory factory;
 	private volatile Bundle bundle;
-	private final Map<Class<? extends org.osgi.service.log.Logger>, Map<String, LoggerImpl>> loggerCache = new HashMap<>();
+	private final Map<Class<? extends org.fdesigner.framework.service.log.Logger>, Map<String, LoggerImpl>> loggerCache = new HashMap<>();
 	private final String LOG_SERVICE = "LogService"; //$NON-NLS-1$
 
 	public ExtendedLogServiceImpl(ExtendedLogServiceFactory factory, Bundle bundle) {
 		this.factory = factory;
 		this.bundle = bundle;
-		loggerCache.put(org.osgi.service.log.Logger.class, new HashMap<String, LoggerImpl>());
-		loggerCache.put(org.osgi.service.log.FormatterLogger.class, new HashMap<String, LoggerImpl>());
+		loggerCache.put(org.fdesigner.framework.service.log.Logger.class, new HashMap<String, LoggerImpl>());
+		loggerCache.put(org.fdesigner.framework.service.log.FormatterLogger.class, new HashMap<String, LoggerImpl>());
 	}
 
 	@SuppressWarnings("deprecation")
@@ -71,7 +72,7 @@ public class ExtendedLogServiceImpl implements ExtendedLogService {
 
 	@Override
 	public Logger getLogger(String name) {
-		return (Logger) getLogger(name, org.osgi.service.log.Logger.class);
+		return (Logger) getLogger(name, org.fdesigner.framework.service.log.Logger.class);
 	}
 
 	@Override
@@ -85,7 +86,7 @@ public class ExtendedLogServiceImpl implements ExtendedLogService {
 	}
 
 	@Override
-	public <L extends org.osgi.service.log.Logger> L getLogger(Bundle logBundle, String name, Class<L> loggerType) {
+	public <L extends org.fdesigner.framework.service.log.Logger> L getLogger(Bundle logBundle, String name, Class<L> loggerType) {
 		if (logBundle == null || (logBundle.getState() & (Bundle.INSTALLED | Bundle.UNINSTALLED)) != 0) {
 			throw new IllegalArgumentException("The bundle is not resolved: " + logBundle); //$NON-NLS-1$
 		}
@@ -128,12 +129,12 @@ public class ExtendedLogServiceImpl implements ExtendedLogService {
 	}
 
 	@Override
-	public org.osgi.service.log.Logger getLogger(Class<?> clazz) {
+	public org.fdesigner.framework.service.log.Logger getLogger(Class<?> clazz) {
 		return getLogger(clazz.getName());
 	}
 
 	@Override
-	public <L extends org.osgi.service.log.Logger> L getLogger(String name, Class<L> loggerType) {
+	public <L extends org.fdesigner.framework.service.log.Logger> L getLogger(String name, Class<L> loggerType) {
 		if (name == null) {
 			Bundle current = bundle;
 			String bsn = (current == null) ? null : current.getSymbolicName();
@@ -155,7 +156,7 @@ public class ExtendedLogServiceImpl implements ExtendedLogService {
 			LoggerContext loggerContext = factory.loggerContextTargetMap.getEffectiveLoggerContext(bundle);
 			if (loggerType == FormatterLogger.class) {
 				logger = new FormatterLoggerImpl(this, name, loggerContext);
-			} else if (loggerType == org.osgi.service.log.Logger.class) {
+			} else if (loggerType == org.fdesigner.framework.service.log.Logger.class) {
 				logger = new LoggerImpl(this, name, loggerContext);
 			} else {
 				throw new IllegalArgumentException(loggerType.getName());
@@ -176,7 +177,7 @@ public class ExtendedLogServiceImpl implements ExtendedLogService {
 	}
 
 	@Override
-	public <L extends org.osgi.service.log.Logger> L getLogger(Class<?> clazz, Class<L> loggerType) {
+	public <L extends org.fdesigner.framework.service.log.Logger> L getLogger(Class<?> clazz, Class<L> loggerType) {
 		return getLogger(clazz.getName(), loggerType);
 	}
 

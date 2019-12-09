@@ -12,17 +12,22 @@
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
 
-package org.eclipse.osgi.storage.url;
+package org.fdesigner.container.storage.url;
 
 import java.io.IOException;
-import java.net.*;
-import org.eclipse.osgi.container.Module;
-import org.eclipse.osgi.container.ModuleContainer;
-import org.eclipse.osgi.internal.messages.Msg;
-import org.eclipse.osgi.storage.bundlefile.BundleEntry;
-import org.eclipse.osgi.util.NLS;
-import org.osgi.framework.AdminPermission;
-import org.osgi.framework.Bundle;
+import java.net.InetAddress;
+import java.net.MalformedURLException;
+import java.net.URL;
+import java.net.URLConnection;
+import java.net.URLStreamHandler;
+
+import org.fdesigner.container.Module;
+import org.fdesigner.container.ModuleContainer;
+import org.fdesigner.container.storage.bundlefile.BundleEntry;
+import org.fdesigner.framework.framework.AdminPermission;
+import org.fdesigner.framework.framework.Bundle;
+import org.fdesigner.supplement.internal.messages.Msg;
+import org.fdesigner.supplement.util.NLS;
 
 /**
  * URLStreamHandler the bundleentry and bundleresource protocols.

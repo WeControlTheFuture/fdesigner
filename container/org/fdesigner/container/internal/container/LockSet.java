@@ -11,7 +11,7 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.osgi.internal.container;
+package org.fdesigner.container.internal.container;
 
 import java.util.HashMap;
 import java.util.Map;

@@ -11,7 +11,7 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.osgi.service.pluginconversion;
+package org.fdesigner.container.service.pluginconversion;
 
 import java.io.File;
 import java.util.Dictionary;

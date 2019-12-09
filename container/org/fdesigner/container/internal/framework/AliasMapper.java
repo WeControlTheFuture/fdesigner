@@ -11,14 +11,24 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.osgi.internal.framework;
+package org.fdesigner.container.internal.framework;
 
-import java.io.*;
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.InputStreamReader;
 import java.nio.charset.StandardCharsets;
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.Collections;
+import java.util.HashMap;
+import java.util.HashSet;
+import java.util.Map;
 import java.util.Map.Entry;
-import org.eclipse.osgi.internal.debug.Debug;
-import org.eclipse.osgi.internal.util.Tokenizer;
+import java.util.Set;
+
+import org.fdesigner.container.internal.debug.Debug;
+import org.fdesigner.supplement.internal.util.Tokenizer;
 
 /**
  * This class maps aliases.

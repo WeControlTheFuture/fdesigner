@@ -12,9 +12,9 @@
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
 
-package org.eclipse.osgi.internal.serviceregistry;
+package org.fdesigner.container.internal.serviceregistry;
 
-import org.osgi.framework.ServiceRegistration;
+import org.fdesigner.framework.framework.ServiceRegistration;
 
 /**
  * A callable hook that contains the context for call a collection of hooks.

@@ -11,7 +11,7 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.osgi.internal.provisional.verifier;
+package org.fdesigner.container.internal.provisional.verifier;
 
 import java.security.SignatureException;
 import java.security.cert.*;

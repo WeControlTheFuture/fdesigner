@@ -19,8 +19,8 @@ package org.fdesigner.framework.framework.wiring;
 import java.util.List;
 
 import org.fdesigner.common.ProviderType;
-import org.fdesigner.common.Version;
 import org.fdesigner.framework.framework.BundleReference;
+import org.fdesigner.framework.framework.Version;
 import org.fdesigner.framework.framework.namespace.BundleNamespace;
 import org.fdesigner.framework.framework.namespace.HostNamespace;
 import org.fdesigner.framework.framework.namespace.PackageNamespace;

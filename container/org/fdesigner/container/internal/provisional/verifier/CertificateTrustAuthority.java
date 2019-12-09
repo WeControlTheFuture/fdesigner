@@ -12,7 +12,7 @@
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
 
-package org.eclipse.osgi.internal.provisional.verifier;
+package org.fdesigner.container.internal.provisional.verifier;
 
 import java.security.cert.Certificate;
 import java.security.cert.CertificateException;

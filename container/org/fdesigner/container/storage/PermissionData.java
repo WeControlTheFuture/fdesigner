@@ -12,7 +12,7 @@
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
 
-package org.eclipse.osgi.storage;
+package org.fdesigner.container.storage;
 
 import java.io.*;
 import java.util.*;

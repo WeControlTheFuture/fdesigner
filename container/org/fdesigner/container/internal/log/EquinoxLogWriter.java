@@ -11,7 +11,7 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.osgi.internal.log;
+package org.fdesigner.container.internal.log;
 
 import java.io.BufferedWriter;
 import java.io.File;
@@ -28,19 +28,20 @@ import java.nio.charset.StandardCharsets;
 import java.util.Calendar;
 import java.util.Date;
 import java.util.Map;
-import org.eclipse.core.runtime.adaptor.EclipseStarter;
-import org.eclipse.equinox.log.ExtendedLogEntry;
-import org.eclipse.equinox.log.LogFilter;
-import org.eclipse.equinox.log.SynchronousLogListener;
-import org.eclipse.osgi.framework.log.FrameworkLogEntry;
-import org.eclipse.osgi.internal.framework.EquinoxConfiguration;
-import org.osgi.framework.Bundle;
-import org.osgi.framework.BundleException;
-import org.osgi.service.log.LogEntry;
-import org.osgi.service.log.LogLevel;
-import org.osgi.service.log.LogService;
-import org.osgi.service.log.admin.LoggerAdmin;
-import org.osgi.service.log.admin.LoggerContext;
+
+import org.fdesigner.container.internal.framework.EquinoxConfiguration;
+import org.fdesigner.framework.framework.Bundle;
+import org.fdesigner.framework.framework.BundleException;
+import org.fdesigner.framework.service.log.LogEntry;
+import org.fdesigner.framework.service.log.LogLevel;
+import org.fdesigner.framework.service.log.LogService;
+import org.fdesigner.framework.service.log.admin.LoggerAdmin;
+import org.fdesigner.framework.service.log.admin.LoggerContext;
+import org.fdesigner.main.EclipseStarter;
+import org.fdesigner.supplement.framework.log.FrameworkLogEntry;
+import org.fdesigner.supplement.log.ExtendedLogEntry;
+import org.fdesigner.supplement.log.LogFilter;
+import org.fdesigner.supplement.log.SynchronousLogListener;
 
 class EquinoxLogWriter implements SynchronousLogListener, LogFilter {
 	private static final String PASSWORD = "-password"; //$NON-NLS-1$	

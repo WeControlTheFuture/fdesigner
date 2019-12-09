@@ -11,19 +11,33 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.osgi.internal.service.security;
+package org.fdesigner.container.internal.service.security;
 
-import java.io.*;
-import java.security.*;
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.OutputStream;
+import java.security.GeneralSecurityException;
+import java.security.InvalidKeyException;
+import java.security.KeyStore;
+import java.security.KeyStoreException;
+import java.security.NoSuchAlgorithmException;
+import java.security.NoSuchProviderException;
+import java.security.SignatureException;
 import java.security.cert.Certificate;
 import java.security.cert.CertificateException;
 import java.security.cert.X509Certificate;
-import java.util.*;
-import org.eclipse.osgi.framework.log.FrameworkLogEntry;
-import org.eclipse.osgi.internal.signedcontent.SignedBundleHook;
-import org.eclipse.osgi.internal.signedcontent.SignedContentMessages;
-import org.eclipse.osgi.service.security.TrustEngine;
-import org.eclipse.osgi.util.NLS;
+import java.util.ArrayList;
+import java.util.Enumeration;
+import java.util.List;
+
+import org.fdesigner.container.internal.signedcontent.SignedBundleHook;
+import org.fdesigner.container.internal.signedcontent.SignedContentMessages;
+import org.fdesigner.container.service.security.TrustEngine;
+import org.fdesigner.supplement.framework.log.FrameworkLogEntry;
+import org.fdesigner.supplement.util.NLS;
 
 //*potential enhancements*
 // 1. reloading from the backing file when it changes

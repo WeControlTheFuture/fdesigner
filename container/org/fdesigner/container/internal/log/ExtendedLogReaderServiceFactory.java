@@ -8,7 +8,7 @@
  *
  * SPDX-License-Identifier: EPL-2.0
  ******************************************************************************/
-package org.eclipse.osgi.internal.log;
+package org.fdesigner.container.internal.log;
 
 import java.io.PrintStream;
 import java.security.AccessController;
@@ -25,18 +25,19 @@ import java.util.concurrent.ThreadPoolExecutor;
 import java.util.concurrent.TimeUnit;
 import java.util.concurrent.atomic.AtomicReference;
 import java.util.concurrent.locks.ReentrantReadWriteLock;
-import org.eclipse.equinox.log.LogFilter;
-import org.eclipse.equinox.log.SynchronousLogListener;
-import org.eclipse.osgi.framework.util.ArrayMap;
-import org.eclipse.osgi.internal.framework.EquinoxContainer;
-import org.eclipse.osgi.internal.log.OrderedExecutor.OrderedTaskQueue;
-import org.osgi.framework.Bundle;
-import org.osgi.framework.ServiceFactory;
-import org.osgi.framework.ServiceReference;
-import org.osgi.framework.ServiceRegistration;
-import org.osgi.service.log.LogEntry;
-import org.osgi.service.log.LogLevel;
-import org.osgi.service.log.LogListener;
+
+import org.fdesigner.container.framework.util.ArrayMap;
+import org.fdesigner.container.internal.framework.EquinoxContainer;
+import org.fdesigner.container.internal.log.OrderedExecutor.OrderedTaskQueue;
+import org.fdesigner.framework.framework.Bundle;
+import org.fdesigner.framework.framework.ServiceFactory;
+import org.fdesigner.framework.framework.ServiceReference;
+import org.fdesigner.framework.framework.ServiceRegistration;
+import org.fdesigner.framework.service.log.LogEntry;
+import org.fdesigner.framework.service.log.LogLevel;
+import org.fdesigner.framework.service.log.LogListener;
+import org.fdesigner.supplement.log.LogFilter;
+import org.fdesigner.supplement.log.SynchronousLogListener;
 
 public class ExtendedLogReaderServiceFactory implements ServiceFactory<ExtendedLogReaderServiceImpl> {
 

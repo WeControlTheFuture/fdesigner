@@ -10,10 +10,11 @@
  * 
  * Contributors: IBM Corporation - initial API and implementation
  ******************************************************************************/
-package org.eclipse.osgi.internal.signedcontent;
+package org.fdesigner.container.internal.signedcontent;
 
 import java.security.cert.Certificate;
-import org.eclipse.osgi.signedcontent.SignerInfo;
+
+import org.fdesigner.container.signedcontent.SignerInfo;
 
 public class SignerInfoImpl implements SignerInfo {
 	private final Certificate[] chain;

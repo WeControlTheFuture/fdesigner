@@ -20,13 +20,13 @@
  * SPDX-License-Identifier: EPL-2.0 OR Apache-2.0 OR GPL-2.0 WITH Classpath-exception-2.0 OR LicenseRef-GPL-2.0 WITH Assembly-exception
  *******************************************************************************/
 
-package org.eclipse.osgi.internal.cds;
+package org.fdesigner.container.internal.cds;
 
-import org.eclipse.osgi.framework.log.FrameworkLogEntry;
-import org.eclipse.osgi.internal.framework.EquinoxContainer;
-import org.eclipse.osgi.internal.hookregistry.HookConfigurator;
-import org.eclipse.osgi.internal.hookregistry.HookRegistry;
-import org.eclipse.osgi.internal.log.EquinoxLogServices;
+import org.fdesigner.container.internal.framework.EquinoxContainer;
+import org.fdesigner.container.internal.hookregistry.HookConfigurator;
+import org.fdesigner.container.internal.hookregistry.HookRegistry;
+import org.fdesigner.container.internal.log.EquinoxLogServices;
+import org.fdesigner.supplement.framework.log.FrameworkLogEntry;
 
 public class CDSHookConfigurator implements HookConfigurator {
 

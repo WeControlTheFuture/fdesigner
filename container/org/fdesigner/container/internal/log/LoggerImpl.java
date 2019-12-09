@@ -8,17 +8,18 @@
  *
  * SPDX-License-Identifier: EPL-2.0
  ******************************************************************************/
-package org.eclipse.osgi.internal.log;
+package org.fdesigner.container.internal.log;
 
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
-import org.eclipse.equinox.log.Logger;
-import org.osgi.framework.Bundle;
-import org.osgi.framework.ServiceReference;
-import org.osgi.service.log.LogLevel;
-import org.osgi.service.log.LogService;
-import org.osgi.service.log.LoggerConsumer;
-import org.osgi.service.log.admin.LoggerContext;
+
+import org.fdesigner.framework.framework.Bundle;
+import org.fdesigner.framework.framework.ServiceReference;
+import org.fdesigner.framework.service.log.LogLevel;
+import org.fdesigner.framework.service.log.LogService;
+import org.fdesigner.framework.service.log.LoggerConsumer;
+import org.fdesigner.framework.service.log.admin.LoggerContext;
+import org.fdesigner.supplement.log.Logger;
 
 public class LoggerImpl implements Logger {
 	static final String THIS_PACKAGE_NAME = LoggerImpl.class.getName().substring(0, LoggerImpl.class.getName().length() - LoggerImpl.class.getSimpleName().length());

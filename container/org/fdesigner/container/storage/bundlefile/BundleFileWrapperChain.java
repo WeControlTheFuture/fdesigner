@@ -12,9 +12,9 @@
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
 
-package org.eclipse.osgi.storage.bundlefile;
+package org.fdesigner.container.storage.bundlefile;
 
-import org.eclipse.osgi.internal.hookregistry.BundleFileWrapperFactoryHook;
+import org.fdesigner.container.internal.hookregistry.BundleFileWrapperFactoryHook;
 
 /**
  * Used to chain the BundleFile objects returned from {@link BundleFileWrapperFactoryHook}.  

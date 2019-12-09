@@ -10,7 +10,7 @@
  * 
  * Contributors: IBM Corporation - initial API and implementation
  ******************************************************************************/
-package org.eclipse.osgi.internal.signedcontent;
+package org.fdesigner.container.internal.signedcontent;
 
 import java.io.IOException;
 import java.io.InputStream;
@@ -24,13 +24,14 @@ import java.util.Date;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-import org.eclipse.osgi.signedcontent.InvalidContentException;
-import org.eclipse.osgi.signedcontent.SignedContent;
-import org.eclipse.osgi.signedcontent.SignedContentEntry;
-import org.eclipse.osgi.signedcontent.SignerInfo;
-import org.eclipse.osgi.storage.bundlefile.BundleEntry;
-import org.eclipse.osgi.storage.bundlefile.BundleFile;
-import org.eclipse.osgi.util.NLS;
+
+import org.fdesigner.container.signedcontent.InvalidContentException;
+import org.fdesigner.container.signedcontent.SignedContent;
+import org.fdesigner.container.signedcontent.SignedContentEntry;
+import org.fdesigner.container.signedcontent.SignerInfo;
+import org.fdesigner.container.storage.bundlefile.BundleEntry;
+import org.fdesigner.container.storage.bundlefile.BundleFile;
+import org.fdesigner.supplement.util.NLS;
 
 public class SignedContentImpl implements SignedContent {
 	final static SignerInfo[] EMPTY_SIGNERINFO = new SignerInfo[0];

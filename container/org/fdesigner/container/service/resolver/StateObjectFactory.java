@@ -11,7 +11,7 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.osgi.service.resolver;
+package org.fdesigner.container.service.resolver;
 
 import java.io.DataInputStream;
 import java.io.DataOutputStream;
@@ -22,9 +22,10 @@ import java.io.OutputStream;
 import java.util.Dictionary;
 import java.util.List;
 import java.util.Map;
-import org.osgi.framework.BundleException;
-import org.osgi.framework.InvalidSyntaxException;
-import org.osgi.framework.Version;
+
+import org.fdesigner.framework.framework.BundleException;
+import org.fdesigner.framework.framework.InvalidSyntaxException;
+import org.fdesigner.framework.framework.Version;
 
 /**
  * A factory for states and their component objects.  

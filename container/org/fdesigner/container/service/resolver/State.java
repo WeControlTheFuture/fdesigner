@@ -11,15 +11,16 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.osgi.service.resolver;
+package org.fdesigner.container.service.resolver;
 
 import java.util.Collection;
 import java.util.Dictionary;
 import java.util.List;
 import java.util.Map;
-import org.osgi.framework.BundleException;
-import org.osgi.framework.Version;
-import org.osgi.framework.hooks.resolver.ResolverHookFactory;
+
+import org.fdesigner.framework.framework.BundleException;
+import org.fdesigner.framework.framework.Version;
+import org.fdesigner.framework.framework.hooks.resolver.ResolverHookFactory;
 
 /**
  * The state of a system as reported by a resolver. This includes all bundles

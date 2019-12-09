@@ -12,7 +12,7 @@
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
 
-package org.eclipse.osgi.internal.loader.classpath;
+package org.fdesigner.container.internal.loader.classpath;
 
 import java.io.File;
 import java.io.FileNotFoundException;
@@ -26,29 +26,30 @@ import java.util.Enumeration;
 import java.util.List;
 import java.util.ListIterator;
 import java.util.NoSuchElementException;
-import org.eclipse.osgi.container.Module;
-import org.eclipse.osgi.container.ModuleCapability;
-import org.eclipse.osgi.container.ModuleContainerAdaptor.ContainerEvent;
-import org.eclipse.osgi.container.ModuleRevision;
-import org.eclipse.osgi.container.ModuleWire;
-import org.eclipse.osgi.container.namespaces.EquinoxModuleDataNamespace;
-import org.eclipse.osgi.framework.util.ArrayMap;
-import org.eclipse.osgi.internal.debug.Debug;
-import org.eclipse.osgi.internal.framework.EquinoxConfiguration;
-import org.eclipse.osgi.internal.hookregistry.ClassLoaderHook;
-import org.eclipse.osgi.internal.hookregistry.HookRegistry;
-import org.eclipse.osgi.internal.loader.ModuleClassLoader;
-import org.eclipse.osgi.internal.loader.ModuleClassLoader.DefineClassResult;
-import org.eclipse.osgi.internal.messages.Msg;
-import org.eclipse.osgi.internal.weaving.WeavingHookConfigurator;
-import org.eclipse.osgi.storage.BundleInfo.Generation;
-import org.eclipse.osgi.storage.NativeCodeFinder;
-import org.eclipse.osgi.storage.Storage;
-import org.eclipse.osgi.storage.bundlefile.BundleEntry;
-import org.eclipse.osgi.storage.bundlefile.BundleFile;
-import org.eclipse.osgi.util.NLS;
-import org.osgi.framework.BundleException;
-import org.osgi.framework.namespace.HostNamespace;
+
+import org.fdesigner.container.Module;
+import org.fdesigner.container.ModuleCapability;
+import org.fdesigner.container.ModuleContainerAdaptor.ContainerEvent;
+import org.fdesigner.container.ModuleRevision;
+import org.fdesigner.container.ModuleWire;
+import org.fdesigner.container.framework.util.ArrayMap;
+import org.fdesigner.container.internal.debug.Debug;
+import org.fdesigner.container.internal.framework.EquinoxConfiguration;
+import org.fdesigner.container.internal.hookregistry.ClassLoaderHook;
+import org.fdesigner.container.internal.hookregistry.HookRegistry;
+import org.fdesigner.container.internal.loader.ModuleClassLoader;
+import org.fdesigner.container.internal.loader.ModuleClassLoader.DefineClassResult;
+import org.fdesigner.container.internal.weaving.WeavingHookConfigurator;
+import org.fdesigner.container.namespaces.EquinoxModuleDataNamespace;
+import org.fdesigner.container.storage.BundleInfo.Generation;
+import org.fdesigner.container.storage.NativeCodeFinder;
+import org.fdesigner.container.storage.Storage;
+import org.fdesigner.container.storage.bundlefile.BundleEntry;
+import org.fdesigner.container.storage.bundlefile.BundleFile;
+import org.fdesigner.framework.framework.BundleException;
+import org.fdesigner.framework.framework.namespace.HostNamespace;
+import org.fdesigner.supplement.internal.messages.Msg;
+import org.fdesigner.supplement.util.NLS;
 
 /**
  * A helper class for {@link ModuleClassLoader} implementations.  This class will keep track of 

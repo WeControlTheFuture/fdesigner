@@ -12,14 +12,19 @@
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
 
-package org.eclipse.osgi.internal.serviceregistry;
+package org.fdesigner.container.internal.serviceregistry;
 
 import java.lang.reflect.Array;
-import java.util.*;
-import org.eclipse.osgi.framework.util.CaseInsensitiveDictionaryMap;
-import org.eclipse.osgi.internal.messages.Msg;
-import org.eclipse.osgi.util.NLS;
-import org.osgi.framework.Constants;
+import java.util.Dictionary;
+import java.util.Enumeration;
+import java.util.Map;
+import java.util.Set;
+
+import org.fdesigner.container.framework.util.CaseInsensitiveDictionaryMap;
+import org.fdesigner.framework.framework.Constants;
+import org.fdesigner.supplement.internal.messages.Msg;
+import org.fdesigner.supplement.report.resolution.ResolutionReport.Entry;
+import org.fdesigner.supplement.util.NLS;
 
 /**
  * Service properties.

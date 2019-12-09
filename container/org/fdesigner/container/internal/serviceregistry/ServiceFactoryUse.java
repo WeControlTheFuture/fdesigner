@@ -12,15 +12,20 @@
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
 
-package org.eclipse.osgi.internal.serviceregistry;
+package org.fdesigner.container.internal.serviceregistry;
 
 import java.security.AccessController;
 import java.security.PrivilegedAction;
-import org.eclipse.osgi.internal.debug.Debug;
-import org.eclipse.osgi.internal.framework.BundleContextImpl;
-import org.eclipse.osgi.internal.messages.Msg;
-import org.eclipse.osgi.util.NLS;
-import org.osgi.framework.*;
+
+import org.fdesigner.container.internal.debug.Debug;
+import org.fdesigner.container.internal.framework.BundleContextImpl;
+import org.fdesigner.framework.framework.Bundle;
+import org.fdesigner.framework.framework.FrameworkEvent;
+import org.fdesigner.framework.framework.ServiceException;
+import org.fdesigner.framework.framework.ServiceFactory;
+import org.fdesigner.framework.framework.ServiceRegistration;
+import org.fdesigner.supplement.internal.messages.Msg;
+import org.fdesigner.supplement.util.NLS;
 
 /**
  * This class represents the use of a service by a bundle. One is created for each

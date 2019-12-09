@@ -12,15 +12,16 @@
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
 
-package org.eclipse.osgi.storage.url;
+package org.fdesigner.container.storage.url;
 
 import java.io.IOException;
 import java.io.InputStream;
 import java.net.URL;
 import java.net.URLConnection;
-import org.eclipse.osgi.internal.messages.Msg;
-import org.eclipse.osgi.storage.bundlefile.BundleEntry;
-import org.eclipse.osgi.util.NLS;
+
+import org.fdesigner.container.storage.bundlefile.BundleEntry;
+import org.fdesigner.supplement.internal.messages.Msg;
+import org.fdesigner.supplement.util.NLS;
 
 /**
  * URLConnection for BundleClassLoader resources.

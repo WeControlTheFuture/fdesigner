@@ -12,13 +12,16 @@
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
 
-package org.eclipse.osgi.storage.bundlefile;
+package org.fdesigner.container.storage.bundlefile;
 
 import java.io.File;
 import java.io.IOException;
-import java.util.*;
-import org.eclipse.osgi.internal.messages.Msg;
-import org.eclipse.osgi.util.NLS;
+import java.util.Collections;
+import java.util.Enumeration;
+import java.util.LinkedHashSet;
+
+import org.fdesigner.supplement.internal.messages.Msg;
+import org.fdesigner.supplement.util.NLS;
 
 /**
  * A BundleFile that uses a directory as its base file.

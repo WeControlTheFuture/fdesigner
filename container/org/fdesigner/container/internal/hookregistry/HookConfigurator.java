@@ -12,7 +12,7 @@
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
 
-package org.eclipse.osgi.internal.hookregistry;
+package org.fdesigner.container.internal.hookregistry;
 
 /**
  * A hook configurator is used to add hooks to the hook registry.

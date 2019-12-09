@@ -11,14 +11,15 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.osgi.internal.loader.buddy;
+package org.fdesigner.container.internal.loader.buddy;
 
 import java.io.IOException;
 import java.net.URL;
 import java.util.Enumeration;
-import org.eclipse.osgi.internal.loader.BundleLoader;
-import org.osgi.service.packageadmin.ExportedPackage;
-import org.osgi.service.packageadmin.PackageAdmin;
+
+import org.fdesigner.container.internal.loader.BundleLoader;
+import org.fdesigner.framework.service.packageadmin.ExportedPackage;
+import org.fdesigner.framework.service.packageadmin.PackageAdmin;
 
 /**
  * Global policy is an implementation of a buddy policy. It is responsible

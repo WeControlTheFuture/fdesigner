@@ -12,17 +12,27 @@
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
 
-package org.eclipse.osgi.internal.signedcontent;
+package org.fdesigner.container.internal.signedcontent;
 
 import java.io.IOException;
 import java.io.InputStream;
 import java.net.URL;
-import java.security.*;
-import java.security.cert.*;
+import java.security.InvalidKeyException;
+import java.security.NoSuchAlgorithmException;
+import java.security.NoSuchProviderException;
+import java.security.SignatureException;
+import java.security.cert.CertificateException;
+import java.security.cert.CertificateExpiredException;
+import java.security.cert.CertificateNotYetValidException;
 import java.util.Date;
-import org.eclipse.osgi.signedcontent.*;
-import org.eclipse.osgi.storage.bundlefile.*;
-import org.eclipse.osgi.util.NLS;
+
+import org.fdesigner.container.signedcontent.SignedContent;
+import org.fdesigner.container.signedcontent.SignedContentEntry;
+import org.fdesigner.container.signedcontent.SignerInfo;
+import org.fdesigner.container.storage.bundlefile.BundleEntry;
+import org.fdesigner.container.storage.bundlefile.BundleFile;
+import org.fdesigner.container.storage.bundlefile.BundleFileWrapper;
+import org.fdesigner.supplement.util.NLS;
 
 /**
  * This class wraps a Repository of classes and resources to check and enforce

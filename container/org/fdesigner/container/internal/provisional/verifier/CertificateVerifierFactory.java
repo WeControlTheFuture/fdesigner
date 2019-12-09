@@ -11,11 +11,12 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.osgi.internal.provisional.verifier;
+package org.fdesigner.container.internal.provisional.verifier;
 
 import java.io.File;
 import java.io.IOException;
-import org.osgi.framework.Bundle;
+
+import org.fdesigner.framework.framework.Bundle;
 
 /**
  * A factory used to create certificate verifiers.

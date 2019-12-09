@@ -12,20 +12,21 @@
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
 
-package org.eclipse.osgi.internal.loader;
+package org.fdesigner.container.internal.loader;
 
 import java.io.IOException;
 import java.net.URL;
 import java.util.Collection;
 import java.util.Enumeration;
-import org.eclipse.osgi.container.Module;
-import org.eclipse.osgi.container.ModuleContainerAdaptor.ContainerEvent;
-import org.eclipse.osgi.container.ModuleRevision;
-import org.eclipse.osgi.container.ModuleWiring;
-import org.eclipse.osgi.internal.framework.EquinoxConfiguration;
-import org.eclipse.osgi.internal.framework.EquinoxContainer;
-import org.eclipse.osgi.storage.BundleInfo.Generation;
-import org.osgi.framework.BundleException;
+
+import org.fdesigner.container.Module;
+import org.fdesigner.container.ModuleContainerAdaptor.ContainerEvent;
+import org.fdesigner.container.ModuleRevision;
+import org.fdesigner.container.ModuleWiring;
+import org.fdesigner.container.internal.framework.EquinoxConfiguration;
+import org.fdesigner.container.internal.framework.EquinoxContainer;
+import org.fdesigner.container.storage.BundleInfo.Generation;
+import org.fdesigner.framework.framework.BundleException;
 
 /**
  * The System Bundle's BundleLoader.  This BundleLoader is used by ImportClassLoaders

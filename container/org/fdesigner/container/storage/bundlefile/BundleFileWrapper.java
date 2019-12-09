@@ -11,15 +11,16 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.osgi.storage.bundlefile;
+package org.fdesigner.container.storage.bundlefile;
 
 import java.io.File;
 import java.io.IOException;
 import java.net.URL;
 import java.util.Enumeration;
-import org.eclipse.osgi.container.Module;
-import org.eclipse.osgi.internal.hookregistry.BundleFileWrapperFactoryHook;
-import org.eclipse.osgi.storage.BundleInfo;
+
+import org.fdesigner.container.Module;
+import org.fdesigner.container.internal.hookregistry.BundleFileWrapperFactoryHook;
+import org.fdesigner.container.storage.BundleInfo;
 
 /**
  * A {@link BundleFile bundle file} decorator. 

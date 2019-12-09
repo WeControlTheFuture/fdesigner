@@ -13,7 +13,7 @@
  *     Rob Harrop - SpringSource Inc. (bug 253942)
  *******************************************************************************/
 
-package org.eclipse.osgi.storage.bundlefile;
+package org.fdesigner.container.storage.bundlefile;
 
 import java.io.File;
 import java.io.FilterInputStream;
@@ -25,15 +25,16 @@ import java.util.LinkedHashSet;
 import java.util.concurrent.TimeUnit;
 import java.util.concurrent.locks.Condition;
 import java.util.concurrent.locks.ReentrantLock;
-import org.eclipse.osgi.container.ModuleContainerAdaptor.ContainerEvent;
-import org.eclipse.osgi.container.ModuleRevision;
-import org.eclipse.osgi.framework.log.FrameworkLogEntry;
-import org.eclipse.osgi.internal.debug.Debug;
-import org.eclipse.osgi.internal.framework.EquinoxContainer;
-import org.eclipse.osgi.internal.messages.Msg;
-import org.eclipse.osgi.storage.BundleInfo;
-import org.eclipse.osgi.storage.Storage.StorageException;
-import org.eclipse.osgi.util.NLS;
+
+import org.fdesigner.container.ModuleContainerAdaptor.ContainerEvent;
+import org.fdesigner.container.ModuleRevision;
+import org.fdesigner.container.internal.debug.Debug;
+import org.fdesigner.container.internal.framework.EquinoxContainer;
+import org.fdesigner.container.storage.BundleInfo;
+import org.fdesigner.container.storage.Storage.StorageException;
+import org.fdesigner.supplement.framework.log.FrameworkLogEntry;
+import org.fdesigner.supplement.internal.messages.Msg;
+import org.fdesigner.supplement.util.NLS;
 
 /**
  * A BundleFile that manages the number of open bundle files by using the MRUBundleFileList

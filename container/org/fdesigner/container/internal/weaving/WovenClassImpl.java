@@ -11,25 +11,39 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.osgi.internal.weaving;
+package org.fdesigner.container.internal.weaving;
 
-import java.security.*;
-import java.util.*;
-import org.eclipse.osgi.container.ModuleRevision;
-import org.eclipse.osgi.internal.framework.EquinoxContainer;
-import org.eclipse.osgi.internal.hookregistry.ClassLoaderHook;
-import org.eclipse.osgi.internal.loader.BundleLoader;
-import org.eclipse.osgi.internal.loader.classpath.ClasspathEntry;
-import org.eclipse.osgi.internal.permadmin.BundlePermissions;
-import org.eclipse.osgi.internal.serviceregistry.HookContext;
-import org.eclipse.osgi.internal.serviceregistry.ServiceRegistry;
-import org.eclipse.osgi.storage.BundleInfo.Generation;
-import org.eclipse.osgi.storage.StorageUtil;
-import org.eclipse.osgi.storage.bundlefile.BundleEntry;
-import org.eclipse.osgi.util.ManifestElement;
-import org.osgi.framework.*;
-import org.osgi.framework.hooks.weaving.*;
-import org.osgi.framework.wiring.BundleWiring;
+import java.security.AccessController;
+import java.security.PrivilegedActionException;
+import java.security.PrivilegedExceptionAction;
+import java.security.ProtectionDomain;
+import java.util.Collections;
+import java.util.List;
+import java.util.Map;
+
+import org.fdesigner.container.ModuleRevision;
+import org.fdesigner.container.internal.framework.EquinoxContainer;
+import org.fdesigner.container.internal.hookregistry.ClassLoaderHook;
+import org.fdesigner.container.internal.loader.BundleLoader;
+import org.fdesigner.container.internal.loader.classpath.ClasspathEntry;
+import org.fdesigner.container.internal.permadmin.BundlePermissions;
+import org.fdesigner.container.internal.serviceregistry.HookContext;
+import org.fdesigner.container.internal.serviceregistry.ServiceRegistry;
+import org.fdesigner.container.storage.BundleInfo.Generation;
+import org.fdesigner.container.storage.StorageUtil;
+import org.fdesigner.container.storage.bundlefile.BundleEntry;
+import org.fdesigner.framework.framework.AdminPermission;
+import org.fdesigner.framework.framework.BundleException;
+import org.fdesigner.framework.framework.Constants;
+import org.fdesigner.framework.framework.FrameworkEvent;
+import org.fdesigner.framework.framework.PackagePermission;
+import org.fdesigner.framework.framework.ServiceRegistration;
+import org.fdesigner.framework.framework.hooks.weaving.WeavingException;
+import org.fdesigner.framework.framework.hooks.weaving.WeavingHook;
+import org.fdesigner.framework.framework.hooks.weaving.WovenClass;
+import org.fdesigner.framework.framework.hooks.weaving.WovenClassListener;
+import org.fdesigner.framework.framework.wiring.BundleWiring;
+import org.fdesigner.supplement.util.ManifestElement;
 
 public final class WovenClassImpl implements WovenClass, HookContext {
 	private final static byte FLAG_HOOKCALLED = 0x01;

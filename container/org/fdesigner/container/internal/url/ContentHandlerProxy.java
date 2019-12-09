@@ -12,15 +12,18 @@
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
 
-package org.eclipse.osgi.internal.url;
+package org.fdesigner.container.internal.url;
 
 import java.io.IOException;
 import java.net.ContentHandler;
 import java.net.URLConnection;
-import org.osgi.framework.*;
-import org.osgi.service.url.URLConstants;
-import org.osgi.util.tracker.ServiceTracker;
-import org.osgi.util.tracker.ServiceTrackerCustomizer;
+
+import org.fdesigner.framework.framework.BundleContext;
+import org.fdesigner.framework.framework.Constants;
+import org.fdesigner.framework.framework.ServiceReference;
+import org.fdesigner.framework.service.url.URLConstants;
+import org.fdesigner.framework.util.tracker.ServiceTracker;
+import org.fdesigner.framework.util.tracker.ServiceTrackerCustomizer;
 
 /**
  * The ContentHandlerProxy is a ContentHandler that acts as a proxy for registered ContentHandlers.

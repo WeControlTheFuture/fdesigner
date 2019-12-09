@@ -12,18 +12,19 @@
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
 
-package org.eclipse.osgi.storage.url.bundleentry;
+package org.fdesigner.container.storage.url.bundleentry;
 
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.net.URL;
-import org.eclipse.osgi.container.Module;
-import org.eclipse.osgi.container.ModuleContainer;
-import org.eclipse.osgi.container.ModuleRevision;
-import org.eclipse.osgi.internal.location.LocationHelper;
-import org.eclipse.osgi.storage.BundleInfo;
-import org.eclipse.osgi.storage.bundlefile.BundleEntry;
-import org.eclipse.osgi.storage.url.BundleResourceHandler;
+
+import org.fdesigner.container.Module;
+import org.fdesigner.container.ModuleContainer;
+import org.fdesigner.container.ModuleRevision;
+import org.fdesigner.container.storage.BundleInfo;
+import org.fdesigner.container.storage.bundlefile.BundleEntry;
+import org.fdesigner.container.storage.url.BundleResourceHandler;
+import org.fdesigner.supplement.internal.location.LocationHelper;
 
 /**
  * URLStreamHandler the bundleentry protocol.

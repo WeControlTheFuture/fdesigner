@@ -56,12 +56,12 @@ import org.fdesigner.container.storage.BundleInfo.Generation;
 import org.fdesigner.framework.framework.Bundle;
 import org.fdesigner.framework.framework.BundleContext;
 import org.fdesigner.framework.framework.BundleException;
+import org.fdesigner.framework.framework.Constants;
 import org.fdesigner.framework.framework.FrameworkEvent;
 import org.fdesigner.framework.framework.namespace.BundleNamespace;
 import org.fdesigner.framework.framework.namespace.HostNamespace;
 import org.fdesigner.framework.framework.namespace.PackageNamespace;
 import org.fdesigner.framework.framework.wiring.BundleWiring;
-import org.fdesigner.supplement.service.environment.Constants;
 import org.fdesigner.supplement.util.ManifestElement;
 
 /**

@@ -11,10 +11,11 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.osgi.service.resolver;
+package org.fdesigner.container.service.resolver;
 
 import java.util.Dictionary;
-import org.osgi.framework.Version;
+
+import org.fdesigner.framework.framework.Version;
 
 /**
  * A description of a generic capability.

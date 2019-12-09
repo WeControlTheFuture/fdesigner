@@ -11,7 +11,7 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.osgi.internal.log;
+package org.fdesigner.container.internal.log;
 
 import java.util.ArrayList;
 import java.util.Collection;
@@ -19,10 +19,11 @@ import java.util.Collections;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-import org.eclipse.osgi.internal.log.ExtendedLogServiceFactory.EquinoxLoggerContext;
-import org.osgi.framework.Bundle;
-import org.osgi.framework.Version;
-import org.osgi.service.log.admin.LoggerContext;
+
+import org.fdesigner.container.internal.log.ExtendedLogServiceFactory.EquinoxLoggerContext;
+import org.fdesigner.framework.framework.Bundle;
+import org.fdesigner.framework.framework.Version;
+import org.fdesigner.framework.service.log.admin.LoggerContext;
 
 public class LoggerContextTargetMap {
 	private final Map<Bundle, ExtendedLogServiceImpl> logServices = new HashMap<>();

@@ -12,24 +12,32 @@
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
 
-package org.eclipse.osgi.internal.url;
+package org.fdesigner.container.internal.url;
 
 import java.lang.reflect.Method;
-import java.net.*;
+import java.net.URL;
+import java.net.URLStreamHandler;
+import java.net.URLStreamHandlerFactory;
 import java.security.AccessController;
-import java.util.*;
-import org.eclipse.osgi.framework.log.FrameworkLogEntry;
-import org.eclipse.osgi.framework.util.SecureAction;
-import org.eclipse.osgi.internal.framework.EquinoxContainer;
-import org.eclipse.osgi.internal.location.EquinoxLocations;
-import org.eclipse.osgi.internal.messages.Msg;
-import org.eclipse.osgi.storage.url.BundleResourceHandler;
-import org.eclipse.osgi.util.NLS;
-import org.osgi.framework.BundleContext;
-import org.osgi.framework.ServiceReference;
-import org.osgi.service.url.URLConstants;
-import org.osgi.service.url.URLStreamHandlerService;
-import org.osgi.util.tracker.ServiceTracker;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Hashtable;
+import java.util.List;
+import java.util.Map;
+import java.util.StringTokenizer;
+
+import org.fdesigner.container.framework.util.SecureAction;
+import org.fdesigner.container.internal.framework.EquinoxContainer;
+import org.fdesigner.container.internal.location.EquinoxLocations;
+import org.fdesigner.container.storage.url.BundleResourceHandler;
+import org.fdesigner.framework.framework.BundleContext;
+import org.fdesigner.framework.framework.ServiceReference;
+import org.fdesigner.framework.service.url.URLConstants;
+import org.fdesigner.framework.service.url.URLStreamHandlerService;
+import org.fdesigner.framework.util.tracker.ServiceTracker;
+import org.fdesigner.supplement.framework.log.FrameworkLogEntry;
+import org.fdesigner.supplement.internal.messages.Msg;
+import org.fdesigner.supplement.util.NLS;
 
 /**
  * This class contains the URL stream handler factory for the OSGi framework.
@@ -139,11 +147,11 @@ public class URLStreamHandlerFactoryImpl extends MultiplexingFactory implements 
 
 	private URLStreamHandler getFrameworkHandler(String protocol) {
 		if (BundleResourceHandler.OSGI_ENTRY_URL_PROTOCOL.equals(protocol)) {
-			return new org.eclipse.osgi.storage.url.bundleentry.Handler(container.getStorage().getModuleContainer(), null);
+			return new org.fdesigner.container.storage.url.bundleentry.Handler(container.getStorage().getModuleContainer(), null);
 		} else if (BundleResourceHandler.OSGI_RESOURCE_URL_PROTOCOL.equals(protocol)) {
-			return new org.eclipse.osgi.storage.url.bundleresource.Handler(container.getStorage().getModuleContainer(), null);
+			return new org.fdesigner.container.storage.url.bundleresource.Handler(container.getStorage().getModuleContainer(), null);
 		} else if (PROTOCOL_REFERENCE.equals(protocol)) {
-			return new org.eclipse.osgi.storage.url.reference.Handler(container.getConfiguration().getConfiguration(EquinoxLocations.PROP_INSTALL_AREA));
+			return new org.fdesigner.container.storage.url.reference.Handler(container.getConfiguration().getConfiguration(EquinoxLocations.PROP_INSTALL_AREA));
 		}
 		return null;
 	}

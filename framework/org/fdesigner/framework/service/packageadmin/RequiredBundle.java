@@ -16,8 +16,8 @@
 
 package org.fdesigner.framework.service.packageadmin;
 
-import org.fdesigner.common.Version;
 import org.fdesigner.framework.framework.Bundle;
+import org.fdesigner.framework.framework.Version;
 
 /**
  * A required bundle.
