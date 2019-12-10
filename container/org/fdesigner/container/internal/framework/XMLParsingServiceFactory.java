@@ -11,12 +11,15 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.osgi.internal.framework;
+package org.fdesigner.container.internal.framework;
 
 import javax.xml.parsers.DocumentBuilderFactory;
 import javax.xml.parsers.SAXParserFactory;
-import org.osgi.framework.*;
-import org.osgi.framework.wiring.BundleWiring;
+
+import org.fdesigner.framework.framework.Bundle;
+import org.fdesigner.framework.framework.ServiceFactory;
+import org.fdesigner.framework.framework.ServiceRegistration;
+import org.fdesigner.framework.framework.wiring.BundleWiring;
 
 class XMLParsingServiceFactory implements ServiceFactory<Object> {
 	private final boolean isSax;

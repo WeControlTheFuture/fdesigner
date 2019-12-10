@@ -61,7 +61,7 @@ import org.fdesigner.framework.framework.ServiceObjects;
 import org.fdesigner.framework.framework.ServicePermission;
 import org.fdesigner.framework.framework.ServiceReference;
 import org.fdesigner.framework.framework.ServiceRegistration;
-import org.fdesigner.framework.framework.hooks.service.FindHook;
+import org.fdesigner.framework.framework.hooks.bundle.FindHook;
 import org.fdesigner.framework.resource.Capability;
 import org.fdesigner.supplement.framework.eventmgr.EventDispatcher;
 import org.fdesigner.supplement.internal.messages.Msg;

@@ -38,7 +38,7 @@ import org.fdesigner.framework.framework.FrameworkListener;
 import org.fdesigner.framework.framework.ServiceRegistration;
 import org.fdesigner.framework.framework.SynchronousBundleListener;
 import org.fdesigner.framework.framework.hooks.bundle.CollisionHook;
-import org.fdesigner.framework.framework.hooks.service.EventHook;
+import org.fdesigner.framework.framework.hooks.bundle.EventHook;
 import org.fdesigner.supplement.framework.eventmgr.CopyOnWriteIdentityMap;
 import org.fdesigner.supplement.framework.eventmgr.EventDispatcher;
 import org.fdesigner.supplement.framework.eventmgr.EventManager;
