@@ -12,13 +12,37 @@
  *     IBM Corporation - initial API and implementation
  *     Rob Harrop - SpringSource Inc. (bug 247522)
  *******************************************************************************/
-package org.eclipse.osgi.internal.resolver;
+package org.fdesigner.compatibility.state.internal.resolver;
 
-import java.io.*;
-import java.util.*;
-import org.eclipse.osgi.service.resolver.*;
-import org.eclipse.osgi.service.resolver.VersionRange;
-import org.osgi.framework.*;
+import java.io.BufferedOutputStream;
+import java.io.DataOutputStream;
+import java.io.File;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.Dictionary;
+import java.util.Enumeration;
+import java.util.HashMap;
+import java.util.Iterator;
+import java.util.List;
+import java.util.Map;
+
+import org.fdesigner.container.service.resolver.BaseDescription;
+import org.fdesigner.container.service.resolver.BundleDescription;
+import org.fdesigner.container.service.resolver.BundleSpecification;
+import org.fdesigner.container.service.resolver.DisabledInfo;
+import org.fdesigner.container.service.resolver.ExportPackageDescription;
+import org.fdesigner.container.service.resolver.GenericDescription;
+import org.fdesigner.container.service.resolver.GenericSpecification;
+import org.fdesigner.container.service.resolver.ImportPackageSpecification;
+import org.fdesigner.container.service.resolver.NativeCodeDescription;
+import org.fdesigner.container.service.resolver.NativeCodeSpecification;
+import org.fdesigner.container.service.resolver.StateWire;
+import org.fdesigner.container.service.resolver.VersionConstraint;
+import org.fdesigner.container.service.resolver.VersionRange;
+import org.fdesigner.framework.framework.Constants;
+import org.fdesigner.framework.framework.Filter;
+import org.fdesigner.framework.framework.Version;
 
 /**
  * This class is <strong>not</strong> thread safe. Instances must not be

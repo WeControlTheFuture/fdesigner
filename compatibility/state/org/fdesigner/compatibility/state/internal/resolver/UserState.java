@@ -12,11 +12,16 @@
  *     IBM Corporation - initial API and implementation
  *     Rob Harrop - SpringSource Inc. (bug 247522)
  *******************************************************************************/
-package org.eclipse.osgi.internal.resolver;
+package org.fdesigner.compatibility.state.internal.resolver;
 
-import java.util.*;
-import org.eclipse.osgi.service.resolver.*;
-import org.osgi.framework.BundleException;
+import java.util.Collections;
+import java.util.HashSet;
+import java.util.Set;
+
+import org.fdesigner.container.service.resolver.BundleDescription;
+import org.fdesigner.container.service.resolver.State;
+import org.fdesigner.container.service.resolver.StateDelta;
+import org.fdesigner.framework.framework.BundleException;
 
 /**
  * This implementation of State does a bookkeeping of all added/removed 

@@ -11,17 +11,36 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  ******************************************************************************/
-package org.eclipse.osgi.compatibility.state;
+package org.fdesigner.compatibility.state;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 import java.util.Map.Entry;
-import org.eclipse.osgi.internal.framework.FilterImpl;
-import org.eclipse.osgi.service.resolver.*;
-import org.osgi.framework.InvalidSyntaxException;
-import org.osgi.framework.Version;
-import org.osgi.framework.namespace.*;
-import org.osgi.framework.wiring.BundleRevision;
-import org.osgi.resource.*;
+import java.util.Set;
+
+import org.fdesigner.container.internal.framework.FilterImpl;
+import org.fdesigner.container.service.resolver.BundleDescription;
+import org.fdesigner.container.service.resolver.BundleSpecification;
+import org.fdesigner.container.service.resolver.ExportPackageDescription;
+import org.fdesigner.container.service.resolver.GenericDescription;
+import org.fdesigner.container.service.resolver.GenericSpecification;
+import org.fdesigner.container.service.resolver.HostSpecification;
+import org.fdesigner.container.service.resolver.ImportPackageSpecification;
+import org.fdesigner.container.service.resolver.State;
+import org.fdesigner.framework.framework.InvalidSyntaxException;
+import org.fdesigner.framework.framework.Version;
+import org.fdesigner.framework.framework.namespace.AbstractWiringNamespace;
+import org.fdesigner.framework.framework.namespace.BundleNamespace;
+import org.fdesigner.framework.framework.namespace.HostNamespace;
+import org.fdesigner.framework.framework.namespace.IdentityNamespace;
+import org.fdesigner.framework.framework.namespace.PackageNamespace;
+import org.fdesigner.framework.framework.wiring.BundleRevision;
+import org.fdesigner.framework.resource.Capability;
+import org.fdesigner.framework.resource.Namespace;
+import org.fdesigner.framework.resource.Requirement;
 
 class StateConverter {
 	private final State state;

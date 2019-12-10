@@ -13,14 +13,32 @@
  *     Danail Nachev -  ProSyst - bug 218625
  *     Rob Harrop - SpringSource Inc. (bug 247522)
  *******************************************************************************/
-package org.eclipse.osgi.compatibility.state;
+package org.fdesigner.compatibility.state;
 
-import java.util.*;
-import org.eclipse.osgi.internal.resolver.StateHelperImpl;
-import org.eclipse.osgi.service.resolver.*;
-import org.osgi.framework.BundleException;
-import org.osgi.framework.Version;
-import org.osgi.framework.hooks.resolver.ResolverHookFactory;
+import java.util.Collection;
+import java.util.Dictionary;
+import java.util.List;
+import java.util.Map;
+
+import org.fdesigner.compatibility.state.internal.resolver.StateHelperImpl;
+import org.fdesigner.container.service.resolver.BaseDescription;
+import org.fdesigner.container.service.resolver.BundleDescription;
+import org.fdesigner.container.service.resolver.DisabledInfo;
+import org.fdesigner.container.service.resolver.ExportPackageDescription;
+import org.fdesigner.container.service.resolver.GenericDescription;
+import org.fdesigner.container.service.resolver.ImportPackageSpecification;
+import org.fdesigner.container.service.resolver.NativeCodeDescription;
+import org.fdesigner.container.service.resolver.Resolver;
+import org.fdesigner.container.service.resolver.ResolverError;
+import org.fdesigner.container.service.resolver.State;
+import org.fdesigner.container.service.resolver.StateDelta;
+import org.fdesigner.container.service.resolver.StateHelper;
+import org.fdesigner.container.service.resolver.StateObjectFactory;
+import org.fdesigner.container.service.resolver.StateWire;
+import org.fdesigner.container.service.resolver.VersionConstraint;
+import org.fdesigner.framework.framework.BundleException;
+import org.fdesigner.framework.framework.Version;
+import org.fdesigner.framework.framework.hooks.resolver.ResolverHookFactory;
 
 public final class ReadOnlyState implements State {
 	private final PlatformAdminImpl platformAdmin;

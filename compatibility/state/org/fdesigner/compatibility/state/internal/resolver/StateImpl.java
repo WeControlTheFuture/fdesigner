@@ -46,6 +46,7 @@ import org.fdesigner.container.service.resolver.HostSpecification;
 import org.fdesigner.container.service.resolver.ImportPackageSpecification;
 import org.fdesigner.container.service.resolver.NativeCodeDescription;
 import org.fdesigner.container.service.resolver.NativeCodeSpecification;
+import org.fdesigner.container.service.resolver.Resolver;
 import org.fdesigner.container.service.resolver.ResolverError;
 import org.fdesigner.container.service.resolver.ResolverHookException;
 import org.fdesigner.container.service.resolver.State;
@@ -62,7 +63,6 @@ import org.fdesigner.framework.framework.Version;
 import org.fdesigner.framework.framework.hooks.resolver.ResolverHook;
 import org.fdesigner.framework.framework.hooks.resolver.ResolverHookFactory;
 import org.fdesigner.framework.framework.wiring.BundleRevision;
-import org.fdesigner.framework.service.resolver.Resolver;
 import org.fdesigner.supplement.util.ManifestElement;
 import org.fdesigner.supplement.util.NLS;
 

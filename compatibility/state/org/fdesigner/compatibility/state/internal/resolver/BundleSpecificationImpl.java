@@ -20,8 +20,8 @@ import java.util.Map;
 
 import org.fdesigner.container.service.resolver.BaseDescription;
 import org.fdesigner.container.service.resolver.BundleSpecification;
+import org.fdesigner.container.service.resolver.VersionRange;
 import org.fdesigner.framework.framework.Constants;
-import org.fdesigner.framework.framework.VersionRange;
 import org.fdesigner.framework.framework.wiring.BundleRevision;
 
 public class BundleSpecificationImpl extends VersionConstraintImpl implements BundleSpecification {

@@ -22,8 +22,8 @@ import java.util.Map;
 import org.fdesigner.container.service.resolver.BaseDescription;
 import org.fdesigner.container.service.resolver.BundleDescription;
 import org.fdesigner.container.service.resolver.HostSpecification;
+import org.fdesigner.container.service.resolver.VersionRange;
 import org.fdesigner.framework.framework.Constants;
-import org.fdesigner.framework.framework.VersionRange;
 import org.fdesigner.framework.framework.wiring.BundleRevision;
 
 public class HostSpecificationImpl extends VersionConstraintImpl implements HostSpecification {

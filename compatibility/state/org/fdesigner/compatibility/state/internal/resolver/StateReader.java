@@ -12,18 +12,40 @@
  *     IBM Corporation - initial API and implementation
  *     Rob Harrop - SpringSource Inc. (bug 247522)
  *******************************************************************************/
-package org.eclipse.osgi.internal.resolver;
+package org.fdesigner.compatibility.state.internal.resolver;
 
-import java.io.*;
+import java.io.BufferedInputStream;
+import java.io.DataInputStream;
+import java.io.File;
+import java.io.IOException;
 import java.lang.reflect.Constructor;
 import java.security.AccessController;
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Dictionary;
+import java.util.HashMap;
+import java.util.Hashtable;
+import java.util.Iterator;
+import java.util.List;
+import java.util.Map;
 import java.util.Map.Entry;
-import org.eclipse.osgi.framework.util.ObjectPool;
-import org.eclipse.osgi.framework.util.SecureAction;
-import org.eclipse.osgi.service.resolver.*;
-import org.eclipse.osgi.service.resolver.VersionRange;
-import org.osgi.framework.*;
+
+import org.fdesigner.container.framework.util.ObjectPool;
+import org.fdesigner.container.framework.util.SecureAction;
+import org.fdesigner.container.service.resolver.BaseDescription;
+import org.fdesigner.container.service.resolver.BundleDescription;
+import org.fdesigner.container.service.resolver.BundleSpecification;
+import org.fdesigner.container.service.resolver.DisabledInfo;
+import org.fdesigner.container.service.resolver.ExportPackageDescription;
+import org.fdesigner.container.service.resolver.GenericDescription;
+import org.fdesigner.container.service.resolver.GenericSpecification;
+import org.fdesigner.container.service.resolver.ImportPackageSpecification;
+import org.fdesigner.container.service.resolver.NativeCodeSpecification;
+import org.fdesigner.container.service.resolver.StateWire;
+import org.fdesigner.container.service.resolver.VersionRange;
+import org.fdesigner.framework.framework.Constants;
+import org.fdesigner.framework.framework.InvalidSyntaxException;
+import org.fdesigner.framework.framework.Version;
 
 /**
  * This class is internally threadsafe and supports client locking. Clients must <strong>not</strong> hold the monitor for

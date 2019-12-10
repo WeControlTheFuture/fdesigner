@@ -24,8 +24,8 @@ import org.fdesigner.container.service.resolver.BaseDescription;
 import org.fdesigner.container.service.resolver.BundleDescription;
 import org.fdesigner.container.service.resolver.ExportPackageDescription;
 import org.fdesigner.container.service.resolver.ImportPackageSpecification;
+import org.fdesigner.container.service.resolver.VersionRange;
 import org.fdesigner.framework.framework.Constants;
-import org.fdesigner.framework.framework.VersionRange;
 import org.fdesigner.framework.framework.wiring.BundleRevision;
 
 public class ImportPackageSpecificationImpl extends VersionConstraintImpl implements ImportPackageSpecification {

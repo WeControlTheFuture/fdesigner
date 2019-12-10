@@ -25,7 +25,6 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
 
-import org.fdesigner.container.Module.State;
 import org.fdesigner.container.framework.util.KeyedElement;
 import org.fdesigner.container.service.resolver.BaseDescription;
 import org.fdesigner.container.service.resolver.BundleDescription;
@@ -37,6 +36,7 @@ import org.fdesigner.container.service.resolver.HostSpecification;
 import org.fdesigner.container.service.resolver.ImportPackageSpecification;
 import org.fdesigner.container.service.resolver.NativeCodeDescription;
 import org.fdesigner.container.service.resolver.NativeCodeSpecification;
+import org.fdesigner.container.service.resolver.State;
 import org.fdesigner.container.service.resolver.StateWire;
 import org.fdesigner.container.service.resolver.VersionConstraint;
 import org.fdesigner.framework.framework.Bundle;

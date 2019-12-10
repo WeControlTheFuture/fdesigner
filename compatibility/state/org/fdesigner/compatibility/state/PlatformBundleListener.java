@@ -11,20 +11,34 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  ******************************************************************************/
-package org.eclipse.osgi.compatibility.state;
+package org.fdesigner.compatibility.state;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.Iterator;
+import java.util.List;
 import java.util.concurrent.atomic.AtomicBoolean;
-import org.eclipse.osgi.container.*;
-import org.eclipse.osgi.internal.resolver.BaseDescriptionImpl.BaseCapability;
-import org.eclipse.osgi.service.resolver.BundleDescription;
-import org.eclipse.osgi.service.resolver.State;
-import org.osgi.framework.*;
-import org.osgi.framework.hooks.resolver.ResolverHook;
-import org.osgi.framework.hooks.resolver.ResolverHookFactory;
-import org.osgi.framework.namespace.ExecutionEnvironmentNamespace;
-import org.osgi.framework.namespace.HostNamespace;
-import org.osgi.framework.wiring.*;
+
+import org.fdesigner.compatibility.state.internal.resolver.BaseDescriptionImpl.BaseCapability;
+import org.fdesigner.container.ModuleCapability;
+import org.fdesigner.container.ModuleContainer;
+import org.fdesigner.container.ModuleDatabase;
+import org.fdesigner.container.ModuleRevision;
+import org.fdesigner.container.ModuleWire;
+import org.fdesigner.container.ModuleWiring;
+import org.fdesigner.container.service.resolver.BundleDescription;
+import org.fdesigner.container.service.resolver.State;
+import org.fdesigner.framework.framework.BundleEvent;
+import org.fdesigner.framework.framework.FrameworkEvent;
+import org.fdesigner.framework.framework.FrameworkListener;
+import org.fdesigner.framework.framework.SynchronousBundleListener;
+import org.fdesigner.framework.framework.hooks.resolver.ResolverHook;
+import org.fdesigner.framework.framework.hooks.resolver.ResolverHookFactory;
+import org.fdesigner.framework.framework.namespace.ExecutionEnvironmentNamespace;
+import org.fdesigner.framework.framework.namespace.HostNamespace;
+import org.fdesigner.framework.framework.wiring.BundleCapability;
+import org.fdesigner.framework.framework.wiring.BundleRequirement;
+import org.fdesigner.framework.framework.wiring.BundleRevision;
 
 class PlatformBundleListener implements SynchronousBundleListener, FrameworkListener, ResolverHookFactory {
 
