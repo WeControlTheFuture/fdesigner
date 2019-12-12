@@ -12,19 +12,24 @@
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
 
-package org.eclipse.equinox.internal.app;
+package org.fdesigner.runtime.app.internal.app;
 
 import java.security.Guard;
 import java.security.GuardedObject;
 import java.util.HashMap;
 import java.util.Map;
-import org.eclipse.osgi.framework.log.FrameworkLogEntry;
-import org.eclipse.osgi.util.NLS;
-import org.osgi.framework.*;
-import org.osgi.service.application.ApplicationDescriptor;
-import org.osgi.service.application.ScheduledApplication;
-import org.osgi.service.event.*;
-import org.osgi.util.tracker.ServiceTracker;
+
+import org.fdesigner.framework.framework.BundleContext;
+import org.fdesigner.framework.framework.InvalidSyntaxException;
+import org.fdesigner.framework.framework.ServiceRegistration;
+import org.fdesigner.framework.util.tracker.ServiceTracker;
+import org.fdesigner.runtime.app.service.application.ApplicationDescriptor;
+import org.fdesigner.runtime.app.service.application.ScheduledApplication;
+import org.fdesigner.services.event.Event;
+import org.fdesigner.services.event.EventHandler;
+import org.fdesigner.services.event.TopicPermission;
+import org.fdesigner.supplement.framework.log.FrameworkLogEntry;
+import org.fdesigner.supplement.util.NLS;
 
 public class EclipseScheduledApplication implements ScheduledApplication, EventHandler {
 	private static final String FILTER_PREFIX = "(&(objectclass=" + ApplicationDescriptor.class.getName() + ")(" + ApplicationDescriptor.APPLICATION_PID + "="; //$NON-NLS-1$ //$NON-NLS-2$ //$NON-NLS-3$

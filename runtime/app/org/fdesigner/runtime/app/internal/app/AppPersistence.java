@@ -12,20 +12,40 @@
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
 
-package org.eclipse.equinox.internal.app;
+package org.fdesigner.runtime.app.internal.app;
 
-import java.io.*;
-import java.util.*;
-import org.eclipse.osgi.framework.log.FrameworkLogEntry;
-import org.eclipse.osgi.service.datalocation.Location;
-import org.eclipse.osgi.storagemanager.StorageManager;
-import org.eclipse.osgi.util.NLS;
-import org.osgi.framework.*;
-import org.osgi.service.application.*;
-import org.osgi.service.event.Event;
-import org.osgi.service.event.EventConstants;
-import org.osgi.util.tracker.ServiceTracker;
-import org.osgi.util.tracker.ServiceTrackerCustomizer;
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.ObjectInputStream;
+import java.io.ObjectOutputStream;
+import java.util.ArrayList;
+import java.util.Calendar;
+import java.util.Collection;
+import java.util.Dictionary;
+import java.util.HashMap;
+import java.util.Hashtable;
+import java.util.Iterator;
+import java.util.Map;
+
+import org.fdesigner.framework.framework.BundleContext;
+import org.fdesigner.framework.framework.Filter;
+import org.fdesigner.framework.framework.FrameworkUtil;
+import org.fdesigner.framework.framework.InvalidSyntaxException;
+import org.fdesigner.framework.framework.ServiceReference;
+import org.fdesigner.framework.framework.ServiceRegistration;
+import org.fdesigner.framework.util.tracker.ServiceTracker;
+import org.fdesigner.framework.util.tracker.ServiceTrackerCustomizer;
+import org.fdesigner.runtime.app.service.application.ApplicationDescriptor;
+import org.fdesigner.runtime.app.service.application.ApplicationException;
+import org.fdesigner.runtime.app.service.application.ScheduledApplication;
+import org.fdesigner.services.event.Event;
+import org.fdesigner.services.event.EventConstants;
+import org.fdesigner.supplement.framework.log.FrameworkLogEntry;
+import org.fdesigner.supplement.service.datalocation.Location;
+import org.fdesigner.supplement.storagemanager.StorageManager;
+import org.fdesigner.supplement.util.NLS;
 
 /**
  * Manages all persistent data for ApplicationDescriptors (lock status, 

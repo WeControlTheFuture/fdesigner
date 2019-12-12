@@ -11,9 +11,9 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.equinox.internal.app;
+package org.fdesigner.runtime.app.internal.app;
 
-import org.osgi.framework.Bundle;
+import org.fdesigner.framework.framework.Bundle;
 
 public class ProviderExtensionBranding implements IBranding {
 	Object product;

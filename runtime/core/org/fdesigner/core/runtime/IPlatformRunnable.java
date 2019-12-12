@@ -13,7 +13,7 @@
  *******************************************************************************/
 package org.fdesigner.core.runtime;
 
-import org.eclipse.equinox.app.IApplication;
+import org.fdesigner.runtime.app.IApplication;
 
 /**
  * Bootstrap type for the platform. Platform runnables represent executable

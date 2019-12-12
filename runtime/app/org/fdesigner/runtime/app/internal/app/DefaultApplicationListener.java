@@ -12,15 +12,15 @@
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
 
-package org.eclipse.equinox.internal.app;
+package org.fdesigner.runtime.app.internal.app;
 
-import org.eclipse.osgi.framework.log.FrameworkLogEntry;
-import org.eclipse.osgi.service.runnable.ApplicationRunnable;
-import org.eclipse.osgi.util.NLS;
-import org.osgi.framework.ServiceReference;
-import org.osgi.service.application.ApplicationHandle;
-import org.osgi.util.tracker.ServiceTracker;
-import org.osgi.util.tracker.ServiceTrackerCustomizer;
+import org.fdesigner.framework.framework.ServiceReference;
+import org.fdesigner.framework.util.tracker.ServiceTracker;
+import org.fdesigner.framework.util.tracker.ServiceTrackerCustomizer;
+import org.fdesigner.runtime.app.service.application.ApplicationHandle;
+import org.fdesigner.supplement.framework.log.FrameworkLogEntry;
+import org.fdesigner.supplement.service.runnable.ApplicationRunnable;
+import org.fdesigner.supplement.util.NLS;
 
 /**
  * Listens for the default ApplicationHandle which run on any thread to be destroyed.  This is used to force the main

@@ -18,19 +18,37 @@ package org.fdesigner.core.runtime;
 
 import java.io.IOException;
 import java.net.URL;
-import java.util.*;
-import org.eclipse.core.internal.runtime.*;
-import org.eclipse.core.runtime.content.IContentTypeManager;
-import org.eclipse.core.runtime.jobs.IJobManager;
-import org.eclipse.core.runtime.jobs.Job;
-import org.eclipse.core.runtime.preferences.IPreferencesService;
-import org.eclipse.equinox.app.IApplicationContext;
-import org.eclipse.osgi.service.datalocation.Location;
-import org.eclipse.osgi.service.debug.DebugOptions;
-import org.eclipse.osgi.service.environment.EnvironmentInfo;
-import org.eclipse.osgi.service.resolver.PlatformAdmin;
-import org.osgi.framework.Bundle;
-import org.osgi.framework.FrameworkUtil;
+import java.util.LinkedHashMap;
+import java.util.Map;
+import java.util.MissingResourceException;
+import java.util.ResourceBundle;
+
+import org.fdesigner.container.service.resolver.PlatformAdmin;
+import org.fdesigner.core.runtime.internal.runtime.AuthorizationHandler;
+import org.fdesigner.core.runtime.internal.runtime.InternalPlatform;
+import org.fdesigner.core.runtime.internal.runtime.Messages;
+import org.fdesigner.core.runtime.internal.runtime.PlatformActivator;
+import org.fdesigner.core.runtime.preferences.runtime.preferences.IPreferencesService;
+import org.fdesigner.framework.framework.Bundle;
+import org.fdesigner.framework.framework.FrameworkUtil;
+import org.fdesigner.runtime.app.IApplicationContext;
+import org.fdesigner.runtime.common.internal.runtime.MetaDataKeeper;
+import org.fdesigner.runtime.common.runtime.CoreException;
+import org.fdesigner.runtime.common.runtime.FileLocator;
+import org.fdesigner.runtime.common.runtime.IAdapterManager;
+import org.fdesigner.runtime.common.runtime.IBundleGroupProvider;
+import org.fdesigner.runtime.common.runtime.ILogListener;
+import org.fdesigner.runtime.common.runtime.IPath;
+import org.fdesigner.runtime.common.runtime.ISafeRunnable;
+import org.fdesigner.runtime.common.runtime.SafeRunner;
+import org.fdesigner.runtime.contenttype.runtime.content.IContentTypeManager;
+import org.fdesigner.runtime.jobs.runtime.jobs.IJobManager;
+import org.fdesigner.runtime.jobs.runtime.jobs.Job;
+import org.fdesigner.runtime.registry.runtime.IExtensionRegistry;
+import org.fdesigner.runtime.registry.runtime.RegistryFactory;
+import org.fdesigner.supplement.service.datalocation.Location;
+import org.fdesigner.supplement.service.debug.DebugOptions;
+import org.fdesigner.supplement.service.environment.EnvironmentInfo;
 
 /**
  * The central class of the Eclipse Platform Runtime. This class cannot

@@ -12,23 +12,42 @@
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
 
-package org.eclipse.equinox.internal.app;
+package org.fdesigner.runtime.app.internal.app;
 
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 import java.security.AccessController;
 import java.security.PrivilegedAction;
-import java.util.*;
-import org.eclipse.core.runtime.*;
-import org.eclipse.equinox.app.IApplicationContext;
-import org.eclipse.osgi.framework.log.FrameworkLogEntry;
-import org.eclipse.osgi.service.runnable.ApplicationLauncher;
-import org.eclipse.osgi.service.runnable.ParameterizedRunnable;
-import org.eclipse.osgi.util.NLS;
-import org.osgi.framework.*;
-import org.osgi.service.application.*;
-import org.osgi.util.tracker.ServiceTracker;
-import org.osgi.util.tracker.ServiceTrackerCustomizer;
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.Dictionary;
+import java.util.HashMap;
+import java.util.Iterator;
+import java.util.List;
+import java.util.Map;
+
+import org.fdesigner.framework.framework.BundleContext;
+import org.fdesigner.framework.framework.BundleEvent;
+import org.fdesigner.framework.framework.InvalidSyntaxException;
+import org.fdesigner.framework.framework.ServiceReference;
+import org.fdesigner.framework.framework.ServiceRegistration;
+import org.fdesigner.framework.framework.SynchronousBundleListener;
+import org.fdesigner.framework.util.tracker.ServiceTracker;
+import org.fdesigner.framework.util.tracker.ServiceTrackerCustomizer;
+import org.fdesigner.runtime.app.IApplicationContext;
+import org.fdesigner.runtime.app.service.application.ApplicationDescriptor;
+import org.fdesigner.runtime.app.service.application.ApplicationException;
+import org.fdesigner.runtime.app.service.application.ApplicationHandle;
+import org.fdesigner.runtime.common.runtime.CoreException;
+import org.fdesigner.runtime.registry.runtime.IConfigurationElement;
+import org.fdesigner.runtime.registry.runtime.IExtension;
+import org.fdesigner.runtime.registry.runtime.IExtensionPoint;
+import org.fdesigner.runtime.registry.runtime.IExtensionRegistry;
+import org.fdesigner.runtime.registry.runtime.IRegistryEventListener;
+import org.fdesigner.supplement.framework.log.FrameworkLogEntry;
+import org.fdesigner.supplement.service.runnable.ApplicationLauncher;
+import org.fdesigner.supplement.service.runnable.ParameterizedRunnable;
+import org.fdesigner.supplement.util.NLS;
 
 /*
  * A MEG application container that understands eclipse applications.  This 

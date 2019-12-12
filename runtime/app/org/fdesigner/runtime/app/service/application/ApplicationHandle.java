@@ -14,9 +14,9 @@
  * limitations under the License.
  */
 
-package org.osgi.service.application;
+package org.fdesigner.runtime.app.service.application;
 
-import org.osgi.framework.Constants;
+import org.fdesigner.framework.framework.Constants;
 
 /**
  * ApplicationHandle is an OSGi service interface which represents an instance

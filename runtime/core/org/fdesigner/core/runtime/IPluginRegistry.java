@@ -13,6 +13,11 @@
  *******************************************************************************/
 package org.fdesigner.core.runtime;
 
+import org.fdesigner.runtime.registry.runtime.IConfigurationElement;
+import org.fdesigner.runtime.registry.runtime.IExtension;
+import org.fdesigner.runtime.registry.runtime.IExtensionPoint;
+import org.fdesigner.runtime.registry.runtime.IExtensionRegistry;
+
 /**
  * As the org.eclipse.core.runtime.compatibility plug-in has been removed in
  * Eclipse 4.6 this interface is not supported anymore.

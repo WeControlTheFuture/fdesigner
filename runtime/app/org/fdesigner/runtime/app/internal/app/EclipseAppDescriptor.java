@@ -12,17 +12,22 @@
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
 
-package org.eclipse.equinox.internal.app;
+package org.fdesigner.runtime.app.internal.app;
 
 import java.net.URL;
 import java.security.AccessController;
-import java.util.*;
-import org.eclipse.equinox.app.IApplicationContext;
-import org.osgi.framework.Bundle;
-import org.osgi.framework.ServiceRegistration;
-import org.osgi.service.application.*;
-import org.osgi.service.condpermadmin.BundleSignerCondition;
-import org.osgi.service.condpermadmin.ConditionInfo;
+import java.util.Enumeration;
+import java.util.Hashtable;
+import java.util.Map;
+
+import org.fdesigner.framework.framework.Bundle;
+import org.fdesigner.framework.framework.ServiceRegistration;
+import org.fdesigner.framework.service.condpermadmin.BundleSignerCondition;
+import org.fdesigner.framework.service.condpermadmin.ConditionInfo;
+import org.fdesigner.runtime.app.IApplicationContext;
+import org.fdesigner.runtime.app.service.application.ApplicationDescriptor;
+import org.fdesigner.runtime.app.service.application.ApplicationException;
+import org.fdesigner.runtime.app.service.application.ApplicationHandle;
 
 /*
  * An ApplicationDescriptor for an eclipse application.

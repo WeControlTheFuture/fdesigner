@@ -14,10 +14,10 @@
  *******************************************************************************/
 package org.fdesigner.core.runtime.internal.runtime;
 
-import org.eclipse.equinox.internal.app.CommandLineArgs;
 import org.fdesigner.core.runtime.Plugin;
 import org.fdesigner.framework.framework.BundleActivator;
 import org.fdesigner.framework.framework.BundleContext;
+import org.fdesigner.runtime.app.internal.app.CommandLineArgs;
 
 /**
  * Activator for the Eclipse runtime.

@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package org.osgi.service.application;
+package org.fdesigner.runtime.app.service.application;
 
 import java.util.Map;
 

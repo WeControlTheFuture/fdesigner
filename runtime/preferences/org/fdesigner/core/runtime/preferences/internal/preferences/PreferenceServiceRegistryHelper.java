@@ -18,8 +18,6 @@ import java.util.Collections;
 import java.util.HashMap;
 import java.util.Map;
 
-import org.eclipse.core.runtime.*;
-import org.eclipse.core.runtime.preferences.*;
 import org.fdesigner.core.runtime.preferences.internal.preferences.exchange.ILegacyPreferences;
 import org.fdesigner.core.runtime.preferences.runtime.preferences.AbstractPreferenceInitializer;
 import org.fdesigner.core.runtime.preferences.runtime.preferences.AbstractPreferenceStorage;
@@ -34,6 +32,13 @@ import org.fdesigner.runtime.common.runtime.IStatus;
 import org.fdesigner.runtime.common.runtime.ListenerList;
 import org.fdesigner.runtime.common.runtime.SafeRunner;
 import org.fdesigner.runtime.common.runtime.Status;
+import org.fdesigner.runtime.registry.runtime.IConfigurationElement;
+import org.fdesigner.runtime.registry.runtime.IExtension;
+import org.fdesigner.runtime.registry.runtime.IExtensionDelta;
+import org.fdesigner.runtime.registry.runtime.IExtensionPoint;
+import org.fdesigner.runtime.registry.runtime.IExtensionRegistry;
+import org.fdesigner.runtime.registry.runtime.IRegistryChangeEvent;
+import org.fdesigner.runtime.registry.runtime.IRegistryChangeListener;
 import org.fdesigner.supplement.util.NLS;
 
 /**

@@ -12,10 +12,10 @@
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
 
-package org.eclipse.equinox.internal.app;
+package org.fdesigner.runtime.app.internal.app;
 
-import org.eclipse.osgi.service.runnable.ApplicationRunnable;
-import org.osgi.service.application.ApplicationException;
+import org.fdesigner.runtime.app.service.application.ApplicationException;
+import org.fdesigner.supplement.service.runnable.ApplicationRunnable;
 
 /**
  * A main threaded application may be launched using this class to launch the main threaded application.

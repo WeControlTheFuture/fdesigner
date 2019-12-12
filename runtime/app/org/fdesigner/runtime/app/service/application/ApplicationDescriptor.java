@@ -14,14 +14,20 @@
  * limitations under the License.
  */
 
-package org.osgi.service.application;
+package org.fdesigner.runtime.app.service.application;
 
 import java.lang.reflect.Array;
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collection;
+import java.util.HashMap;
+import java.util.Iterator;
+import java.util.Map;
 import java.util.Map.Entry;
-import org.eclipse.equinox.internal.app.AppPersistence;
-import org.osgi.framework.Constants;
-import org.osgi.framework.InvalidSyntaxException;
+
+import org.fdesigner.framework.framework.Constants;
+import org.fdesigner.framework.framework.InvalidSyntaxException;
+import org.fdesigner.runtime.app.internal.app.AppPersistence;
 
 /**
  * An OSGi service that represents an installed application and stores

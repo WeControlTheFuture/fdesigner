@@ -12,21 +12,25 @@
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
 
-package org.eclipse.equinox.internal.app;
+package org.fdesigner.runtime.app.internal.app;
 
 import java.security.AccessController;
 import java.security.PrivilegedAction;
-import org.eclipse.core.runtime.IContributor;
-import org.eclipse.core.runtime.IExtensionRegistry;
-import org.eclipse.core.runtime.spi.RegistryContributor;
-import org.eclipse.osgi.framework.log.FrameworkLog;
-import org.eclipse.osgi.framework.log.FrameworkLogEntry;
-import org.eclipse.osgi.service.debug.DebugOptions;
-import org.eclipse.osgi.service.environment.EnvironmentInfo;
-import org.osgi.framework.*;
-import org.osgi.service.packageadmin.PackageAdmin;
-import org.osgi.util.tracker.ServiceTracker;
-import org.osgi.util.tracker.ServiceTrackerCustomizer;
+
+import org.fdesigner.framework.framework.Bundle;
+import org.fdesigner.framework.framework.BundleActivator;
+import org.fdesigner.framework.framework.BundleContext;
+import org.fdesigner.framework.framework.ServiceReference;
+import org.fdesigner.framework.service.packageadmin.PackageAdmin;
+import org.fdesigner.framework.util.tracker.ServiceTracker;
+import org.fdesigner.framework.util.tracker.ServiceTrackerCustomizer;
+import org.fdesigner.runtime.registry.runtime.IContributor;
+import org.fdesigner.runtime.registry.runtime.IExtensionRegistry;
+import org.fdesigner.runtime.registry.runtime.spi.RegistryContributor;
+import org.fdesigner.supplement.framework.log.FrameworkLog;
+import org.fdesigner.supplement.framework.log.FrameworkLogEntry;
+import org.fdesigner.supplement.service.debug.DebugOptions;
+import org.fdesigner.supplement.service.environment.EnvironmentInfo;
 
 public class Activator implements BundleActivator, ServiceTrackerCustomizer {
 	public static final String PI_APP = "org.eclipse.equinox.app"; //$NON-NLS-1$

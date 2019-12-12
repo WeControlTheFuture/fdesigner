@@ -14,16 +14,16 @@
  * limitations under the License.
  */
 
-package org.osgi.service.application;
+package org.fdesigner.runtime.app.service.application;
 
 import java.security.Permission;
 import java.util.Hashtable;
 import java.util.StringTokenizer;
 import java.util.Vector;
 
-import org.osgi.framework.Filter;
-import org.osgi.framework.FrameworkUtil;
-import org.osgi.framework.InvalidSyntaxException;
+import org.fdesigner.framework.framework.Filter;
+import org.fdesigner.framework.framework.FrameworkUtil;
+import org.fdesigner.framework.framework.InvalidSyntaxException;
 
 /**
  * This class implements permissions for manipulating applications and their

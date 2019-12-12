@@ -17,9 +17,9 @@ package org.fdesigner.core.runtime.preferences.internal.preferences;
 import java.util.Set;
 import java.util.TreeSet;
 
-import org.fdesigner.core.runtime.Preferences;
 import org.fdesigner.core.runtime.preferences.runtime.preferences.ConfigurationScope;
 import org.fdesigner.core.runtime.preferences.service.prefs.BackingStoreException;
+import org.fdesigner.core.runtime.preferences.service.prefs.Preferences;
 import org.fdesigner.framework.framework.Bundle;
 import org.fdesigner.framework.framework.BundleContext;
 import org.fdesigner.framework.framework.BundleEvent;
@@ -80,7 +80,7 @@ public class OSGiPreferencesServiceManager implements ServiceFactory<org.fdesign
 	 * Creates a new OSGiPreferencesServiceImpl for each bundle.
 	 */
 	@Override
-	public org.osgi.service.prefs.PreferencesService getService(Bundle bundle, ServiceRegistration<org.osgi.service.prefs.PreferencesService> registration) {
+	public org.fdesigner.core.runtime.preferences.service.prefs.PreferencesService getService(Bundle bundle, ServiceRegistration<org.fdesigner.core.runtime.preferences.service.prefs.PreferencesService> registration) {
 		String qualifier = getQualifier(bundle);
 		//remember we created prefs for this bundle
 		Preferences bundlesNode = getBundlesNode();
@@ -106,7 +106,7 @@ public class OSGiPreferencesServiceManager implements ServiceFactory<org.fdesign
 	 * Flush the bundle's preferences.
 	 */
 	@Override
-	public void ungetService(Bundle bundle, ServiceRegistration<org.osgi.service.prefs.PreferencesService> registration, org.osgi.service.prefs.PreferencesService service) {
+	public void ungetService(Bundle bundle, ServiceRegistration<org.fdesigner.core.runtime.preferences.service.prefs.PreferencesService> registration, org.fdesigner.core.runtime.preferences.service.prefs.PreferencesService service) {
 		try {
 			//new InstanceScope().getNode(getQualifier(bundle)).flush();
 			ConfigurationScope.INSTANCE.getNode(getQualifier(bundle)).flush();

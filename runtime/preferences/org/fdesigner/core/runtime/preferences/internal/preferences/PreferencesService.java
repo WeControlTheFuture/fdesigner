@@ -32,7 +32,6 @@ import java.util.Map.Entry;
 import java.util.Properties;
 import java.util.concurrent.atomic.AtomicReference;
 
-import org.fdesigner.core.runtime.Preferences;
 import org.fdesigner.core.runtime.preferences.runtime.preferences.BundleDefaultsScope;
 import org.fdesigner.core.runtime.preferences.runtime.preferences.ConfigurationScope;
 import org.fdesigner.core.runtime.preferences.runtime.preferences.DefaultScope;
@@ -47,6 +46,7 @@ import org.fdesigner.core.runtime.preferences.runtime.preferences.InstanceScope;
 import org.fdesigner.core.runtime.preferences.runtime.preferences.PreferenceFilterEntry;
 import org.fdesigner.core.runtime.preferences.runtime.preferences.PreferenceModifyListener;
 import org.fdesigner.core.runtime.preferences.service.prefs.BackingStoreException;
+import org.fdesigner.core.runtime.preferences.service.prefs.Preferences;
 import org.fdesigner.framework.framework.Bundle;
 import org.fdesigner.framework.framework.Constants;
 import org.fdesigner.runtime.common.internal.runtime.RuntimeLog;

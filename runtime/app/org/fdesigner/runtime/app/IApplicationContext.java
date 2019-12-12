@@ -17,7 +17,7 @@ package org.fdesigner.runtime.app;
 import java.util.Map;
 
 import org.fdesigner.framework.framework.Bundle;
-import org.osgi.service.application.ApplicationDescriptor;
+import org.fdesigner.runtime.app.service.application.ApplicationDescriptor;
 
 /**
  * The context used to start an application.

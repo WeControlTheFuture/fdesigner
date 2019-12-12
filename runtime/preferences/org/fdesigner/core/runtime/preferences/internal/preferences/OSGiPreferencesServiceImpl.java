@@ -16,6 +16,7 @@ package org.fdesigner.core.runtime.preferences.internal.preferences;
 import org.fdesigner.core.runtime.preferences.runtime.preferences.IEclipsePreferences;
 import org.fdesigner.core.runtime.preferences.service.prefs.BackingStoreException;
 import org.fdesigner.core.runtime.preferences.service.prefs.Preferences;
+import org.fdesigner.core.runtime.preferences.service.prefs.PreferencesService;
 
 /**
  * <p>

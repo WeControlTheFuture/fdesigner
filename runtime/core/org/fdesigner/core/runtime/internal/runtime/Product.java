@@ -13,9 +13,9 @@
  *******************************************************************************/
 package org.fdesigner.core.runtime.internal.runtime;
 
-import org.eclipse.equinox.internal.app.IBranding;
 import org.fdesigner.core.runtime.IProduct;
 import org.fdesigner.framework.framework.Bundle;
+import org.fdesigner.runtime.app.internal.app.IBranding;
 
 public class Product implements IProduct {
 	IBranding branding;

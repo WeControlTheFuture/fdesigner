@@ -11,9 +11,9 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.equinox.internal.app;
+package org.fdesigner.runtime.app.internal.app;
 
-import org.eclipse.osgi.service.environment.EnvironmentInfo;
+import org.fdesigner.supplement.service.environment.EnvironmentInfo;
 
 public class CommandLineArgs {
 	// obsolete command line args

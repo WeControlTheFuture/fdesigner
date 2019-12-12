@@ -12,9 +12,9 @@
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
 
-package org.eclipse.equinox.internal.app;
+package org.fdesigner.runtime.app.internal.app;
 
-import org.eclipse.osgi.framework.log.FrameworkLogEntry;
+import org.fdesigner.supplement.framework.log.FrameworkLogEntry;
 
 public class AnyThreadAppLauncher implements Runnable {
 	private EclipseAppHandle appHandle;

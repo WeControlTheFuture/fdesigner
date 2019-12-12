@@ -11,11 +11,12 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.equinox.internal.app;
+package org.fdesigner.runtime.app.internal.app;
 
 import java.util.HashMap;
-import org.eclipse.core.runtime.IConfigurationElement;
-import org.osgi.framework.Bundle;
+
+import org.fdesigner.framework.framework.Bundle;
+import org.fdesigner.runtime.registry.runtime.IConfigurationElement;
 
 public class ProductExtensionBranding implements IBranding {
 	private static final String ATTR_DESCRIPTION = "description"; //$NON-NLS-1$

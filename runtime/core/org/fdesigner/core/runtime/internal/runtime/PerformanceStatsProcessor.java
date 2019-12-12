@@ -19,7 +19,6 @@ import java.util.ArrayList;
 import java.util.Collection;
 import java.util.HashMap;
 
-import org.eclipse.core.runtime.jobs.Job;
 import org.fdesigner.core.runtime.PerformanceStats;
 import org.fdesigner.core.runtime.PerformanceStats.PerformanceListener;
 import org.fdesigner.core.runtime.Platform;
@@ -31,6 +30,7 @@ import org.fdesigner.runtime.common.runtime.IProgressMonitor;
 import org.fdesigner.runtime.common.runtime.IStatus;
 import org.fdesigner.runtime.common.runtime.ListenerList;
 import org.fdesigner.runtime.common.runtime.Status;
+import org.fdesigner.runtime.jobs.runtime.jobs.Job;
 import org.fdesigner.supplement.framework.log.FrameworkLog;
 import org.fdesigner.supplement.framework.log.FrameworkLogEntry;
 

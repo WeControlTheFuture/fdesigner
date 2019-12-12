@@ -13,18 +13,31 @@
  *     Josh Arnold - Bug 180080 Equinox Application Admin spec violations
  *******************************************************************************/
 
-package org.eclipse.equinox.internal.app;
+package org.fdesigner.runtime.app.internal.app;
 
-import java.util.*;
-import org.eclipse.core.runtime.*;
-import org.eclipse.equinox.app.IApplication;
-import org.eclipse.equinox.app.IApplicationContext;
-import org.eclipse.osgi.service.runnable.ApplicationRunnable;
-import org.eclipse.osgi.service.runnable.StartupMonitor;
-import org.eclipse.osgi.util.NLS;
-import org.osgi.framework.*;
-import org.osgi.service.application.ApplicationException;
-import org.osgi.service.application.ApplicationHandle;
+import java.util.Arrays;
+import java.util.Comparator;
+import java.util.Dictionary;
+import java.util.HashMap;
+import java.util.Hashtable;
+import java.util.Map;
+
+import org.fdesigner.framework.framework.Bundle;
+import org.fdesigner.framework.framework.Constants;
+import org.fdesigner.framework.framework.InvalidSyntaxException;
+import org.fdesigner.framework.framework.ServiceReference;
+import org.fdesigner.framework.framework.ServiceRegistration;
+import org.fdesigner.runtime.app.IApplication;
+import org.fdesigner.runtime.app.IApplicationContext;
+import org.fdesigner.runtime.app.service.application.ApplicationException;
+import org.fdesigner.runtime.app.service.application.ApplicationHandle;
+import org.fdesigner.runtime.common.runtime.ISafeRunnable;
+import org.fdesigner.runtime.common.runtime.SafeRunner;
+import org.fdesigner.runtime.registry.runtime.IConfigurationElement;
+import org.fdesigner.runtime.registry.runtime.IExtension;
+import org.fdesigner.supplement.service.runnable.ApplicationRunnable;
+import org.fdesigner.supplement.service.runnable.StartupMonitor;
+import org.fdesigner.supplement.util.NLS;
 
 /*
  * An ApplicationHandle that represents a single instance of a running eclipse application.

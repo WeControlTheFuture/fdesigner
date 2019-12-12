@@ -331,7 +331,7 @@ public abstract class Plugin implements BundleActivator {
 		// won't force the PreferenceForwarder class to be loaded (which triggers Preferences plugin
 		// activation).
 		final Preferences[] preferencesCopy = new Preferences[1];
-		Runnable innerCall = () -> preferencesCopy[0] = new org.eclipse.core.internal.preferences.legacy.PreferenceForwarder(
+		Runnable innerCall = () -> preferencesCopy[0] = new org.fdesigner.core.runtime.internal.preferences.legacy.PreferenceForwarder(
 				this, bundleCopy.getSymbolicName());
 
 		innerCall.run();
@@ -370,8 +370,8 @@ public abstract class Plugin implements BundleActivator {
 		final Preferences preferencesCopy = preferences;
 		Runnable innerCall = () -> {
 			try {
-				((org.eclipse.core.internal.preferences.legacy.PreferenceForwarder) preferencesCopy).flush();
-			} catch (org.osgi.service.prefs.BackingStoreException e) {
+				((org.fdesigner.core.runtime.internal.preferences.legacy.PreferenceForwarder) preferencesCopy).flush();
+			} catch (org.fdesigner.core.runtime.preferences.service.prefs.BackingStoreException e) {
 				IStatus status = new Status(IStatus.ERROR, Platform.PI_RUNTIME, IStatus.ERROR,
 						Messages.preferences_saveProblems, e);
 				RuntimeLog.log(status);

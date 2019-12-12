@@ -12,10 +12,10 @@
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
 
-package org.eclipse.equinox.internal.app;
+package org.fdesigner.runtime.app.internal.app;
 
-import org.eclipse.equinox.app.IApplication;
-import org.eclipse.equinox.app.IApplicationContext;
+import org.fdesigner.runtime.app.IApplication;
+import org.fdesigner.runtime.app.IApplicationContext;
 
 /*
  * Special case class only used to throw exceptions when an application

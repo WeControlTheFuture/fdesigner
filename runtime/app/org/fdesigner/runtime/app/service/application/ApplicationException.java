@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package org.osgi.service.application;
+package org.fdesigner.runtime.app.service.application;
 
 /**
  * This exception is used to indicate problems related to application lifecycle

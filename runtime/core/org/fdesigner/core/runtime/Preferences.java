@@ -13,16 +13,33 @@
  *******************************************************************************/
 package org.fdesigner.core.runtime;
 
-import java.io.*;
-import java.util.*;
-import org.eclipse.core.internal.preferences.PreferencesService;
-import org.eclipse.core.internal.preferences.PrefsMessages;
-import org.eclipse.core.runtime.preferences.*;
-import org.eclipse.osgi.util.NLS;
+import java.io.BufferedInputStream;
+import java.io.BufferedOutputStream;
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.OutputStream;
+import java.util.EventListener;
+import java.util.EventObject;
+import java.util.Properties;
+
+import org.fdesigner.core.runtime.preferences.internal.preferences.PreferencesService;
+import org.fdesigner.core.runtime.preferences.internal.preferences.PrefsMessages;
+import org.fdesigner.core.runtime.preferences.runtime.preferences.DefaultScope;
 import org.fdesigner.core.runtime.preferences.runtime.preferences.IEclipsePreferences;
 import org.fdesigner.core.runtime.preferences.runtime.preferences.IPreferencesService;
+import org.fdesigner.core.runtime.preferences.runtime.preferences.InstanceScope;
+import org.fdesigner.runtime.common.runtime.CoreException;
 import org.fdesigner.runtime.common.runtime.IPath;
+import org.fdesigner.runtime.common.runtime.ISafeRunnable;
+import org.fdesigner.runtime.common.runtime.IStatus;
 import org.fdesigner.runtime.common.runtime.ListenerList;
+import org.fdesigner.runtime.common.runtime.SafeRunner;
+import org.fdesigner.runtime.common.runtime.Status;
+import org.fdesigner.supplement.util.NLS;
 
 /**
  * A table of preference settings, mapping named properties to values. Property

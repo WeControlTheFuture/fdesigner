@@ -12,16 +12,29 @@
  *     IBM Corporation - initial API and implementation
  *     Alex Blewitt (bug 196071)
  *******************************************************************************/
-package org.eclipse.equinox.internal.app;
+package org.fdesigner.runtime.app.internal.app;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Dictionary;
+import java.util.HashMap;
+import java.util.Hashtable;
+import java.util.Iterator;
+import java.util.LinkedHashMap;
+import java.util.Map;
 import java.util.Map.Entry;
-import org.eclipse.equinox.app.IApplicationContext;
-import org.eclipse.osgi.framework.console.CommandInterpreter;
-import org.eclipse.osgi.framework.console.CommandProvider;
-import org.osgi.framework.*;
-import org.osgi.service.application.*;
-import org.osgi.util.tracker.ServiceTracker;
+
+import org.fdesigner.framework.framework.BundleContext;
+import org.fdesigner.framework.framework.Filter;
+import org.fdesigner.framework.framework.InvalidSyntaxException;
+import org.fdesigner.framework.framework.ServiceReference;
+import org.fdesigner.framework.framework.ServiceRegistration;
+import org.fdesigner.framework.util.tracker.ServiceTracker;
+import org.fdesigner.runtime.app.IApplicationContext;
+import org.fdesigner.runtime.app.service.application.ApplicationDescriptor;
+import org.fdesigner.runtime.app.service.application.ApplicationHandle;
+import org.fdesigner.runtime.app.service.application.ScheduledApplication;
+import org.fdesigner.supplement.framework.console.CommandInterpreter;
+import org.fdesigner.supplement.framework.console.CommandProvider;
 
 public class AppCommands implements CommandProvider {
 	private final static String LAUNCHABLE_APP_FILTER = "(&(application.locked=false)(application.launchable=true)(application.visible=true))"; //$NON-NLS-1$
