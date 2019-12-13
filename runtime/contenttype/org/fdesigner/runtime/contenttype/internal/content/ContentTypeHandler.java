@@ -18,12 +18,12 @@ import java.io.InputStream;
 import java.io.Reader;
 import java.lang.ref.SoftReference;
 
-import org.fdesigner.core.runtime.preferences.runtime.preferences.IScopeContext;
 import org.fdesigner.runtime.common.runtime.CoreException;
 import org.fdesigner.runtime.common.runtime.QualifiedName;
 import org.fdesigner.runtime.contenttype.runtime.content.IContentDescription;
 import org.fdesigner.runtime.contenttype.runtime.content.IContentType;
 import org.fdesigner.runtime.contenttype.runtime.content.IContentTypeSettings;
+import org.fdesigner.runtime.preferences.runtime.preferences.IScopeContext;
 
 /**
  * The only content types exposed to clients. Allows the content type registry to change

@@ -15,8 +15,8 @@ package org.fdesigner.runtime.contenttype.runtime.content;
 
 import java.util.EventObject;
 
-import org.fdesigner.core.runtime.preferences.runtime.preferences.IScopeContext;
 import org.fdesigner.runtime.common.runtime.CoreException;
+import org.fdesigner.runtime.preferences.runtime.preferences.IScopeContext;
 
 /**
  * The content type manager provides facilities for file name and content-based

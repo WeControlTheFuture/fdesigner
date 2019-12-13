@@ -31,7 +31,6 @@ import java.util.Map.Entry;
 import java.util.Set;
 import java.util.regex.Pattern;
 
-import org.fdesigner.core.runtime.preferences.runtime.preferences.IScopeContext;
 import org.fdesigner.runtime.common.runtime.CoreException;
 import org.fdesigner.runtime.common.runtime.ISafeRunnable;
 import org.fdesigner.runtime.common.runtime.QualifiedName;
@@ -41,6 +40,7 @@ import org.fdesigner.runtime.contenttype.runtime.content.IContentDescription;
 import org.fdesigner.runtime.contenttype.runtime.content.IContentType;
 import org.fdesigner.runtime.contenttype.runtime.content.IContentTypeManager;
 import org.fdesigner.runtime.contenttype.runtime.content.IContentTypeManager.ISelectionPolicy;
+import org.fdesigner.runtime.preferences.runtime.preferences.IScopeContext;
 import org.fdesigner.runtime.contenttype.runtime.content.IContentTypeSettings;
 import org.fdesigner.runtime.contenttype.runtime.content.ITextContentDescriber;
 import org.fdesigner.runtime.contenttype.runtime.content.XMLRootElementContentDescriber;

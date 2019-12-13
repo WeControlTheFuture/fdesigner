@@ -17,11 +17,12 @@
 package org.fdesigner.runtime.common.internal.runtime;
 
 import java.util.*;
-import org.fdesigner.core.runtime.*;
+
 import org.fdesigner.runtime.common.runtime.Assert;
 import org.fdesigner.runtime.common.runtime.AssertionFailedException;
 import org.fdesigner.runtime.common.runtime.IAdapterFactory;
 import org.fdesigner.runtime.common.runtime.IAdapterManager;
+import org.fdesigner.runtime.core.*;
 
 /**
  * This class is the standard implementation of <code>IAdapterManager</code>. It provides

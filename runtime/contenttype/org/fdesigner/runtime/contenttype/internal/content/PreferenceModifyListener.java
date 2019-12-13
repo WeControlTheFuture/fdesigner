@@ -13,12 +13,12 @@
  *******************************************************************************/
 package org.fdesigner.runtime.contenttype.internal.content;
 
-import org.fdesigner.core.runtime.preferences.runtime.preferences.IEclipsePreferences;
-import org.fdesigner.core.runtime.preferences.runtime.preferences.InstanceScope;
-import org.fdesigner.core.runtime.preferences.service.prefs.BackingStoreException;
-import org.fdesigner.core.runtime.preferences.service.prefs.Preferences;
+import org.fdesigner.runtime.preferences.runtime.preferences.IEclipsePreferences;
+import org.fdesigner.runtime.preferences.runtime.preferences.InstanceScope;
+import org.fdesigner.runtime.preferences.service.prefs.BackingStoreException;
+import org.fdesigner.runtime.preferences.service.prefs.Preferences;
 
-public class PreferenceModifyListener extends org.fdesigner.core.runtime.preferences.runtime.preferences.PreferenceModifyListener {
+public class PreferenceModifyListener extends org.fdesigner.runtime.preferences.runtime.preferences.PreferenceModifyListener {
 	@Override
 	public IEclipsePreferences preApply(IEclipsePreferences node) {
 		Preferences root = node.node("/"); //$NON-NLS-1$

@@ -14,10 +14,10 @@
 
 package org.fdesigner.runtime.registry.internal.registry;
 
-import org.fdesigner.core.runtime.*;
 import org.fdesigner.runtime.common.runtime.CoreException;
 import org.fdesigner.runtime.common.runtime.IStatus;
 import org.fdesigner.runtime.common.runtime.Status;
+import org.fdesigner.runtime.core.*;
 import org.fdesigner.runtime.registry.runtime.spi.IRegistryProvider;
 
 /**

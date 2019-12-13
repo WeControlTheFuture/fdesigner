@@ -23,14 +23,14 @@ import java.util.HashSet;
 import java.util.Set;
 import java.util.regex.Pattern;
 
-import org.fdesigner.core.runtime.preferences.runtime.preferences.IEclipsePreferences;
-import org.fdesigner.core.runtime.preferences.runtime.preferences.IScopeContext;
-import org.fdesigner.core.runtime.preferences.service.prefs.BackingStoreException;
 import org.fdesigner.runtime.common.runtime.QualifiedName;
 import org.fdesigner.runtime.contenttype.runtime.content.IContentDescription;
 import org.fdesigner.runtime.contenttype.runtime.content.IContentType;
 import org.fdesigner.runtime.contenttype.runtime.content.IContentTypeManager;
 import org.fdesigner.runtime.contenttype.runtime.content.IContentTypeMatcher;
+import org.fdesigner.runtime.preferences.runtime.preferences.IEclipsePreferences;
+import org.fdesigner.runtime.preferences.runtime.preferences.IScopeContext;
+import org.fdesigner.runtime.preferences.service.prefs.BackingStoreException;
 
 /**
  * @since 3.1

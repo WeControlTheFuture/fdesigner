@@ -15,7 +15,7 @@
 package org.fdesigner.runtime.common.internal.runtime;
 
 import java.util.ArrayList;
-import org.fdesigner.core.runtime.*;
+
 import org.fdesigner.supplement.log.*;
 import org.fdesigner.supplement.framework.log.FrameworkLogEntry;
 import org.fdesigner.framework.framework.Bundle;
@@ -26,6 +26,7 @@ import org.fdesigner.runtime.common.runtime.CoreException;
 import org.fdesigner.runtime.common.runtime.IStatus;
 import org.fdesigner.runtime.common.runtime.MultiStatus;
 import org.fdesigner.runtime.common.runtime.Status;
+import org.fdesigner.runtime.core.*;
 
 /**
  * A log writer that writes log entries.  

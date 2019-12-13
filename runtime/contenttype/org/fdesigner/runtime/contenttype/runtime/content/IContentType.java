@@ -17,9 +17,9 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.io.Reader;
 
-import org.fdesigner.core.runtime.preferences.runtime.preferences.IScopeContext;
 import org.fdesigner.runtime.common.runtime.CoreException;
 import org.fdesigner.runtime.common.runtime.QualifiedName;
+import org.fdesigner.runtime.preferences.runtime.preferences.IScopeContext;
 
 /**
  * Content types represent and provide information on file types, such as

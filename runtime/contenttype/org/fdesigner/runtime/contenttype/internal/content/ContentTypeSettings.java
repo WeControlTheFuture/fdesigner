@@ -15,15 +15,15 @@ package org.fdesigner.runtime.contenttype.internal.content;
 
 import java.util.List;
 
-import org.fdesigner.core.runtime.preferences.runtime.preferences.IScopeContext;
-import org.fdesigner.core.runtime.preferences.service.prefs.BackingStoreException;
-import org.fdesigner.core.runtime.preferences.service.prefs.Preferences;
 import org.fdesigner.runtime.common.runtime.CoreException;
 import org.fdesigner.runtime.common.runtime.IStatus;
 import org.fdesigner.runtime.common.runtime.QualifiedName;
 import org.fdesigner.runtime.common.runtime.Status;
 import org.fdesigner.runtime.contenttype.runtime.content.IContentDescription;
 import org.fdesigner.runtime.contenttype.runtime.content.IContentTypeSettings;
+import org.fdesigner.runtime.preferences.runtime.preferences.IScopeContext;
+import org.fdesigner.runtime.preferences.service.prefs.BackingStoreException;
+import org.fdesigner.runtime.preferences.service.prefs.Preferences;
 import org.fdesigner.supplement.util.NLS;
 
 public class ContentTypeSettings implements IContentTypeSettings, IContentTypeInfo {

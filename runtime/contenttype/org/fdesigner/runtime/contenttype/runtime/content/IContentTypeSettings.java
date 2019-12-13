@@ -13,8 +13,8 @@
  *******************************************************************************/
 package org.fdesigner.runtime.contenttype.runtime.content;
 
-import org.fdesigner.core.runtime.preferences.runtime.preferences.IScopeContext;
 import org.fdesigner.runtime.common.runtime.CoreException;
+import org.fdesigner.runtime.preferences.runtime.preferences.IScopeContext;
 
 /**
  * Gives access to the user settings for a content type.
